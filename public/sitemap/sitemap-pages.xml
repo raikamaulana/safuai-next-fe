@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
+>
+  <url>
+    <loc>https://beta.blocksafu.com/_app</loc>
+    <lastmod>2023-03-11T04:54:59.224Z</lastmod>
+    <priority>1</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://beta.blocksafu.com/_document</loc>
+    <lastmod>2023-03-11T04:54:59.224Z</lastmod>
+    <priority>1</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://beta.blocksafu.com/_error</loc>
+    <lastmod>2023-03-11T04:54:59.224Z</lastmod>
+    <priority>1</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://beta.blocksafu.com/audit-list</loc>
+    <lastmod>2023-03-11T04:54:59.224Z</lastmod>
+    <priority>1</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://beta.blocksafu.com/disclaimer</loc>
+    <lastmod>2023-03-11T04:54:59.224Z</lastmod>
+    <priority>1</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://beta.blocksafu.com/</loc>
+    <lastmod>2023-03-11T04:54:59.224Z</lastmod>
+    <priority>1</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://beta.blocksafu.com/privacy-policy</loc>
+    <lastmod>2023-03-11T04:54:59.224Z</lastmod>
+    <priority>1</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://beta.blocksafu.com/request</loc>
+    <lastmod>2023-03-11T04:54:59.224Z</lastmod>
+    <priority>1</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://beta.blocksafu.com/security-audit</loc>
+    <lastmod>2023-03-11T04:54:59.224Z</lastmod>
+    <priority>1</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://beta.blocksafu.com/team</loc>
+    <lastmod>2023-03-11T04:54:59.224Z</lastmod>
+    <priority>1</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://beta.blocksafu.com/api/bullish</loc>
+    <lastmod>2023-03-11T04:54:59.224Z</lastmod>
+    <priority>1</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://beta.blocksafu.com/api/finish</loc>
+    <lastmod>2023-03-11T04:54:59.224Z</lastmod>
+    <priority>1</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://beta.blocksafu.com/api/hello</loc>
+    <lastmod>2023-03-11T04:54:59.224Z</lastmod>
+    <priority>1</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://beta.blocksafu.com/bounty-scammers</loc>
+    <lastmod>2023-03-11T04:54:59.224Z</lastmod>
+    <priority>1</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://beta.blocksafu.com/kyc-list</loc>
+    <lastmod>2023-03-11T04:54:59.224Z</lastmod>
+    <priority>1</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://beta.blocksafu.com/nft-scanner</loc>
+    <lastmod>2023-03-11T04:54:59.224Z</lastmod>
+    <priority>1</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://beta.blocksafu.com/project-detail/[address]</loc>
+    <lastmod>2023-03-11T04:54:59.224Z</lastmod>
+    <priority>1</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://beta.blocksafu.com/token-scanner</loc>
+    <lastmod>2023-03-11T04:54:59.224Z</lastmod>
+    <priority>1</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://beta.blocksafu.com/nft-scanner/[chainId]/[address]</loc>
+    <lastmod>2023-03-11T04:54:59.224Z</lastmod>
+    <priority>1</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://beta.blocksafu.com/token-scanner/[chainId]/[address]</loc>
+    <lastmod>2023-03-11T04:54:59.224Z</lastmod>
+    <priority>1</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+</urlset>
