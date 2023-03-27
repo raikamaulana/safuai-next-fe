@@ -40,7 +40,7 @@ export default function Home() {
         <meta name="theme-color" content="#ffffff" />
         <title>Blocksafu - Audit Smart Contract Solidity, KYC, Bounty Scammer, Token Scanner, and Vulnerability Scanner Platform</title>
       </Head>
-      {/* <Header /> */}
+      <Header />
       <Footer />
     </>
   )
