@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import axios from 'axios';
 import dynamic from 'next/dynamic';
+import HowWork from '@/components/HowWork';
 
 const Header = dynamic(() => import('@/components/bsafu-ui').then((mod) => mod.Header), {
   ssr: false,
@@ -40,7 +41,8 @@ export default function Home() {
         <meta name="theme-color" content="#ffffff" />
         <title>Blocksafu - Audit Smart Contract Solidity, KYC, Bounty Scammer, Token Scanner, and Vulnerability Scanner Platform</title>
       </Head>
-      <Header />
+      <Header /> 
+      <HowWork />
       <Footer />
     </>
   )
