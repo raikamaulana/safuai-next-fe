@@ -48,6 +48,7 @@
     "mythxjs": "^1.3.13",
     "next": "13.2.1",
     "next-remove-imports": "^1.0.10",
+    "next-themes": "^0.2.1",
     "node-cache": "^5.1.2",
     "os-browserify": "^0.3.0",
     "path": "^0.12.7",
