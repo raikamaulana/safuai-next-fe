@@ -5,6 +5,11 @@ import dynamic from 'next/dynamic';
 const Header = dynamic(() => import('@/components/bsafu-ui').then((mod) => mod.Header), {
   ssr: false,
 });
+
+const SafuAiHero = dynamic(() => import('@/components/safuaiHero').then((mod) => mod.safuaiHero), {
+  ssr: false,
+});
+
 const Footer = dynamic(() => import('@/components/bsafu-ui').then((mod) => mod.Footer), {
   ssr: false,
 });
@@ -41,6 +46,7 @@ export default function Home() {
         <title>Blocksafu - Audit Smart Contract Solidity, KYC, Bounty Scammer, Token Scanner, and Vulnerability Scanner Platform</title>
       </Head>
       <Header />
+      <SafuAiHero />
       <Footer />
     </>
   )
