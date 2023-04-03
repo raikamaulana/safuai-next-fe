@@ -89,7 +89,7 @@ export const manualAudit = () => {
                     <h2 className='mb-1'>1. safe math</h2>
                     <p>Risk Recommendation: Don't use safe math after solc version 0.8.0</p>
                   </div>
-                  <div className='min-h-[556px] px-5 py-4 mt-5 border border-white rounded-lg overflow-x-scroll'>
+                  <div className='min-h-[556px] px-5 py-4 mt-5 border border-white rounded-lg overflow-x-scroll lg:overflow-hidden'>
                     <div className='w-[630px]'>
                       <p>library SafeMath &#123;</p>
                       <p>2 &nbsp;&nbsp;/**</p>
@@ -117,7 +117,7 @@ export const manualAudit = () => {
                     <p className='mt-3'>Risk Scenario: Add liquidity not to burn address</p>
                     <p className='mt-3'>Risk Recommendation: Please make it liquidity function with auto burn lp<span className='inline-block'>(send it to 0xdead) 1</span></p>
                   </div>
-                  <div className='min-h-[475px] px-5 py-4 mt-5 border border-white rounded-lg overflow-x-scroll'>
+                  <div className='min-h-[475px] px-5 py-4 mt-5 border border-white rounded-lg overflow-x-scroll lg:overflow-hidden'>
                     <div className='w-[630px]'>
                       <p>function addLiquidity(uint256 tokenAmount, uint256 ethAmount) private &#123;</p>
                       <p>2 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// approve token transfer to cover all possible scenarios</p>
@@ -139,14 +139,14 @@ export const manualAudit = () => {
               <Tab.Panel>
                 <div className='max-w-3xl min-h-[688px] text-base mt-4 px-6 py-4 bg-white dark:bg-[#2C3239]'>
                   <h1>Major - Must be fixed, and will bring problems.</h1>
-                  <div className='min-h-[605px] px-5 py-4 mt-5 border border-white rounded-lg overflow-x-scroll'>
+                  <div className='min-h-[605px] px-5 py-4 mt-5 border border-white rounded-lg overflow-x-scroll lg:overflow-hidden'>
                   </div>
                 </div>
               </Tab.Panel>
               <Tab.Panel>
                 <div className='max-w-3xl min-h-[688px] text-base mt-4 px-6 py-4 bg-white dark:bg-[#2C3239]'>
                   <h1>Critical - Really need to  be fixed, and will bring big problems and honeypod.</h1>
-                  <div className='min-h-[605px] px-5 py-4 mt-5 border border-white rounded-lg overflow-x-scroll'>
+                  <div className='min-h-[605px] px-5 py-4 mt-5 border border-white rounded-lg overflow-x-scroll lg:overflow-hidden'>
                   </div>
                 </div>
               </Tab.Panel>
@@ -157,14 +157,14 @@ export const manualAudit = () => {
                     <p className='mt-4'>Risk Scenario: The owner can set fees up to 100%</p>
                     <p className='mt-4'>Risk Recommendation: Contract Already Renounce 1</p>
                   </div>
-                  <div className='min-h-[183px] px-5 py-4 mt-5 border border-white rounded-lg overflow-x-scroll'>
+                  <div className='min-h-[183px] px-5 py-4 mt-5 border border-white rounded-lg overflow-x-scroll lg:overflow-hidden'>
                   </div>
                   <div className='mt-8'>
                     <h1 className='text-[#D171FF]'>2. Max Tx</h1>
                     <p className='mt-3'>Risk Scenario: The owner can set max tx amount with zero value <span className='inline-block'>(but already renounce)</span></p>
                     <p className='mt-4'>Risk Recommendation: Contract Already Renounce</p>
                   </div>
-                  <div className='min-h-[183px] px-5 py-4 mt-5 border border-white rounded-lg overflow-x-scroll'>
+                  <div className='min-h-[183px] px-5 py-4 mt-5 border border-white rounded-lg overflow-x-scroll lg:overflow-hidden'>
                   </div>
                 </div>
               </Tab.Panel>
