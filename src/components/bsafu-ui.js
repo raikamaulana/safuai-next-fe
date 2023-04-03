@@ -460,7 +460,7 @@ export function Header() {
   return (
     <>
       <Popover className="fixed z-20 w-full h-20 bg-white backdrop-blur dark:bg-[#26293A]">
-        <div className="md:px-12 px-8 py-2.5 md:py-2.5 lg:px-18 lg:py-2 xl:py-2">
+        <div className="md:px-12 px-8 py-2.5 md:py-2.5 lg:px-16 lg:pl-20 lg:py-2 xl:py-2 ">
           <div className="flex items-center justify-between md:justify-between md:space-x-4">
             <div className="flex items-center justify-start gap-2">
               <Link

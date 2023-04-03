@@ -3,10 +3,10 @@ import React from 'react'
 export const ContractInheritance = () => {
   return (
     <>
-    <section className="bg-[#0D1116] w-full lg:pl-36 lg:pr-36 px-3 md:px-20 py-10">
-            <div className='bg-customDark h-[650px] rounded-lg lg:px-11 md:px-11  py-14'>
+    <section className="dark:bg-[#0D1116] bg-[#E8ECEF] w-full lg:pl-36 lg:pr-36 px-3 md:px-20 py-10 duration-500 transition-all">
+            <div className='dark:bg-customDark bg-white h-[650px] rounded-lg lg:px-11 md:px-11  py-14'>
                 <div>
-                <div className='border border-customPurple text-white max-w-min mx-auto lg:px-20 lg:py-5 md:px-20 md:py-5 px-6 py-3 rounded-lg text-lg lg:mb-1 md:mb-1 mb-2'>
+                <div className='border border-customPurple dark:text-white max-w-min mx-auto lg:px-20 lg:py-5 md:px-20 md:py-5 px-6 py-3 rounded-lg text-lg lg:mb-1 md:mb-1 mb-2'>
                     BEP20Token
                 </div>
                 <div className='flex max-w-min mx-auto'>
@@ -19,10 +19,10 @@ export const ContractInheritance = () => {
                 </div>
                 </div>
                 <div className='flex max-w-min mx-auto'>
-                    <div className='border border-customPurple text-white max-w-min mr-16 lg:px-20 lg:py-5 md:px-20 md:py-5 px-6 py-3 rounded-lg text-lg mb-5 lg:mb-1 md:mb-1'>
+                    <div className='border border-customPurple dark:text-white max-w-min mr-16 lg:px-20 lg:py-5 md:px-20 md:py-5 px-6 py-3 rounded-lg text-lg mb-5 lg:mb-1 md:mb-1'>
                         IBEP20
                     </div>
-                    <div className='border border-customPurple text-white max-w-min mx-auto lg:px-20 lg:py-5 md:px-20 md:py-5 px-6 py-3 rounded-lg text-lg mb-1 mt-5 lg:mt-0 md:mt-0'>
+                    <div className='border border-customPurple dark:text-white max-w-min mx-auto lg:px-20 lg:py-5 md:px-20 md:py-5 px-6 py-3 rounded-lg text-lg mb-1 mt-5 lg:mt-0 md:mt-0'>
                         Ownable
                     </div>
                 </div>

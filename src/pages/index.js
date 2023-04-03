@@ -14,12 +14,6 @@ const Footer = dynamic(
     ssr: false,
   }
 );
-const safuaiHero = dynamic(
-  () => import("@/components/safuaiHero").then((mod) => mod.safuaiHero),
-  {
-    ssr: false,
-  }
-);
 
 export default function Home() {
   return (
@@ -77,7 +71,6 @@ export default function Home() {
         </title>
       </Head>
       <Header />
-      <safuaiHero />
       <Footer />
     </>
   );
