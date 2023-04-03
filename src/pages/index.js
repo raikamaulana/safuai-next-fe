@@ -1,6 +1,8 @@
 import Head from "next/head";
 import axios from "axios";
 import dynamic from "next/dynamic";
+import { OurSquad } from "@/components/OurSquad";
+import { HolderTaken } from "@/components/HolderTaken";
 
 const Header = dynamic(
   () => import("@/components/bsafu-ui").then((mod) => mod.Header),
@@ -77,7 +79,9 @@ export default function Home() {
         </title>
       </Head>
       <Header />
-      <safuaiHero />
+      {/* <safuaiHero /> */}
+      <OurSquad />
+      {/* <HolderTaken/> */}
       <Footer />
     </>
   );
