@@ -8,12 +8,6 @@ const Header = dynamic(
     ssr: false,
   }
 );
-const OurSquad = dynamic(
-  () => import("@/components/OurSquad").then((mod) => mod.OurSquad),
-  {
-    ssr: false,
-  }
-);
 
 const Footer = dynamic(
   () => import("@/components/footer").then((mod) => mod.Footer),
@@ -78,7 +72,6 @@ export default function Home() {
         </title>
       </Head>
       <Header />
-      <OurSquad/>
       <Footer />
     </>
   );

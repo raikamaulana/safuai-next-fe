@@ -10,9 +10,10 @@
   },
   "dependencies": {
     "@ethersproject/providers": "^5.5.2",
-    "@headlessui/react": "^1.6.1",
+    "@headlessui/react": "^1.7.13",
     "@sentry/nextjs": "^7.41.0",
     "@tailwindcss/forms": "^0.5.3",
+    "@tailwindcss/ui": "^0.7.2",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^12.0.0",
     "@testing-library/user-event": "^13.2.1",
