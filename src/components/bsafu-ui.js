@@ -565,8 +565,7 @@ export function Header() {
                                     </svg>
                                 </div>
                             )}
-
-                            <Popover.Button className="relative inline-flex items-center justify-center p-2 text-gray-400 bg-white rounded-lg dark:bg-gray-800  focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                            <Popover.Button className="relative inline-flex items-center justify-center p-2 text-gray-400 bg-white rounded-md dark:bg-gray-800 hover:black hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
                                 <span className="sr-only">Open menu</span>
                                 <FaBars className="w-6 h-6" aria-hidden="true" />
                             </Popover.Button>
@@ -1214,7 +1213,7 @@ export function HeaderFixed() {
                                 </div>
                             )}
 
-                            <Popover.Button className="inline-flex items-center justify-center p-2 text-gray-400 bg-white rounded-md rounded-lg dark:bg-gray-800 hover:black hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                            <Popover.Button className="inline-flex items-center justify-center p-2 text-gray-400 bg-white rounded-md dark:bg-gray-800 hover:black hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
                                 <span className="sr-only">Open menu</span>
                                 <FaBars className="w-6 h-6" aria-hidden="true" />
                             </Popover.Button>
