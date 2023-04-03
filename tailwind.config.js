@@ -3,25 +3,31 @@ const colors = require("tailwindcss/colors");
 module.exports = {
   important: true,
   purge: [
-    './src/**/*.{js,jsx,ts,tsx}',
-    './pages/**/*.{js,jsx,ts,tsx}',
-    './components/**/*.{js,jsx,ts,tsx}',
+    "./src/**/*.{js,jsx,ts,tsx}",
+    "./pages/**/*.{js,jsx,ts,tsx}",
+    "./components/**/*.{js,jsx,ts,tsx}",
   ],
-  darkMode: 'class',
+  darkMode: "class",
   theme: {
     extend: {
-      backgroundImage: theme => ({
-        'hero-pattern': "url('./fun-fact-bg.jpg')",
-        'hero-bg': "url('../../public/images/illustration/background-scan.png')",
-        'token-scanner-home': "url('../../public/images/illustration/background-token-scanner-home.png')",
-        'privacy-bg': "url('../../public/images/illustration/background-privacy-policy.png')",
-        'hero-bg-nft': "url('../../public/images/illustration/background-scan-nft.png')",
-        'kyc-bg': "url('../../public/images/illustration/background-kyc.png')",
-        'audit-bg': "url('../../public/images/illustration/background-audit.png')",
-        'security-audit-bg': "url('../../public/images/illustration/background-security-audit.png')",
-        'blur': "url('../../public/images/illustration/chartblur.webp')",
-        'tear': "url('../../public/images/illustration/backdrop.svg')",
-      })
+      backgroundImage: (theme) => ({
+        "hero-pattern": "url('./fun-fact-bg.jpg')",
+        "hero-bg":
+          "url('../../public/images/illustration/background-scan.png')",
+        "token-scanner-home":
+          "url('../../public/images/illustration/background-token-scanner-home.png')",
+        "privacy-bg":
+          "url('../../public/images/illustration/background-privacy-policy.png')",
+        "hero-bg-nft":
+          "url('../../public/images/illustration/background-scan-nft.png')",
+        "kyc-bg": "url('../../public/images/illustration/background-kyc.png')",
+        "audit-bg":
+          "url('../../public/images/illustration/background-audit.png')",
+        "security-audit-bg":
+          "url('../../public/images/illustration/background-security-audit.png')",
+        blur: "url('../../public/images/illustration/chartblur.webp')",
+        tear: "url('../../public/images/illustration/backdrop.svg')",
+      }),
     },
     screens: {
       sm: "640px",
@@ -125,7 +131,7 @@ module.exports = {
         600: "#0284c7",
         700: "#0369a1",
         800: "#075985",
-        900: "#0c4a6e"
+        900: "#0c4a6e",
       },
       blue: {
         100: "#d1e3fa",
@@ -136,7 +142,7 @@ module.exports = {
         600: "#165bb8",
         700: "#10448a",
         800: "#0b2e5c",
-        900: "#05172e"
+        900: "#05172e",
       },
       indigo: {
         100: "#ebf4ff",
@@ -288,12 +294,9 @@ module.exports = {
       sm: "0 1px 2px 0 rgba(0, 0, 0, 0.05)",
       DEFAULT:
         "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
-      md:
-        "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
-      lg:
-        "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
-      xl:
-        "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
+      md: "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
+      lg: "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
+      xl: "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
       "2xl": "0 25px 50px -12px rgba(0, 0, 0, 0.25)",
       inner: "inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)",
       none: "none",
@@ -889,7 +892,8 @@ module.exports = {
       50: "50",
     },
   },
-  plugins: [
-    require('@tailwindcss/forms'),
-  ]
-}
+  plugins: [require("@tailwindcss/forms"), require("tailwind-scrollbar")],
+  variants: {
+    scrollbar: ["rounded"],
+  },
+};
