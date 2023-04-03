@@ -38,7 +38,9 @@ module.exports = {
       white: colors.white,
       customBlue: "#165BB8",
       customDarkBlue: "#0D3B6E",
-
+      customPurple: "#D171FF",
+      customDark: "#1B1F28",
+      customGrey: "#363D4C",
       gray: {
         100: "#EEF1F6",
         200: "#f1f1f1",
