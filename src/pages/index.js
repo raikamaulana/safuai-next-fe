@@ -14,6 +14,12 @@ const OurSquad = dynamic(
     ssr: false,
   }
 );
+const HolderTaken = dynamic(
+  () => import("@/components/HolderTaken").then((mod) => mod.HolderTaken),
+  {
+    ssr: false,
+  }
+);
 
 const Footer = dynamic(
   () => import("@/components/footer").then((mod) => mod.Footer),
@@ -78,8 +84,9 @@ export default function Home() {
         </title>
       </Head>
       <Header />
-      <OurSquad/>
-      <Footer />
+      {/* <OurSquad/> */}
+      <HolderTaken />
+      {/* <Footer /> */}
     </>
   );
 }
