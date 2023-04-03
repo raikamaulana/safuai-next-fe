@@ -8,13 +8,19 @@ const Header = dynamic(
     ssr: false,
   }
 );
+<<<<<<< HEAD
 
 const Footer = dynamic(
   () => import("@/components/bsafu-ui").then((mod) => mod.Footer),
+=======
+const Footer = dynamic(
+  () => import("@/components/footer").then((mod) => mod.Footer),
+>>>>>>> 0e98c6bc89cec29f863b6fe6cd8bacaf10e5746b
   {
     ssr: false,
   }
 );
+<<<<<<< HEAD
 
 const AuditInfo = dynamic(
   () => import("@/components/AuditInfo").then((mod) => mod.AuditInfo),
@@ -25,6 +31,10 @@ const AuditInfo = dynamic(
 
 const Collaborator = dynamic(
   () => import("@/components/Collaborator").then((mod) => mod.Collaborator),
+=======
+const safuaiHero = dynamic(
+  () => import("@/components/safuaiHero").then((mod) => mod.safuaiHero),
+>>>>>>> 0e98c6bc89cec29f863b6fe6cd8bacaf10e5746b
   {
     ssr: false,
   }
@@ -86,8 +96,12 @@ export default function Home() {
         </title>
       </Head>
       <Header />
+<<<<<<< HEAD
       <Collaborator />
       <AuditInfo />
+=======
+      <safuaiHero />
+>>>>>>> 0e98c6bc89cec29f863b6fe6cd8bacaf10e5746b
       <Footer />
     </>
   );
