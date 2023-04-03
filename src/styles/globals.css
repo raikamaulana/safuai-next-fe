@@ -3,9 +3,11 @@
 @tailwind utilities;
 
 @layer base {
-  html {
-    scroll-behavior: smooth;
-  }
+    html {
+        scroll-behavior: smooth;
+        fontFamily: Poppins
+        font-family: Inter, Poppins, sans-serif, mono;
+    }
 }
 
 .slick-prev,

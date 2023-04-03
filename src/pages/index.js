@@ -8,8 +8,14 @@ const Header = dynamic(
     ssr: false,
   }
 );
+const OurSquad = dynamic(
+  () => import("@/components/OurSquad").then((mod) => mod.OurSquad),
+  {
+    ssr: false,
+  }
+);
 const Footer = dynamic(
-  () => import("@/components/bsafu-ui").then((mod) => mod.Footer),
+  () => import("@/components/footer").then((mod) => mod.Footer),
   {
     ssr: false,
   }
@@ -77,8 +83,8 @@ export default function Home() {
         </title>
       </Head>
       <Header />
-      <AuditDetail />
-      {/* <Footer /> */}
+      <OurSquad />
+      <Footer />
     </>
   );
 }
