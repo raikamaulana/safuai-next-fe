@@ -17,20 +17,20 @@ export const auditInformation = () => {
                     </div>
                 </div>
                 {/* DIV 2 */}
-                <div className='max-w-3xl font-[Poppins] grid grid-cols-2 gap-10 mt-9 lg:grid-cols-4 lg:gap-20 bg-red-800'>
-                    <div className='flex flex-col text-center bg-customDarkBlue lg:text-left'>
+                <div className='max-w-3xl font-[Poppins] grid grid-cols-2 gap-10 mt-9 lg:grid-cols-4 lg:gap-20'>
+                    <div className='flex flex-col text-center lg:text-left'>
                         <h2 className='font-light text-sm sm:text-base'>Contract Name</h2>
                         <p className='font-medium text-base sm:text-lg'>BEP20 Token</p>
                     </div>
-                    <div className='flex flex-col text-center bg-customDarkBlue'>
+                    <div className='flex flex-col text-center'>
                         <h2 className='font-light text-sm sm:text-base'>Compiler</h2>
                         <p className='font-medium text-xs sm:text-base md:text-lg lg:-ml-12'>v0.8.17+commit.8df45f5f</p>
                     </div>
-                    <div className='flex flex-col text-center bg-customDarkBlue'>
+                    <div className='flex flex-col text-center'>
                         <h2 className='font-light text-sm sm:text-base'>Language</h2>
                         <p className='font-medium text-base sm:text-lg'>Solidity</p>
                     </div>
-                    <div className='flex flex-col text-center bg-customDarkBlue'>
+                    <div className='flex flex-col text-center'>
                         <div className='lg:-mr-7'>
                             <h2 className='font-light text-sm sm:text-base'>License</h2>
                             <p className='font-medium text-base sm:text-lg'>MIT License</p>
