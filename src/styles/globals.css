@@ -5,7 +5,10 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+<<<<<<< HEAD
+=======
     font-family: Inter, Poppins, sans-serif, mono;
+>>>>>>> 0e98c6bc89cec29f863b6fe6cd8bacaf10e5746b
   }
 }
 
@@ -189,3 +192,7 @@
   opacity: 0.75;
   color: black;
 }
+<<<<<<< HEAD
+
+=======
+>>>>>>> 0e98c6bc89cec29f863b6fe6cd8bacaf10e5746b

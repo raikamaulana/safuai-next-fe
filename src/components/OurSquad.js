@@ -3,7 +3,7 @@ import React from "react";
 
 export const OurSquad = () => {
   return (
-    <div className="dark:bg-[#1B1F28] pb-64 flex justify-center items-center">
+    <div className="dark:bg-[#1B1F28] bg-[#E8ECEF] pb-64 flex justify-center items-center transition-all duration-500 overflow-hidden">
       <div className="flex flex-col pt-36">
         <h1 className="text-3xl dark:text-white  text-center">Our Groups</h1>
         <p className="text-xl dark:text-white font-bold text-center">
@@ -38,6 +38,7 @@ export const OurSquad = () => {
                         height="165"
                       />
                     </a>
+
                     <h2 className="text-center dark:text-white justify-center items-center text-xl">
                       Sherrod wood
                     </h2>
