@@ -11,6 +11,10 @@
   "dependencies": {
     "@ethersproject/providers": "^5.5.2",
     "@headlessui/react": "^1.7.13",
+<<<<<<< HEAD
+=======
+    "@heroicons/react": "^2.0.16",
+>>>>>>> b9b1dfb94bdcfc7de1e6acb739b675df81efca24
     "@sentry/nextjs": "^7.41.0",
     "@tailwindcss/forms": "^0.5.3",
     "@tailwindcss/ui": "^0.7.2",
@@ -74,6 +78,7 @@
     "slick-carousel": "^1.8.1",
     "stream-browserify": "^3.0.0",
     "stream-http": "^3.2.0",
+    "tailwind-scrollbar": "^3.0.0",
     "tailwindcss": "^3.2.7",
     "url": "^0.11.0",
     "walletconnect": "^1.7.1",
