@@ -83,6 +83,7 @@ export default function Home() {
         </title>
       </Head>
       <Header />
+      <AuditDetail />
       <OurSquad />
       <Footer />
     </>

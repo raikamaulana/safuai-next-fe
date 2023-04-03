@@ -95,7 +95,7 @@ export default function auditList() {
               </h3>
               <Link
                 href="/"
-                className="inline-block text-white font-medium px-1 py-1 ml-12 -translate-y-3 ring-2 ring-[#5B4C7C] rounded-md"
+                className="inline-block text-white font-medium px-1 py-1 ml-32 -translate-y-10 ring-2 ring-[#5B4C7C] rounded-md"
               >
                 View Detail
               </Link>
@@ -135,7 +135,7 @@ export default function auditList() {
               </h3>
               <Link
                 href="/"
-                className="inline-block text-white font-medium px-1 py-1 ml-12 -translate-y-3 ring-2 ring-[#5B4C7C] rounded-md"
+                className="inline-block text-white font-medium px-1 py-1 ml-32 -translate-y-10 ring-2 ring-[#5B4C7C] rounded-md"
               >
                 View Detail
               </Link>
@@ -175,7 +175,7 @@ export default function auditList() {
               </h3>
               <Link
                 href="/"
-                className="inline-block text-white font-medium px-1 py-1 ml-12 -translate-y-3 ring-2 ring-[#5B4C7C] rounded-md"
+                className="inline-block text-white font-medium px-1 py-1 ml-32 -translate-y-10 ring-2 ring-[#5B4C7C] rounded-md"
               >
                 View Detail
               </Link>
@@ -215,7 +215,7 @@ export default function auditList() {
               </h3>
               <Link
                 href="/"
-                className="inline-block text-white font-medium px-1 py-1 ml-12 -translate-y-3 ring-2 ring-[#5B4C7C] rounded-md"
+                className="inline-block text-white font-medium px-1 py-1 ml-32 -translate-y-10 ring-2 ring-[#5B4C7C] rounded-md"
               >
                 View Detail
               </Link>
@@ -255,7 +255,7 @@ export default function auditList() {
               </h3>
               <Link
                 href="/"
-                className="inline-block text-white font-medium px-1 py-1 ml-12 -translate-y-3 ring-2 ring-[#5B4C7C] rounded-md"
+                className="inline-block text-white font-medium px-1 py-1 ml-32 -translate-y-10 ring-2 ring-[#5B4C7C] rounded-md"
               >
                 View Detail
               </Link>
@@ -295,7 +295,7 @@ export default function auditList() {
               </h3>
               <Link
                 href="/"
-                className="inline-block text-white font-medium px-1 py-1 ml-12 -translate-y-3 ring-2 ring-[#5B4C7C] rounded-md"
+                className="inline-block text-white font-medium px-1 py-1 ml-32 -translate-y-10 ring-2 ring-[#5B4C7C] rounded-md"
               >
                 View Detail
               </Link>
@@ -335,7 +335,7 @@ export default function auditList() {
               </h3>
               <Link
                 href="/"
-                className="inline-block text-white font-medium px-1 py-1 ml-12 -translate-y-3 ring-2 ring-[#5B4C7C] rounded-md"
+                className="inline-block text-white font-medium px-1 py-1 ml-32 -translate-y-10 ring-2 ring-[#5B4C7C] rounded-md"
               >
                 View Detail
               </Link>
@@ -375,7 +375,7 @@ export default function auditList() {
               </h3>
               <Link
                 href="/"
-                className="inline-block text-white font-medium px-1 py-1 ml-12 -translate-y-3 ring-2 ring-[#5B4C7C] rounded-md"
+                className="inline-block text-white font-medium px-1 py-1 ml-32 -translate-y-10 ring-2 ring-[#5B4C7C] rounded-md"
               >
                 View Detail
               </Link>
@@ -415,7 +415,7 @@ export default function auditList() {
               </h3>
               <Link
                 href="/"
-                className="inline-block text-white font-medium px-1 py-1 ml-12 -translate-y-3 ring-2 ring-[#5B4C7C] rounded-md"
+                className="inline-block text-white font-medium px-1 py-1 ml-32 -translate-y-10 ring-2 ring-[#5B4C7C] rounded-md"
               >
                 View Detail
               </Link>
