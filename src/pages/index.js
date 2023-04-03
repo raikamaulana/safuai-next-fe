@@ -7,11 +7,13 @@ const Header = dynamic(
   {
     ssr: false,
   }
-  );
-
-const SafuAiHero = dynamic(() => import('@/components/safuaiHero').then((mod) => mod.safuaiHero), {
-  ssr: false,
-});
+);
+const OurSquad = dynamic(
+  () => import("@/components/OurSquad").then((mod) => mod.OurSquad),
+  {
+    ssr: false,
+  }
+);
 
 const Footer = dynamic(
   () => import("@/components/footer").then((mod) => mod.Footer),
@@ -76,7 +78,7 @@ export default function Home() {
         </title>
       </Head>
       <Header />
-      <SafuAiHero />
+      <OurSquad/>
       <Footer />
     </>
   );
