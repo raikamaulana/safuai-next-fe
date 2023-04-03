@@ -5,11 +5,7 @@
 @layer base {
     html {
         scroll-behavior: smooth;
-<<<<<<< HEAD
-        fontFamily: Poppins
-=======
         font-family: Inter, Poppins, sans-serif, mono;
->>>>>>> 4b749690c7ea55659347c05d5d2ad0f3cf01d8cc
     }
 }
 
