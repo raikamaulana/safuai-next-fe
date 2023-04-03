@@ -6,12 +6,13 @@ export const AuditInfo = () => {
     <div className="dark:bg-[#1B1F28] bg-[#E8ECEF] min-h-screen overflow-hidden">
       <div className="pb-28">
         <div className="pt-40 lg:flex flex justify-center">
-          <div className="dark:bg-white bg-[#D9D9D9] lg:block hidden">
-            <p className="font-bold mx-20 m-48">Ilustration</p>
+          <div className="lg:block hidden">
+            <Image src ="/images/auditinfo/analysislight.svg" width="300" height="300" className="pt-20 ml-10 dark:hidden" />
+            <Image src ="/images/auditinfo/analysisdark.svg" width="350" height="350" className="pt-20 ml-10 hidden dark:block" />
           </div>
-          <div className="md:space-x-28 space-x-10 ml-12 md:-translate-x-20 lg:-translate-x-0">
-            <div className="flex md:ml-10 ml-36">
-              <p className="dark:text-white text-black font-medium md:text-2xl text-xl pt-2 md:ml-20 md:mr-10">
+          <div className="md:space-x-6 space-x-10 md:translate-x-16 lg:-translate-x- pr-32">
+            <div className="flex md:ml-1 ml-36">
+              <p className="dark:text-white text-black font-medium md:text-2xl text-xl pt-2 md:ml-8 md:mr-2">
                 Recently completed audit information
               </p>
               <a
@@ -157,9 +158,9 @@ export const AuditInfo = () => {
       </div>
       <div className="pb-28 mx-auto">
         <div className="pt-36 flex justify-center">
-          <div className="md:space-x-28 space-x-10 md:translate-x-2 lg:translate-x-0 pr-32">
+          <div className="md:space-x-10 space-x-10 md:translate-x-16 lg:-translate-x- pr-32">
             <div className="flex md:ml-10 ml-10">
-              <p className="dark:text-white text-black md:text-2xl text-xl pt-2 md:ml-20 ml-44 md:mr-10">
+              <p className="dark:text-white text-black md:text-2xl text-xl pt-2 md:ml-4 ml-44 md:mr-10">
                 Review of onboarding project data
               </p>
               <a
@@ -301,8 +302,9 @@ export const AuditInfo = () => {
               </div>
             </div>
           </div>
-          <div className="dark:bg-white bg-[#D9D9D9] lg:block hidden">
-            <p className="font-bold mx-20 m-48">Ilustration</p>
+          <div className="lg:block hidden">
+          <Image src ="/images/auditinfo/reviewlight.svg" width="330" height="330" className="pt-20 mr-20 dark:hidden" />
+          <Image src ="/images/auditinfo/reviewdark.svg" width="390" height="390" className="pt-20 mr-20 hidden dark:block" />
           </div>
         </div>
       </div>
