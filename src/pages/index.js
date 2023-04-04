@@ -1,6 +1,7 @@
 import Head from "next/head";
 import axios from "axios";
 import dynamic from "next/dynamic";
+import { TokenInformation } from "@/components/TokenInformation";
 
 const Header = dynamic(
   () => import("@/components/bsafu-ui").then((mod) => mod.Header),
@@ -76,9 +77,9 @@ export default function Home() {
           Scanner, and Vulnerability Scanner Platform
         </title>
       </Head>
-      <Header />
-      <safuaiHero />
-      <Footer />
+      {/* <Header /> */}
+      <TokenInformation />
+      {/* <Footer /> */}
     </>
   );
 }
