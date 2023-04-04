@@ -15,6 +15,28 @@ const SafuAiHero = dynamic(
     ssr: false,
   }
 );
+
+const Collaborator = dynamic(
+  () => import("@/components/Collaborator").then((mod) => mod.Collaborator),
+  {
+    ssr: false,
+  }
+);
+
+const AuditInfo = dynamic(
+  () => import("@/components/AuditInfo").then((mod) => mod.AuditInfo),
+  {
+    ssr: false,
+  }
+);
+
+const HowWork = dynamic(
+  () => import("@/components/HowWork").then((mod) => mod.HowWork),
+  {
+    ssr: false,
+  }
+);
+
 const ServiceProducts = dynamic(
   () => import("@/components/ServiceProducts").then((mod) => mod.ServiceProducts),
   {
@@ -86,6 +108,9 @@ export default function Home() {
       </Head>
       <Header />
       <SafuAiHero />
+      <Collaborator />
+      <AuditInfo />
+      <HowWork />
       <ServiceProducts />
       <Footer />
     </>

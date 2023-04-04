@@ -1,8 +1,8 @@
 import React from 'react'
 
-const HowWork = () => {
+export const HowWork = () => {
   return (
-    <div className='bg-[#E8ECEF] dark:bg-[#1B1F28] duration-300 px-6 pt-32 md:pb-14 lg:pb-10 pb-[750px]'>
+    <div className='bg-[#E8ECEF] dark:bg-[#1B1F28] transit duration-500 px-6 pt-32 md:pb-14 lg:pb-10 pb-[750px]'>
       <div className='absolute lg:p-10'>
       <svg
       className='mb-4 md:mb-4 xl:mx-20 mt-10                                         '
@@ -263,5 +263,3 @@ are accurate.</p>
     </div>
   )
 }
-
-export default HowWork
