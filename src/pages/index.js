@@ -8,20 +8,20 @@ const Header = dynamic(
     ssr: false,
   }
 );
-const OurSquad = dynamic(
-  () => import("@/components/OurSquad").then((mod) => mod.OurSquad),
+const SafuAiHero = dynamic(
+  () => import("@/components/safuaiHero").then((mod) => mod.safuaiHero),
+  {
+    ssr: false,
+  }
+);
+const ServiceProducts = dynamic(
+  () => import("@/components/ServiceProducts").then((mod) => mod.ServiceProducts),
   {
     ssr: false,
   }
 );
 const Footer = dynamic(
   () => import("@/components/footer").then((mod) => mod.Footer),
-  {
-    ssr: false,
-  }
-);
-const AuditDetail = dynamic(
-  () => import("@/components/AuditDetail").then((mod) => mod.AuditDetail),
   {
     ssr: false,
   }
@@ -83,7 +83,8 @@ export default function Home() {
         </title>
       </Head>
       <Header />
-      <OurSquad />
+      <SafuAiHero />
+      <ServiceProducts />
       <Footer />
     </>
   );

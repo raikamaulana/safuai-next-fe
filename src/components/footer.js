@@ -12,7 +12,7 @@ export const Footer = () => {
                         <div className=" min-w-[110px] md:w-[400px] lg:w-[400px] mb-[49px]">
                             <div className="lg:flex gap-1 mb-3 lg:mb-0 md:flex ">
                                 <div className="flex items-center">
-                                    <Image src="/images/safuai-logo-dark.svg" width="60" height="60" alt="" />
+                                    <Image src="/images/safuai-logo-dark.svg" width="60" height="60" alt="safuai" />
                                     <p className="font-semibold dark:text-white lg:ml-5 ml-3 text-2xl">SAFU AI</p>
                                 </div>  
                                       <div className="lg:absolute md:absolute md:right-[110px] lg:right-[110px] mt-5 md:mt-3 lg:mt-0">
