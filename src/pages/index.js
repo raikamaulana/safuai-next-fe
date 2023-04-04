@@ -1,7 +1,6 @@
 import Head from "next/head";
 import axios from "axios";
 import dynamic from "next/dynamic";
-import { TokenInformation } from "@/components/TokenInformation";
 
 const Header = dynamic(
   () => import("@/components/bsafu-ui").then((mod) => mod.Header),
@@ -9,14 +8,22 @@ const Header = dynamic(
     ssr: false,
   }
 );
-const Footer = dynamic(
-  () => import("@/components/footer").then((mod) => mod.Footer),
+
+const SafuAiHero = dynamic(
+  () => import("@/components/safuaiHero").then((mod) => mod.safuaiHero),
   {
     ssr: false,
   }
 );
-const safuaiHero = dynamic(
-  () => import("@/components/safuaiHero").then((mod) => mod.safuaiHero),
+const ServiceProducts = dynamic(
+  () => import("@/components/ServiceProducts").then((mod) => mod.ServiceProducts),
+  {
+    ssr: false,
+  }
+);
+
+const Footer = dynamic(
+  () => import("@/components/footer").then((mod) => mod.Footer),
   {
     ssr: false,
   }
@@ -27,7 +34,7 @@ export default function Home() {
     <>
       <Head>
         <meta charSet="UTF-8" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta
           name="description"
@@ -77,9 +84,10 @@ export default function Home() {
           Scanner, and Vulnerability Scanner Platform
         </title>
       </Head>
-      {/* <Header /> */}
-      <TokenInformation />
-      {/* <Footer /> */}
+      <Header />
+      <SafuAiHero />
+      <ServiceProducts />
+      <Footer />
     </>
   );
 }
