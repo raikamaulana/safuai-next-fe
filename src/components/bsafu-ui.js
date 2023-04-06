@@ -71,7 +71,7 @@ const solutions = [
   {
     name: "Pricing",
     description: "List Bounty Scammer.",
-    href: "/request",
+    href: "/pricing",
     icon: FaDollarSign,
   },
   {
@@ -178,7 +178,7 @@ const products = [
     description:
       "Get all of your questions answered in our forums or contact support.",
     // href: "/register-bounty",
-    href: "/request",
+    href: "/pricing",
     icon: FaDollarSign,
   },
   {
@@ -456,8 +456,8 @@ export function Header() {
 
   return (
     <>
-      <Popover className="fixed z-20 w-full h-20 bg-white backdrop-blur dark:bg-[#26293A]">
-        <div className="md:px-12 px-8 py-2.5 md:py-2.5 lg:px-16 lg:pl-20 lg:py-2 xl:py-2 ">
+      <Popover className="fixed z-20 w-full bg-white backdrop-blur dark:bg-[#26293A]">
+        <div className="px-4 sm:px-8 md:px-12 lg:px-28 py-2.5 md:py-2.5 lg:py-2 xl:py-2 transition-all duration-500">
           <div className="flex items-center justify-between md:justify-between md:space-x-4">
             <div className="flex items-center justify-start gap-2">
               <Link
@@ -1077,7 +1077,7 @@ export function HeaderFixed() {
                     xmlns="http://www.w3.org/2000/svg"
                     className="w-5 h-5"
                     fill="none"
-                    viewBox="0 0 24 24"
+                    viewxBox="0 0 24 24"
                     stroke="currentColor">
                     <path
                       strokeLinecap="round"

@@ -8,6 +8,42 @@ const Header = dynamic(
     ssr: false,
   }
 );
+
+const SafuAiHero = dynamic(
+  () => import("@/components/safuaiHero").then((mod) => mod.safuaiHero),
+  {
+    ssr: false,
+  }
+);
+
+const Collaborator = dynamic(
+  () => import("@/components/Collaborator").then((mod) => mod.Collaborator),
+  {
+    ssr: false,
+  }
+);
+
+const AuditInfo = dynamic(
+  () => import("@/components/AuditInfo").then((mod) => mod.AuditInfo),
+  {
+    ssr: false,
+  }
+);
+
+const HowWork = dynamic(
+  () => import("@/components/HowWork").then((mod) => mod.HowWork),
+  {
+    ssr: false,
+  }
+);
+
+const ServiceProducts = dynamic(
+  () => import("@/components/ServiceProducts").then((mod) => mod.ServiceProducts),
+  {
+    ssr: false,
+  }
+);
+
 const Footer = dynamic(
   () => import("@/components/footer").then((mod) => mod.Footer),
   {
@@ -77,6 +113,11 @@ export default function Home() {
         </title>
       </Head>
       <Header />
+      <SafuAiHero />
+      <Collaborator />
+      <AuditInfo />
+      <HowWork />
+      <ServiceProducts />
       <Footer />
     </>
   );
