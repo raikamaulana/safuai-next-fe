@@ -8,8 +8,16 @@ const Header = dynamic(
     ssr: false,
   }
 );
-const Footer = dynamic(
-  () => import("@/components/footer").then((mod) => mod.Footer),
+
+const SafuAiHero = dynamic(
+  () => import("@/components/safuaiHero").then((mod) => mod.safuaiHero),
+  {
+    ssr: false,
+  }
+);
+
+const Collaborator = dynamic(
+  () => import("@/components/Collaborator").then((mod) => mod.Collaborator),
   {
     ssr: false,
   }
@@ -22,14 +30,28 @@ const AuditInfo = dynamic(
   }
 );
 
-const SafuaiHero = dynamic(
-  () => import("@/components/safuaiHero").then((mod) => mod.safuaiHero),
+const HowWork = dynamic(
+  () => import("@/components/HowWork").then((mod) => mod.HowWork),
   {
     ssr: false,
   }
 );
-const Collaborator = dynamic(
-  () => import("@/components/Collaborator").then((mod) => mod.Collaborator),
+
+const ServiceProducts = dynamic(
+  () => import("@/components/ServiceProducts").then((mod) => mod.ServiceProducts),
+  {
+    ssr: false,
+  }
+);
+
+const Footer = dynamic(
+  () => import("@/components/footer").then((mod) => mod.Footer),
+  {
+    ssr: false,
+  }
+);
+const VulnerabilityScan = dynamic(
+  () => import("@/components/vulnerabilityScan").then((mod) => mod.VulnerabilityScan),
   {
     ssr: false,
   }
@@ -91,9 +113,11 @@ export default function Home() {
         </title>
       </Head>
       <Header />
-      <SafuaiHero />
+      <SafuAiHero />
       <Collaborator />
       <AuditInfo />
+      <HowWork />
+      <ServiceProducts />
       <Footer />
     </>
   );

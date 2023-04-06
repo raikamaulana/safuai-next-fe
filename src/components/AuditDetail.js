@@ -7,7 +7,7 @@ import {
 } from "@heroicons/react/20/solid";
 
 const audits = [
-  { id: 1, name: "Tax / Fee Information" },
+  { id: 1, name: "Tax / Fee Information", link: "index" },
   { id: 3, name: "Overview Information" },
   { id: 2, name: "Audit Information" },
   { id: 4, name: "Manual Audit" },

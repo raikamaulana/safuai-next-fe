@@ -5,7 +5,7 @@ const Header = dynamic(() => import('@/components/bsafu-ui').then((mod) => mod.H
     ssr: false,
 });
 
-const PrivacyPolicy = dynamic(() => import('@/components/privacyPolicy').then((mod) => mod.privacyPolicy), {
+const OurSquad = dynamic(() => import('@/components/OurSquad').then((mod) => mod.OurSquad), {
     ssr: false,
 });
 
@@ -45,7 +45,7 @@ export default function projectDetail() {
                 <title>Blocksafu - Audit Smart Contract Solidity, KYC, Bounty Scammer, Token Scanner, and Vulnerability Scanner Platform</title>
             </Head>
             <Header />
-            <PrivacyPolicy />
+            <OurSquad />
             <Footer />
         </>
     )
