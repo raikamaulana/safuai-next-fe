@@ -545,7 +545,6 @@ export function Header() {
                                         )}
                                     </Menu.Item>
                                 </Menu.Items> */}
-
               </Menu>
               {colorTheme === "light" ? (
                 <div className="p-2 text-black bg-white rounded-lg dark:bg-[#26293A] dark:text-[#D171FF] ring-2 ring-[#D171FF]">
@@ -1069,7 +1068,6 @@ export function HeaderFixed() {
                                             </>
                                         )}
                                     </Menu.Item> */}
-
                 </Menu.Items>
               </Menu>
               {colorTheme === "light" ? (
@@ -1079,7 +1077,7 @@ export function HeaderFixed() {
                     xmlns="http://www.w3.org/2000/svg"
                     className="w-5 h-5"
                     fill="none"
-                    viewBox="0 0 24 24"
+                    viewxBox="0 0 24 24"
                     stroke="currentColor">
                     <path
                       strokeLinecap="round"

@@ -16,7 +16,7 @@ export const Footer = () => {
                                     <p className="font-semibold dark:text-white lg:ml-5 ml-3 text-2xl">SAFU AI</p>
                                 </div>  
                                       <div className="lg:absolute md:absolute md:right-[110px] lg:right-[110px] mt-5 md:mt-3 lg:mt-0">
-                                    <button className="bg-white dark:bg-customGrey text-black dark:text-white w-[130px] h-[40px] lg:w-[187px] lg:h-[54px] rounded-lg font-semibold">Buy SAFUAI</button>
+                                    <button className="bg-white dark:bg-customGrey text-black dark:text-white w-[130px] h-[40px] lg:w-[187px] lg:h-[54px] rounded-lg font-semibold duration-500">Buy SAFUAI</button>
                                 </div>
                             </div>
                                 <div className="mt-[33px] block">
@@ -100,7 +100,7 @@ export const Footer = () => {
                         </div>
                     </div>
                 </footer>
-                <div className="lg:mt-32 md:mt-24 mt-16 w-full flex flex-col items-center lg:py-6 py-4 space-y-5 lg:flex-row lg:space-y-0 bg-white dark:bg-customGrey lg:mr-0">
+                <div className="lg:mt-32 md:mt-24 mt-16 w-full flex flex-col items-center lg:py-6 py-4 space-y-5 lg:flex-row lg:space-y-0 bg-white dark:bg-customGrey lg:mr-0 duration-500">
                     <nav className="flex lg:pl-[88px] flex-col items-center justify-center text-black dark:text-white font-medium lg:flex-row">
                     <p className="text-center px-2 lg:px-0">Copyright © 2022 Blocksafu. All rights reserved.</p>
                         <div className="lg:absolute mt-2 lg:mt-0 lg:right-[62px] px-2 lg:px-0 ">
