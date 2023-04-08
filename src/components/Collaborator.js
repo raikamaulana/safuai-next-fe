@@ -5,7 +5,7 @@ import Link from "next/link";
 export const Collaborator = () => {
   return (
     <div className="dark:bg-[#1B1F28] bg-[#E8ECEF]">
-      <div className="pt-40 w-72 md:w-96 mx-auto">
+      <div className="pt-10 w-72 md:w-96 mx-auto">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width=""
