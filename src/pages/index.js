@@ -8,20 +8,54 @@ const Header = dynamic(
     ssr: false,
   }
 );
-const OurSquad = dynamic(
-  () => import("@/components/OurSquad").then((mod) => mod.OurSquad),
+
+const SafuAiHero = dynamic(
+  () => import("@/components/safuaiHero").then((mod) => mod.safuaiHero),
   {
     ssr: false,
   }
 );
+
+const Collaborator = dynamic(
+  () => import("@/components/Collaborator").then((mod) => mod.Collaborator),
+  {
+    ssr: false,
+  }
+);
+
+const AuditInfo = dynamic(
+  () => import("@/components/AuditInfo").then((mod) => mod.AuditInfo),
+  {
+    ssr: false,
+  }
+);
+
+const HowWork = dynamic(
+  () => import("@/components/HowWork").then((mod) => mod.HowWork),
+  {
+    ssr: false,
+  }
+);
+
+const ServiceProducts = dynamic(
+  () =>
+    import("@/components/ServiceProducts").then((mod) => mod.ServiceProducts),
+  {
+    ssr: false,
+  }
+);
+
 const Footer = dynamic(
   () => import("@/components/footer").then((mod) => mod.Footer),
   {
     ssr: false,
   }
 );
-const AuditDetail = dynamic(
-  () => import("@/components/AuditDetail").then((mod) => mod.AuditDetail),
+const VulnerabilityScan = dynamic(
+  () =>
+    import("@/components/vulnerabilityScan").then(
+      (mod) => mod.VulnerabilityScan
+    ),
   {
     ssr: false,
   }
@@ -32,7 +66,7 @@ export default function Home() {
     <>
       <Head>
         <meta charSet="UTF-8" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta
           name="description"
