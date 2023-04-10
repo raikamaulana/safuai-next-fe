@@ -82,10 +82,10 @@ export default function Home() {
           Scanner, and Vulnerability Scanner Platform
         </title>
       </Head>
-      <Header />
+      {/* <Header /> */}
       <AuditDetail />
-      <OurSquad />
-      <Footer />
+      {/* <OurSquad /> */}
+      {/* <Footer /> */}
     </>
   );
 }

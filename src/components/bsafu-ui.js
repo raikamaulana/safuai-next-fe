@@ -459,7 +459,7 @@ export function Header() {
 
   return (
     <>
-      <Popover className="fixed z-20 w-full h-20 bg-white backdrop-blur dark:bg-[#26293A]">
+      <Popover className="fixed z-20 w-full h-20 bg-white backdrop-blur dark:bg-[#26293A] duration-500">
         <div className="md:px-12 px-8 py-2.5 md:py-2.5 lg:px-18 lg:py-2 xl:py-2">
           <div className="flex items-center justify-between md:justify-between md:space-x-4">
             <div className="flex items-center justify-start gap-2">
@@ -488,9 +488,13 @@ export function Header() {
                   />
                 )}
                 {colorTheme === "dark" ? (
-                  <h1 className="text-xl text-black font-bold">SAFU.AI</h1>
+                  <h1 className="text-xl text-[#000000] duration-500 font-bold">
+                    SAFU.AI
+                  </h1>
                 ) : (
-                  <h1 className="text-xl text-white font-bold">SAFU.AI</h1>
+                  <h1 className="text-xl text-white duration-500 font-bold">
+                    SAFU.AI
+                  </h1>
                 )}
               </Link>
             </div>
@@ -552,7 +556,7 @@ export function Header() {
                                 </Menu.Items> */}
               </Menu>
               {colorTheme === "light" ? (
-                <div className="p-2 text-black bg-white rounded-lg dark:bg-[#26293A] dark:text-[#D171FF] ring-2 ring-[#D171FF]">
+                <div className="p-2 text-black bg-white rounded-lg dark:bg-[#26293A] dark:text-[#D171FF] duration-500 ring-2 ring-[#D171FF]">
                   <svg
                     onClick={() => setTheme("light")}
                     xmlns="http://www.w3.org/2000/svg"
@@ -568,7 +572,7 @@ export function Header() {
                   </svg>
                 </div>
               ) : (
-                <div className="p-2 text-[#D171FF] ring-2 ring-[#D171FF] bg-white rounded-lg">
+                <div className="p-2 text-[#D171FF] ring-2 ring-[#D171FF] bg-white duration-500 rounded-lg">
                   <svg
                     onClick={() => setTheme("dark")}
                     xmlns="http://www.w3.org/2000/svg"
@@ -587,7 +591,7 @@ export function Header() {
                 </div>
               )}
 
-              <Popover.Button className="relative inline-flex items-center justify-center p-2 text-[#D171FF] bg-white rounded-md dark:bg-gray-800 hover:black hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-[#D171FF]">
+              <Popover.Button className="relative inline-flex items-center justify-center p-2 text-[#D171FF] bg-white rounded-md dark:bg-gray-800 duration-500 hover:black hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-[#D171FF]">
                 <span className="sr-only">Open menu</span>
                 <FaBars className="w-6 h-6" aria-hidden="true" />
               </Popover.Button>
@@ -598,7 +602,7 @@ export function Header() {
                 className={
                   activ === "/"
                     ? "text-[#D171FF] font-medium py-5 ml-20"
-                    : "dark:text-white text-gray-900 font-medium py-5 ml-20"
+                    : "dark:text-white text-gray-900 duration-500 font-medium py-5 ml-20"
                 }
               >
                 Home
@@ -609,8 +613,8 @@ export function Header() {
                     <Popover.Button
                       className={classNames(
                         open
-                          ? "text-gray-900 dark:text-white font-medium py-5"
-                          : "dark:text-white black py-5",
+                          ? "text-gray-900 dark:text-white duration-500 font-medium py-5"
+                          : "dark:text-white duration-500 black py-5",
                         "group rounded-md inline-flex items-center text-base font-medium ml-5",
                         pathname.match("/request") ||
                           pathname.match("/audit-list") ||
@@ -675,8 +679,8 @@ export function Header() {
                     <Popover.Button
                       className={classNames(
                         open
-                          ? "text-gray-900 dark:text-white py-5"
-                          : "dark:text-white black py-5",
+                          ? "text-gray-900 dark:text-white duration-500 py-5"
+                          : "dark:text-white duration-500 black py-5",
                         "group rounded-md inline-flex items-center text-base font-medium ml-1 mr-5",
                         pathname.match("/about") ||
                           pathname.match("/team") ||
@@ -736,7 +740,7 @@ export function Header() {
 
               <a
                 href="https://token.blocksafu.com"
-                className="my-5 font-medium text-gray-900 dark:text-white"
+                className="my-5 font-medium text-gray-900 dark:text-white duration-500"
               >
                 Presale
               </a>
@@ -748,7 +752,7 @@ export function Header() {
 
               <div className="">
                 {colorTheme === "light" ? (
-                  <div className="px-2.5 py-2 text-black bg-white rounded-lg dark:bg-[#26293A] dark:text-[#D171FF] ring-2 ring-[#D171FF]">
+                  <div className="px-2.5 py-2 text-black bg-white rounded-lg dark:bg-[#26293A] dark:text-[#D171FF] duration-500 ring-2 ring-[#D171FF]">
                     <svg
                       onClick={() => setTheme("light")}
                       xmlns="http://www.w3.org/2000/svg"
@@ -764,7 +768,7 @@ export function Header() {
                     </svg>
                   </div>
                 ) : (
-                  <div className="px-2.5 py-2 text-[#D171FF] bg-white ring-2 ring-[#D171FF] rounded-lg">
+                  <div className="px-2.5 py-2 text-[#D171FF] bg-white duration-500 ring-2 ring-[#D171FF] rounded-lg">
                     <svg
                       onClick={() => setTheme("dark")}
                       xmlns="http://www.w3.org/2000/svg"
