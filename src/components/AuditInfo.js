@@ -3,23 +3,33 @@ import Image from "next/image";
 
 export const AuditInfo = () => {
   return (
-    <div className="dark:bg-[#1B1F28] bg-[#E8ECEF] min-h-screen overflow-hidden">
+    <div className="dark:bg-[#1B1F28] bg-[#E8ECEF] min-h-screen overflow-hidden transition-all duration-500">
       <div className="pb-28">
         <div className="pt-40 lg:flex flex justify-center">
           <div className="lg:block hidden">
-            <Image src ="/images/auditinfo/analysislight.svg" width="300" height="300" className="pt-20 ml-10 dark:hidden" />
-            <Image src ="/images/auditinfo/analysisdark.svg" width="350" height="350" className="pt-20 ml-10 hidden dark:block" />
+            <Image
+              src="/images/auditinfo/analysislight.svg"
+              width="300"
+              height="300"
+              className="pt-20 -p-10 ml-9 w-72 dark:hidden"
+            />
+            <Image
+              src="/images/auditinfo/analysisdark.svg"
+              width="342"
+              height="342"
+              className="pt-20 ml-10 hidden dark:block"
+            />
           </div>
-          <div className="md:space-x-6 space-x-10 md:translate-x-16 lg:-translate-x- pr-32">
+          <div className="md:space-x-6 space-x-12 md:-translate-x-7 lg:translate-x-2 dark:md:-translate-x-7 pl-7">
             <div className="flex md:ml-1 ml-36">
-              <p className="dark:text-white text-black font-medium md:text-2xl text-xl pt-2 md:ml-8 md:mr-2">
+              <p className="dark:text-white text-black font-medium md:text-2xl text-xl pt-2 md:ml-8 md:-mr-4">
                 Recently completed audit information
               </p>
               <a
                 href="http://"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="md:ml-32 mt-4 md:mt-0 ml-7 mr-40 md:-mr-20 mb-14"
+                className="md:ml-32 mt-4 md:mt-0 ml-2 mr-40 md:-mr-20 mb-14"
               >
                 <button className="dark:bg-gray-700 bg-[#FFFFFF] hover:bg-gray-400 text-white text-sm md:px-8 p-1 px-5 md:py-4 rounded-md md:-mr-20 -pl-10">
                   <p className="font-semibold dark:text-white text-base text-black">
@@ -59,9 +69,9 @@ export const AuditInfo = () => {
                     />
                     <p className="dark:text-white font-medium text-black md:-mt-8 md:ml-32 -mt-6 ml-[68px] absolute hover:text-blue-500 md:text-lg text-xs">
                       Ordinals Finance
-                    </p> 
+                    </p>
                     <div>
-                    <Image
+                      <Image
                         src="/images/auditinfo/score50light.svg"
                         width="28"
                         height="28"
@@ -131,7 +141,7 @@ export const AuditInfo = () => {
                       Twitter Doge
                     </p>
                     <div>
-                    <Image
+                      <Image
                         src="/images/auditinfo/score100light.svg"
                         width="28"
                         height="28"
@@ -158,7 +168,7 @@ export const AuditInfo = () => {
       </div>
       <div className="pb-28 mx-auto">
         <div className="pt-36 flex justify-center">
-          <div className="md:space-x-10 space-x-10 md:translate-x-16 lg:-translate-x- pr-32">
+          <div className="md:space-x-10 space-x-10 md:translate-x-12 translate-x-3 pr-32">
             <div className="flex md:ml-10 ml-10">
               <p className="dark:text-white text-black md:text-2xl text-xl pt-2 md:ml-4 ml-44 md:mr-10">
                 Review of onboarding project data
@@ -169,7 +179,7 @@ export const AuditInfo = () => {
                 rel="noopener noreferrer"
                 className="md:ml-32 mt-4 md:mt-0 ml-7 mr-20 md:-mr-20 mb-14"
               >
-                <button className="dark:bg-gray-700 bg-[#FFFFFF] hover:bg-gray-400 text-white text-sm md:px-8 p-1 px-5 md:py-4 rounded-md md:-mr-20 -pl-10">
+                <button className="dark:bg-gray-700 bg-[#FFFFFF] hover:bg-gray-400 text-white text-sm md:px-8 p-1 px-5 md:py-4 rounded-md md:-ml-10 -pl-10">
                   <p className="dark:text-white text-base text-black font-semibold">
                     View All
                   </p>
@@ -244,7 +254,7 @@ export const AuditInfo = () => {
                       Equilibrium
                     </p>
                     <div>
-                    <Image
+                      <Image
                         src="/images/auditinfo/score100light.svg"
                         width="28"
                         height="28"
@@ -279,7 +289,7 @@ export const AuditInfo = () => {
                       Twitter Doge
                     </p>
                     <div>
-                    <Image
+                      <Image
                         src="/images/auditinfo/score100light.svg"
                         width="28"
                         height="28"
@@ -303,8 +313,18 @@ export const AuditInfo = () => {
             </div>
           </div>
           <div className="lg:block hidden">
-          <Image src ="/images/auditinfo/reviewlight.svg" width="330" height="330" className="pt-20 mr-20 dark:hidden" />
-          <Image src ="/images/auditinfo/reviewdark.svg" width="390" height="390" className="pt-20 mr-20 hidden dark:block" />
+            <Image
+              src="/images/auditinfo/reviewlight.svg"
+              width="340"
+              height="200"
+              className="pt-20 mr-20 dark:hidden"
+            />
+            <Image
+              src="/images/auditinfo/reviewdark.svg"
+              width="500"
+              height="400"
+              className="pt-20 -ml-8 hidden dark:block"
+            />
           </div>
         </div>
       </div>

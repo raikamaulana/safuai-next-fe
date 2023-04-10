@@ -347,7 +347,8 @@ function WalletConnectButton({ onConnect, onDisconnect }) {
           onClick={() => setDropdownOpen(!dropdownOpen)}
           className={
             "rounded-lg text-white bg-[#D171FF] border-2 border-[#D171FF] px-1 py-1 md:px-3 md:py-2 lg:px-3 lg:py-2"
-          }>
+          }
+        >
           {getSimpleAddress(address ? address : "")} ({chainId})
         </button>
       ) : (
@@ -355,7 +356,8 @@ function WalletConnectButton({ onConnect, onDisconnect }) {
           onClick={connect}
           className={
             "rounded-lg text-[#26293A] bg-[#D171FF] border-2 border-[#D171FF] px-1 py-1 md:px-3 md:py-2 lg:px-3 lg:py-2"
-          }>
+          }
+        >
           Connect Wallet
         </button>
       )}
@@ -376,7 +378,8 @@ function WalletConnectButton({ onConnect, onDisconnect }) {
             onClick={() => {
               disconnect();
               setDropdownOpen(false);
-            }}>
+            }}
+          >
             Disconnect
           </button>
         </div>
@@ -467,7 +470,8 @@ export function Header() {
                     ? "text-[#D171FF] font-medium flex items-center gap-1"
                     : "text-gray-900 dark:text-white font-medium flex items-center gap-1"
                 }
-                aria-label="logo this">
+                aria-label="logo this"
+              >
                 {colorTheme === "dark" ? (
                   <Image
                     src="/images/safuai-logo-dark.svg"
@@ -484,16 +488,21 @@ export function Header() {
                   />
                 )}
                 {colorTheme === "dark" ? (
-                  <h1 className="text-xl text-black font-bold">SAFU.AI</h1>
+                  <h1 className="text-xl text-[#000000] duration-500 font-bold">
+                    SAFU.AI
+                  </h1>
                 ) : (
-                  <h1 className="text-xl text-white font-bold">SAFU.AI</h1>
+                  <h1 className="text-xl text-white duration-500 font-bold">
+                    SAFU.AI
+                  </h1>
                 )}
               </Link>
             </div>
             <div className="flex items-center gap-2 -mr-2 lg:hidden">
               <Menu
                 as="div"
-                className="relative inline-block py-2 text-left md:p-2">
+                className="relative inline-block py-2 text-left md:p-2"
+              >
                 {/* <Menu.Button as="div">
                                     <BtnWalletConnect>
                                         <button
@@ -547,14 +556,15 @@ export function Header() {
                                 </Menu.Items> */}
               </Menu>
               {colorTheme === "light" ? (
-                <div className="p-2 text-black bg-white rounded-lg dark:bg-[#26293A] dark:text-[#D171FF] ring-2 ring-[#D171FF]">
+                <div className="p-2 text-black bg-white rounded-lg dark:bg-[#26293A] dark:text-[#D171FF] duration-500 ring-2 ring-[#D171FF]">
                   <svg
                     onClick={() => setTheme("light")}
                     xmlns="http://www.w3.org/2000/svg"
                     className="w-6 h-6"
                     fill="none"
                     viewBox="0 0 33 33"
-                    stroke="currentColor">
+                    stroke="currentColor"
+                  >
                     <path
                       d="M16.5 25.5C14.1131 25.5 11.8239 24.5518 10.136 22.864C8.44821 21.1761 7.5 18.8869 7.5 16.5C7.5 14.1131 8.44821 11.8239 10.136 10.136C11.8239 8.44821 14.1131 7.5 16.5 7.5C18.8869 7.5 21.1761 8.44821 22.864 10.136C24.5518 11.8239 25.5 14.1131 25.5 16.5C25.5 18.8869 24.5518 21.1761 22.864 22.864C21.1761 24.5518 18.8869 25.5 16.5 25.5ZM16.5 22.5C18.0913 22.5 19.6174 21.8679 20.7426 20.7426C21.8679 19.6174 22.5 18.0913 22.5 16.5C22.5 14.9087 21.8679 13.3826 20.7426 12.2574C19.6174 11.1321 18.0913 10.5 16.5 10.5C14.9087 10.5 13.3826 11.1321 12.2574 12.2574C11.1321 13.3826 10.5 14.9087 10.5 16.5C10.5 18.0913 11.1321 19.6174 12.2574 20.7426C13.3826 21.8679 14.9087 22.5 16.5 22.5ZM15 0H18V4.5H15V0ZM15 28.5H18V33H15V28.5ZM3.7725 5.8935L5.8935 3.7725L9.075 6.954L6.954 9.075L3.7725 5.8935ZM23.925 26.046L26.046 23.925L29.2275 27.1065L27.1065 29.2275L23.925 26.046ZM27.1065 3.771L29.2275 5.8935L26.046 9.075L23.925 6.954L27.1065 3.7725V3.771ZM6.954 23.925L9.075 26.046L5.8935 29.2275L3.7725 27.1065L6.954 23.925ZM33 15V18H28.5V15H33ZM4.5 15V18H0V15H4.5Z"
                       fill="#D171FF"
@@ -562,14 +572,15 @@ export function Header() {
                   </svg>
                 </div>
               ) : (
-                <div className="p-2 text-[#D171FF] ring-2 ring-[#D171FF] bg-white rounded-lg">
+                <div className="p-2 text-[#D171FF] ring-2 ring-[#D171FF] bg-white duration-500 rounded-lg">
                   <svg
                     onClick={() => setTheme("dark")}
                     xmlns="http://www.w3.org/2000/svg"
                     className="w-6 h-6"
                     fill="none"
                     viewBox="0 0 24 24"
-                    stroke="currentColor">
+                    stroke="currentColor"
+                  >
                     <path
                       strokeLinecap="round"
                       strokeLinejoin="round"
@@ -580,7 +591,7 @@ export function Header() {
                 </div>
               )}
 
-              <Popover.Button className="relative inline-flex items-center justify-center p-2 text-[#D171FF] bg-white rounded-md dark:bg-gray-800 hover:black hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-[#D171FF]">
+              <Popover.Button className="relative inline-flex items-center justify-center p-2 text-[#D171FF] bg-white rounded-md dark:bg-gray-800 duration-500 hover:black hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-[#D171FF]">
                 <span className="sr-only">Open menu</span>
                 <FaBars className="w-6 h-6" aria-hidden="true" />
               </Popover.Button>
@@ -591,8 +602,9 @@ export function Header() {
                 className={
                   activ === "/"
                     ? "text-[#D171FF] font-medium py-5 ml-20"
-                    : "dark:text-white text-gray-900 font-medium py-5 ml-20"
-                }>
+                    : "dark:text-white text-gray-900 duration-500 font-medium py-5 ml-20"
+                }
+              >
                 Home
               </Link>
               <Popover className="relative">
@@ -601,8 +613,8 @@ export function Header() {
                     <Popover.Button
                       className={classNames(
                         open
-                          ? "text-gray-900 dark:text-white font-medium py-5"
-                          : "dark:text-white black py-5",
+                          ? "text-gray-900 dark:text-white duration-500 font-medium py-5"
+                          : "dark:text-white duration-500 black py-5",
                         "group rounded-md inline-flex items-center text-base font-medium ml-5",
                         pathname.match("/request") ||
                           pathname.match("/audit-list") ||
@@ -612,7 +624,8 @@ export function Header() {
                           pathname.match("/nft-scanner")
                           ? ""
                           : ""
-                      )}>
+                      )}
+                    >
                       <span>Services</span>
                       <FaAngleDown
                         className={classNames(
@@ -630,7 +643,8 @@ export function Header() {
                       enterTo="opacity-100 translate-y-0"
                       leave="transition ease-in duration-150"
                       leaveFrom="opacity-100 translate-y-0"
-                      leaveTo="opacity-0 translate-y-1">
+                      leaveTo="opacity-0 translate-y-1"
+                    >
                       <Popover.Panel className="absolute z-20 w-screen max-w-md px-2 mt-3 transform -translate-x-1/2 left-1/2 sm:px-0">
                         <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
                           <div className="relative grid gap-6 px-5 py-6 bg-white dark:bg-gray-900 sm:gap-8 sm:p-8">
@@ -638,7 +652,8 @@ export function Header() {
                               <Link
                                 href={item.href}
                                 key={productIndex}
-                                className="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50">
+                                className="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50"
+                              >
                                 <item.icon
                                   className="flex-shrink-0 w-6 h-6 text-[#D171FF]"
                                   aria-hidden="true"
@@ -664,8 +679,8 @@ export function Header() {
                     <Popover.Button
                       className={classNames(
                         open
-                          ? "text-gray-900 dark:text-white py-5"
-                          : "dark:text-white black py-5",
+                          ? "text-gray-900 dark:text-white duration-500 py-5"
+                          : "dark:text-white duration-500 black py-5",
                         "group rounded-md inline-flex items-center text-base font-medium ml-1 mr-5",
                         pathname.match("/about") ||
                           pathname.match("/team") ||
@@ -673,7 +688,8 @@ export function Header() {
                           pathname.match("/privacy-policy")
                           ? ""
                           : ""
-                      )}>
+                      )}
+                    >
                       <span>Company</span>
                       <FaAngleDown
                         className={classNames(
@@ -691,7 +707,8 @@ export function Header() {
                       enterTo="opacity-100 translate-y-0"
                       leave="transition ease-in duration-150"
                       leaveFrom="opacity-100 translate-y-0"
-                      leaveTo="opacity-0 translate-y-1">
+                      leaveTo="opacity-0 translate-y-1"
+                    >
                       <Popover.Panel className="absolute z-20 w-screen max-w-md px-2 mt-3 transform -translate-x-1/2 left-1/2 sm:px-0">
                         <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
                           <div className="relative grid gap-6 px-5 py-6 bg-white dark:bg-gray-900 sm:gap-8 sm:p-8">
@@ -700,7 +717,8 @@ export function Header() {
                                 key={companyIndex}
                                 href={item.href}
                                 // href={item.href}
-                                className="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50">
+                                className="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50"
+                              >
                                 <item.icon
                                   className="flex-shrink-0 w-6 h-6 text-[#D171FF]"
                                   aria-hidden="true"
@@ -722,7 +740,8 @@ export function Header() {
 
               <a
                 href="https://token.blocksafu.com"
-                className="my-5 font-medium text-gray-900 dark:text-white">
+                className="my-5 font-medium text-gray-900 dark:text-white duration-500"
+              >
                 Presale
               </a>
             </Popover.Group>
@@ -733,14 +752,15 @@ export function Header() {
 
               <div className="">
                 {colorTheme === "light" ? (
-                  <div className="px-2.5 py-2 text-black bg-white rounded-lg dark:bg-[#26293A] dark:text-[#D171FF] ring-2 ring-[#D171FF]">
+                  <div className="px-2.5 py-2 text-black bg-white rounded-lg dark:bg-[#26293A] dark:text-[#D171FF] duration-500 ring-2 ring-[#D171FF]">
                     <svg
                       onClick={() => setTheme("light")}
                       xmlns="http://www.w3.org/2000/svg"
                       className="w-6 h-6"
                       fill="none"
                       viewBox="0 0 33 33"
-                      stroke="currentColor">
+                      stroke="currentColor"
+                    >
                       <path
                         d="M16.5 25.5C14.1131 25.5 11.8239 24.5518 10.136 22.864C8.44821 21.1761 7.5 18.8869 7.5 16.5C7.5 14.1131 8.44821 11.8239 10.136 10.136C11.8239 8.44821 14.1131 7.5 16.5 7.5C18.8869 7.5 21.1761 8.44821 22.864 10.136C24.5518 11.8239 25.5 14.1131 25.5 16.5C25.5 18.8869 24.5518 21.1761 22.864 22.864C21.1761 24.5518 18.8869 25.5 16.5 25.5ZM16.5 22.5C18.0913 22.5 19.6174 21.8679 20.7426 20.7426C21.8679 19.6174 22.5 18.0913 22.5 16.5C22.5 14.9087 21.8679 13.3826 20.7426 12.2574C19.6174 11.1321 18.0913 10.5 16.5 10.5C14.9087 10.5 13.3826 11.1321 12.2574 12.2574C11.1321 13.3826 10.5 14.9087 10.5 16.5C10.5 18.0913 11.1321 19.6174 12.2574 20.7426C13.3826 21.8679 14.9087 22.5 16.5 22.5ZM15 0H18V4.5H15V0ZM15 28.5H18V33H15V28.5ZM3.7725 5.8935L5.8935 3.7725L9.075 6.954L6.954 9.075L3.7725 5.8935ZM23.925 26.046L26.046 23.925L29.2275 27.1065L27.1065 29.2275L23.925 26.046ZM27.1065 3.771L29.2275 5.8935L26.046 9.075L23.925 6.954L27.1065 3.7725V3.771ZM6.954 23.925L9.075 26.046L5.8935 29.2275L3.7725 27.1065L6.954 23.925ZM33 15V18H28.5V15H33ZM4.5 15V18H0V15H4.5Z"
                         fill="#D171FF"
@@ -748,14 +768,15 @@ export function Header() {
                     </svg>
                   </div>
                 ) : (
-                  <div className="px-2.5 py-2 text-[#D171FF] bg-white ring-2 ring-[#D171FF] rounded-lg">
+                  <div className="px-2.5 py-2 text-[#D171FF] bg-white duration-500 ring-2 ring-[#D171FF] rounded-lg">
                     <svg
                       onClick={() => setTheme("dark")}
                       xmlns="http://www.w3.org/2000/svg"
                       className="w-6 h-6"
                       fill="none"
                       viewBox="0 0 24 24"
-                      stroke="currentColor">
+                      stroke="currentColor"
+                    >
                       <path
                         strokeLinecap="round"
                         strokeLinejoin="round"
@@ -777,10 +798,12 @@ export function Header() {
           enterTo="opacity-100 scale-100"
           leave="duration-100 ease-in"
           leaveFrom="opacity-100 scale-100"
-          leaveTo="opacity-0 scale-95">
+          leaveTo="opacity-0 scale-95"
+        >
           <Popover.Panel
             focus
-            className="relative inset-x-0 top-0 p-2 transition origin-top-right transform lg:hidden">
+            className="relative inset-x-0 top-0 p-2 transition origin-top-right transform lg:hidden"
+          >
             <div className="z-20 bg-white divide-y-2 rounded-lg shadow-lg dark:bg-gray-800 ring-1 ring-black ring-opacity-5 divide-gray-50 dark:divide-gray-900">
               <div className="px-5 pt-5 pb-6">
                 <div className="flex items-center justify-between">
@@ -790,7 +813,8 @@ export function Header() {
                       width="30"
                       height="30"
                       fill="none"
-                      fillRule="evenodd">
+                      fillRule="evenodd"
+                    >
                       <g fill="#0d3b6f">
                         <path d="M16.68 26.89c-.05 0-.11-.03-.22-.1C7.51 21.44 5.41 14.74 5.41 3.41c4.44-.47 7.47-1.3 11.27-3.41 3.8 2.11 6.83 2.94 11.27 3.41 0 11.33-2.1 18.03-11.05 23.38-.11.07-.17.1-.22.11v-.01h0z" />
                         <path d="M16.68 26.89c-.05 0-.11-.03-.22-.1C7.51 21.44 5.41 14.74 5.41 3.41c4.44-.47 7.47-1.3 11.27-3.41v26.89z" />
@@ -831,7 +855,8 @@ export function Header() {
                       height="25"
                       shapeRendering="geometricPrecision"
                       imageRendering="optimizeQuality"
-                      fillRule="nonzero">
+                      fillRule="nonzero"
+                    >
                       <path
                         d="M9.75 12.3c0 3.06-2.48 4.29-5.21 4.29H.63c-.49 0-.74-.34-.74-.81V2.44c0-.46.25-.8.74-.8h3.4c2.58 0 4.78.84 4.78 3.77 0 1.42-.67 2.61-1.99 3.18 1.83.35 2.93 1.88 2.93 3.71zM6.77 5.61c0-1.85-1.17-2.36-2.84-2.36H1.88V8.1h2.26c1.6 0 2.63-.85 2.63-2.49zm.9 6.81c0-2.12-1.54-2.74-3.42-2.74H1.88v5.28h2.88c1.6 0 2.91-.8 2.91-2.54zm6.79 3.88c0 .13-.08.22-.2.27-.31.12-1.21.12-1.52 0-.13-.06-.2-.13-.2-.27V.87c0-.54 1.92-.52 1.92 0V16.3zm13.17-5.32c0 3.36-1.77 5.82-5.31 5.82-3.55 0-5.08-2.26-5.08-5.61 0-3.38 1.73-5.82 5.3-5.82 3.53 0 5.09 2.26 5.09 5.61zm-1.99.12c0-2.15-.68-4.14-3.18-4.14-2.42 0-3.23 1.96-3.23 4.09 0 2.16.68 4.14 3.19 4.14 2.44 0 3.22-1.96 3.22-4.09zm12.16 4.36c-.48.86-2.52 1.34-3.45 1.34-3.38 0-4.63-2.52-4.63-5.57 0-2.24.67-4.61 2.94-5.49 1.37-.52 4.14-.48 5.08.9.21.36.25 1.6-.22 1.6-.36 0-1.37-1.23-2.97-1.23-2.31 0-2.85 2.21-2.85 4.11 0 1.96.57 4.02 2.89 4.02 1.58 0 2.69-1.32 3.03-1.32.43 0 .34 1.34.18 1.64zm11.15.99c-.2.29-1.83.39-2.2-.16l-4.38-5.76v5.77c0 .51-1.92.52-1.92 0V.87c0-.54 1.92-.52 1.92 0v9.4l3.91-4.32c.43-.52 1.95-.55 2.24-.23.18.22-.12.61-.28.77l-3.74 3.77 4.22 5.48c.12.18.38.49.23.71zm10.99-4.35c0 3.25-2.63 4.75-5.54 4.75-1.12 0-3.1-.35-3.95-1.17-.42-.44-.45-2.52.16-2.52.37 0 2.01 1.23 3.81 1.23 1.21 0 2.37-.52 2.37-1.89 0-2.71-6.36-1.89-6.36-6.82 0-2.93 2.32-4.3 5.01-4.3.79 0 3.09.33 3.5 1.09.15.29.33 2.29-.27 2.29-.34 0-1.77-1.02-3.19-1.02-1.03 0-1.98.46-1.98 1.61 0 2.62 6.44 2 6.44 6.75zm14.35 4.38c-.28.26-2.75.29-3.01-.05-.18-.23-.94-2.77-1.09-3.25h-5.64l-1.07 3.2c-.24.38-2.5.38-2.76.08-.43-.5 4.18-12.81 4.7-14.3.31-.92 3.86-.95 4.16.04.51 1.44 5.15 13.84 4.71 14.28zm-6.95-12h-.01l-2.08 6.36h4.2l-2.11-6.36zm16.91-.36h-4.9v4.02h4.59c.66 0 .63 2.44 0 2.44h-4.59v5.57c0 .72-3.05.72-3.05 0V2.59c0-.58.3-.95.9-.95h7.05c.64 0 .62 2.48 0 2.48zm15.09 6.9c0 3.89-2.43 5.83-6.19 5.83-3.74 0-6.02-1.85-6.02-5.71V2.05c0-.69 3.03-.68 3.03 0v8.83c0 1.99.91 3.48 3.11 3.48 2.04 0 3.07-1.35 3.07-3.3V2.05c0-.69 3-.69 3 0v8.97z"
                         fill="#07203d"
@@ -873,7 +898,8 @@ export function Header() {
                     <a
                       key={resourcesIndex}
                       href={item.href}
-                      className="text-base font-medium text-gray-900 hover:text-gray-700 dark:text-gray-400">
+                      className="text-base font-medium text-gray-900 hover:text-gray-700 dark:text-gray-400"
+                    >
                       {item.name}
                     </a>
                   ))}
@@ -894,7 +920,8 @@ export function Header() {
                           className="w-6 h-6"
                           fill="none"
                           viewBox="0 0 24 24"
-                          stroke="currentColor">
+                          stroke="currentColor"
+                        >
                           <path
                             strokeLinecap="round"
                             strokeLinejoin="round"
@@ -911,7 +938,8 @@ export function Header() {
                           className="w-6 h-6"
                           fill="none"
                           viewBox="0 0 24 24"
-                          stroke="currentColor">
+                          stroke="currentColor"
+                        >
                           <path
                             strokeLinecap="round"
                             strokeLinejoin="round"
@@ -998,7 +1026,8 @@ export function HeaderFixed() {
                   activ
                     ? "text-blue-500 font-medium mr-6 flex items-center gap-1 border-b-2 border-gray-600"
                     : "text-gray-900 dark:text-white font-medium flex items-center gap-1"
-                }>
+                }
+              >
                 {colorTheme === "dark" ? (
                   <Image
                     src="/images/logo-dark.svg"
@@ -1078,7 +1107,8 @@ export function HeaderFixed() {
                     className="w-5 h-5"
                     fill="none"
                     viewxBox="0 0 24 24"
-                    stroke="currentColor">
+                    stroke="currentColor"
+                  >
                     <path
                       strokeLinecap="round"
                       strokeLinejoin="round"
@@ -1095,7 +1125,8 @@ export function HeaderFixed() {
                     className="w-5 h-5"
                     fill="none"
                     viewBox="0 0 24 24"
-                    stroke="currentColor">
+                    stroke="currentColor"
+                  >
                     <path
                       strokeLinecap="round"
                       strokeLinejoin="round"
@@ -1118,7 +1149,8 @@ export function HeaderFixed() {
                   activ
                     ? "text-blue-500 font-medium"
                     : "dark:text-white text-gray-900 font-medium"
-                }>
+                }
+              >
                 Home
               </Link>
               <Popover className="relative">
@@ -1130,7 +1162,8 @@ export function HeaderFixed() {
                           ? "text-gray-900 dark:text-blue-500"
                           : "dark:text-white black",
                         "group bg-white dark:bg-gray-900 rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 dark:focus:ring-gray-900"
-                      )}>
+                      )}
+                    >
                       <span>Products</span>
                       <FaAngleDown
                         className={classNames(
@@ -1148,7 +1181,8 @@ export function HeaderFixed() {
                       enterTo="opacity-100 translate-y-0"
                       leave="transition ease-in duration-150"
                       leaveFrom="opacity-100 translate-y-0"
-                      leaveTo="opacity-0 translate-y-1">
+                      leaveTo="opacity-0 translate-y-1"
+                    >
                       <Popover.Panel className="absolute z-20 w-screen max-w-md px-2 mt-3 transform -translate-x-1/2 left-1/2 sm:px-0">
                         <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
                           <div className="relative grid gap-6 px-5 py-6 bg-white dark:bg-gray-900 sm:gap-8 sm:p-8">
@@ -1156,7 +1190,8 @@ export function HeaderFixed() {
                               <Link
                                 href={item.href}
                                 key={productIndex}
-                                className="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50">
+                                className="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50"
+                              >
                                 <item.icon
                                   className="flex-shrink-0 w-6 h-6 text-blue-500"
                                   aria-hidden="true"
@@ -1185,7 +1220,8 @@ export function HeaderFixed() {
                           ? "text-gray-900 dark:text-blue-500"
                           : "dark:text-white black",
                         "group bg-white dark:bg-gray-900 rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 dark:focus:ring-gray-900"
-                      )}>
+                      )}
+                    >
                       <span>Knowledge</span>
                       <FaAngleDown
                         className={classNames(
@@ -1203,7 +1239,8 @@ export function HeaderFixed() {
                       enterTo="opacity-100 translate-y-0"
                       leave="transition ease-in duration-150"
                       leaveFrom="opacity-100 translate-y-0"
-                      leaveTo="opacity-0 translate-y-1">
+                      leaveTo="opacity-0 translate-y-1"
+                    >
                       <Popover.Panel className="absolute z-20 w-screen max-w-md px-2 mt-3 transform -translate-x-1/2 left-1/2 sm:px-0">
                         <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
                           <div className="relative grid gap-6 px-5 py-6 bg-white dark:bg-gray-900 sm:gap-8 sm:p-8">
@@ -1212,7 +1249,8 @@ export function HeaderFixed() {
                                 href={item.href}
                                 key={knowledgeIndex}
                                 // href={item.href}
-                                className="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50">
+                                className="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50"
+                              >
                                 <item.icon
                                   className="flex-shrink-0 w-6 h-6 text-blue-500"
                                   aria-hidden="true"
@@ -1241,7 +1279,8 @@ export function HeaderFixed() {
                           ? "text-gray-900 dark:text-blue-500"
                           : "dark:text-white black",
                         "group bg-white dark:bg-gray-900 rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 dark:focus:ring-gray-900"
-                      )}>
+                      )}
+                    >
                       <span>Company</span>
                       <FaAngleDown
                         className={classNames(
@@ -1259,7 +1298,8 @@ export function HeaderFixed() {
                       enterTo="opacity-100 translate-y-0"
                       leave="transition ease-in duration-150"
                       leaveFrom="opacity-100 translate-y-0"
-                      leaveTo="opacity-0 translate-y-1">
+                      leaveTo="opacity-0 translate-y-1"
+                    >
                       <Popover.Panel className="absolute z-20 w-screen max-w-md px-2 mt-3 transform -translate-x-1/2 left-1/2 sm:px-0">
                         <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
                           <div className="relative grid gap-6 px-5 py-6 bg-white dark:bg-gray-900 sm:gap-8 sm:p-8">
@@ -1268,7 +1308,8 @@ export function HeaderFixed() {
                                 key={companyIndex}
                                 href={item.href}
                                 // href={item.href}
-                                className="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50">
+                                className="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50"
+                              >
                                 <item.icon
                                   className="flex-shrink-0 w-6 h-6 text-blue-500"
                                   aria-hidden="true"
@@ -1297,7 +1338,8 @@ export function HeaderFixed() {
                           ? "text-gray-900 dark:text-blue-500"
                           : "dark:text-white black",
                         "group bg-white dark:bg-gray-900 rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 dark:focus:ring-gray-900"
-                      )}>
+                      )}
+                    >
                       <span>Earn</span>
                       <FaAngleDown
                         className={classNames(
@@ -1315,7 +1357,8 @@ export function HeaderFixed() {
                       enterTo="opacity-100 translate-y-0"
                       leave="transition ease-in duration-150"
                       leaveFrom="opacity-100 translate-y-0"
-                      leaveTo="opacity-0 translate-y-1">
+                      leaveTo="opacity-0 translate-y-1"
+                    >
                       <Popover.Panel className="absolute z-20 w-screen max-w-md px-2 mt-3 transform -translate-x-1/2 left-1/2 sm:px-0">
                         <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
                           <div className="relative grid gap-6 px-5 py-6 bg-white dark:bg-gray-900 sm:gap-8 sm:p-8">
@@ -1324,7 +1367,8 @@ export function HeaderFixed() {
                                 key={earnIndex}
                                 href={item.href}
                                 // href={item.href}
-                                className="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50">
+                                className="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50"
+                              >
                                 <item.icon
                                   className="flex-shrink-0 w-6 h-6 text-blue-500"
                                   aria-hidden="true"
@@ -1346,7 +1390,8 @@ export function HeaderFixed() {
 
               <a
                 href="https://token.blocksafu.com"
-                className="font-medium text-gray-900 dark:text-white">
+                className="font-medium text-gray-900 dark:text-white"
+              >
                 Token
               </a>
             </Popover.Group>
@@ -1364,7 +1409,8 @@ export function HeaderFixed() {
                       className="w-5 h-5"
                       fill="none"
                       viewBox="0 0 24 24"
-                      stroke="currentColor">
+                      stroke="currentColor"
+                    >
                       <path
                         strokeLinecap="round"
                         strokeLinejoin="round"
@@ -1381,7 +1427,8 @@ export function HeaderFixed() {
                       className="w-5 h-5"
                       fill="none"
                       viewBox="0 0 24 24"
-                      stroke="currentColor">
+                      stroke="currentColor"
+                    >
                       <path
                         strokeLinecap="round"
                         strokeLinejoin="round"
@@ -1408,10 +1455,12 @@ export function HeaderFixed() {
           enterTo="opacity-100 scale-100"
           leave="duration-100 ease-in"
           leaveFrom="opacity-100 scale-100"
-          leaveTo="opacity-0 scale-95">
+          leaveTo="opacity-0 scale-95"
+        >
           <Popover.Panel
             focus
-            className="relative inset-x-0 top-0 p-2 transition origin-top-right transform lg:hidden">
+            className="relative inset-x-0 top-0 p-2 transition origin-top-right transform lg:hidden"
+          >
             <div className="z-20 bg-white divide-y-2 rounded-lg shadow-lg dark:bg-gray-800 ring-1 ring-black ring-opacity-5 divide-gray-50 dark:divide-gray-900">
               <div className="px-5 pt-5 pb-6">
                 <div className="flex items-center justify-between">
@@ -1421,7 +1470,8 @@ export function HeaderFixed() {
                       width="30"
                       height="30"
                       fill="none"
-                      fillRule="evenodd">
+                      fillRule="evenodd"
+                    >
                       <g fill="#0d3b6f">
                         <path d="M16.68 26.89c-.05 0-.11-.03-.22-.1C7.51 21.44 5.41 14.74 5.41 3.41c4.44-.47 7.47-1.3 11.27-3.41 3.8 2.11 6.83 2.94 11.27 3.41 0 11.33-2.1 18.03-11.05 23.38-.11.07-.17.1-.22.11v-.01h0z" />
                         <path d="M16.68 26.89c-.05 0-.11-.03-.22-.1C7.51 21.44 5.41 14.74 5.41 3.41c4.44-.47 7.47-1.3 11.27-3.41v26.89z" />
@@ -1462,7 +1512,8 @@ export function HeaderFixed() {
                       height="25"
                       shapeRendering="geometricPrecision"
                       imageRendering="optimizeQuality"
-                      fillRule="nonzero">
+                      fillRule="nonzero"
+                    >
                       <path
                         d="M9.75 12.3c0 3.06-2.48 4.29-5.21 4.29H.63c-.49 0-.74-.34-.74-.81V2.44c0-.46.25-.8.74-.8h3.4c2.58 0 4.78.84 4.78 3.77 0 1.42-.67 2.61-1.99 3.18 1.83.35 2.93 1.88 2.93 3.71zM6.77 5.61c0-1.85-1.17-2.36-2.84-2.36H1.88V8.1h2.26c1.6 0 2.63-.85 2.63-2.49zm.9 6.81c0-2.12-1.54-2.74-3.42-2.74H1.88v5.28h2.88c1.6 0 2.91-.8 2.91-2.54zm6.79 3.88c0 .13-.08.22-.2.27-.31.12-1.21.12-1.52 0-.13-.06-.2-.13-.2-.27V.87c0-.54 1.92-.52 1.92 0V16.3zm13.17-5.32c0 3.36-1.77 5.82-5.31 5.82-3.55 0-5.08-2.26-5.08-5.61 0-3.38 1.73-5.82 5.3-5.82 3.53 0 5.09 2.26 5.09 5.61zm-1.99.12c0-2.15-.68-4.14-3.18-4.14-2.42 0-3.23 1.96-3.23 4.09 0 2.16.68 4.14 3.19 4.14 2.44 0 3.22-1.96 3.22-4.09zm12.16 4.36c-.48.86-2.52 1.34-3.45 1.34-3.38 0-4.63-2.52-4.63-5.57 0-2.24.67-4.61 2.94-5.49 1.37-.52 4.14-.48 5.08.9.21.36.25 1.6-.22 1.6-.36 0-1.37-1.23-2.97-1.23-2.31 0-2.85 2.21-2.85 4.11 0 1.96.57 4.02 2.89 4.02 1.58 0 2.69-1.32 3.03-1.32.43 0 .34 1.34.18 1.64zm11.15.99c-.2.29-1.83.39-2.2-.16l-4.38-5.76v5.77c0 .51-1.92.52-1.92 0V.87c0-.54 1.92-.52 1.92 0v9.4l3.91-4.32c.43-.52 1.95-.55 2.24-.23.18.22-.12.61-.28.77l-3.74 3.77 4.22 5.48c.12.18.38.49.23.71zm10.99-4.35c0 3.25-2.63 4.75-5.54 4.75-1.12 0-3.1-.35-3.95-1.17-.42-.44-.45-2.52.16-2.52.37 0 2.01 1.23 3.81 1.23 1.21 0 2.37-.52 2.37-1.89 0-2.71-6.36-1.89-6.36-6.82 0-2.93 2.32-4.3 5.01-4.3.79 0 3.09.33 3.5 1.09.15.29.33 2.29-.27 2.29-.34 0-1.77-1.02-3.19-1.02-1.03 0-1.98.46-1.98 1.61 0 2.62 6.44 2 6.44 6.75zm14.35 4.38c-.28.26-2.75.29-3.01-.05-.18-.23-.94-2.77-1.09-3.25h-5.64l-1.07 3.2c-.24.38-2.5.38-2.76.08-.43-.5 4.18-12.81 4.7-14.3.31-.92 3.86-.95 4.16.04.51 1.44 5.15 13.84 4.71 14.28zm-6.95-12h-.01l-2.08 6.36h4.2l-2.11-6.36zm16.91-.36h-4.9v4.02h4.59c.66 0 .63 2.44 0 2.44h-4.59v5.57c0 .72-3.05.72-3.05 0V2.59c0-.58.3-.95.9-.95h7.05c.64 0 .62 2.48 0 2.48zm15.09 6.9c0 3.89-2.43 5.83-6.19 5.83-3.74 0-6.02-1.85-6.02-5.71V2.05c0-.69 3.03-.68 3.03 0v8.83c0 1.99.91 3.48 3.11 3.48 2.04 0 3.07-1.35 3.07-3.3V2.05c0-.69 3-.69 3 0v8.97z"
                         fill="#07203d"
@@ -1504,7 +1555,8 @@ export function HeaderFixed() {
                     <a
                       key={resourcesIndex}
                       href={item.href}
-                      className="text-base font-medium text-gray-900 hover:text-gray-700 dark:text-gray-400">
+                      className="text-base font-medium text-gray-900 hover:text-gray-700 dark:text-gray-400"
+                    >
                       {item.name}
                     </a>
                   ))}
@@ -1525,7 +1577,8 @@ export function HeaderFixed() {
                           className="w-6 h-6"
                           fill="none"
                           viewBox="0 0 24 24"
-                          stroke="currentColor">
+                          stroke="currentColor"
+                        >
                           <path
                             strokeLinecap="round"
                             strokeLinejoin="round"
@@ -1542,7 +1595,8 @@ export function HeaderFixed() {
                           className="w-6 h-6"
                           fill="none"
                           viewBox="0 0 24 24"
-                          stroke="currentColor">
+                          stroke="currentColor"
+                        >
                           <path
                             strokeLinecap="round"
                             strokeLinejoin="round"
@@ -1569,7 +1623,8 @@ export function HeaderFixed() {
                   : "bg-white py-2 dark:bg-gray-900 px-4 rounded-md text-gray-600 dark:text-gray-500 font-semibold"
               }
               scroll={true}
-              href="#safetyScore">
+              href="#safetyScore"
+            >
               Safety Score
             </Link>
             <Link
@@ -1579,7 +1634,8 @@ export function HeaderFixed() {
                   : "bg-white py-2 dark:bg-gray-900 px-4 rounded-md text-gray-600 dark:text-gray-500 font-semibold"
               }
               scroll={true}
-              href="#taxInformation">
+              href="#taxInformation"
+            >
               Tax Information
             </Link>
             <Link
@@ -1589,7 +1645,8 @@ export function HeaderFixed() {
                   : "bg-white py-2 dark:bg-gray-900 px-4 rounded-md text-gray-600 dark:text-gray-500 font-semibold"
               }
               scroll={true}
-              href="#overviewInformation">
+              href="#overviewInformation"
+            >
               Security Overview
             </Link>
             <Link
@@ -1599,7 +1656,8 @@ export function HeaderFixed() {
                   : "bg-white py-2 dark:bg-gray-900 px-4 rounded-md text-gray-600 dark:text-gray-500 font-semibold"
               }
               scroll={true}
-              href="#auditInformation">
+              href="#auditInformation"
+            >
               Audit Overview
             </Link>
             <Link
@@ -1609,7 +1667,8 @@ export function HeaderFixed() {
                   : "bg-white py-2 dark:bg-gray-900 px-4 rounded-md text-gray-600 dark:text-gray-500 font-semibold"
               }
               scroll={true}
-              href="#manualInformation">
+              href="#manualInformation"
+            >
               Manual Analysis
             </Link>
             <Link
@@ -1619,7 +1678,8 @@ export function HeaderFixed() {
                   : "bg-white py-2 dark:bg-gray-900 px-4 rounded-md text-gray-600 dark:text-gray-500 font-semibold"
               }
               scroll={true}
-              href="#marketInformation">
+              href="#marketInformation"
+            >
               Market Information
             </Link>
             <Link
@@ -1629,7 +1689,8 @@ export function HeaderFixed() {
                   : "bg-white py-2 dark:bg-gray-900 px-4 rounded-md text-gray-600 dark:text-gray-500 font-semibold"
               }
               scroll={true}
-              href="#contractInformation">
+              href="#contractInformation"
+            >
               Contract Inheritance
             </Link>
             <Link
@@ -1639,7 +1700,8 @@ export function HeaderFixed() {
                   : "bg-white py-2 dark:bg-gray-900 px-4 rounded-md text-gray-600 dark:text-gray-500 font-semibold"
               }
               scroll={true}
-              href="#websiteInformation">
+              href="#websiteInformation"
+            >
               Website Information
             </Link>
             <Link
@@ -1649,7 +1711,8 @@ export function HeaderFixed() {
                   : "bg-white py-2 dark:bg-gray-900 px-4 rounded-md text-gray-600 dark:text-gray-500 font-semibold"
               }
               scroll={true}
-              href="#liquidityInformation">
+              href="#liquidityInformation"
+            >
               Liquidity & Holder
             </Link>
             <Link
@@ -1659,7 +1722,8 @@ export function HeaderFixed() {
                   : "bg-white py-2 dark:bg-gray-900 px-4 rounded-md text-gray-600 dark:text-gray-500 font-semibold"
               }
               scroll={true}
-              href="#autoInformation">
+              href="#autoInformation"
+            >
               Automatic Vulnerability Scan
             </Link>
             <div className="px-4 py-2 text-gray-900 bg-white rounded-md"></div>
@@ -1692,7 +1756,8 @@ export const Modal = ({
                   </h3>
                   <button
                     className="float-right p-1 ml-auto text-lg font-semibold leading-none text-black bg-transparent border-0 outline-none opacity-5 focus:outline-none"
-                    onClick={() => onClose(false)}>
+                    onClick={() => onClose(false)}
+                  >
                     <FaTimes color={"black"} />
                   </button>
                 </div>
@@ -1745,7 +1810,8 @@ export const Toast = ({
                     onClick={() => {
                       setShowToast(false);
                       onClose(false);
-                    }}>
+                    }}
+                  >
                     <FaTimes className="text-white" />
                   </button>
                 </div>
@@ -1799,7 +1865,8 @@ export const CopyAddress = ({ addr }) => {
         onClick={(e) => {
           e.preventDefault();
           onCopy();
-        }}>
+        }}
+      >
         Copy
       </a>
       <Toast
@@ -1807,7 +1874,8 @@ export const CopyAddress = ({ addr }) => {
         isOpen={isToastOpen}
         onClose={(e) => {
           setIsToastOpen(false);
-        }}>
+        }}
+      >
         Copied to Clipboard
       </Toast>
     </div>
@@ -1860,7 +1928,8 @@ export const CopyButton = ({ text }) => {
         onClick={(e) => {
           e.preventDefault();
           onCopy();
-        }}>
+        }}
+      >
         <RiFileCopy2Line /> Copy
       </a>
       <Toast
@@ -1868,7 +1937,8 @@ export const CopyButton = ({ text }) => {
         isOpen={isToastOpen}
         onClose={(e) => {
           setIsToastOpen(false);
-        }}>
+        }}
+      >
         Copied to Clipboard
       </Toast>
     </div>
@@ -1920,7 +1990,8 @@ export const CopyButton2 = ({ text }) => {
         onClick={(e) => {
           e.preventDefault();
           onCopy();
-        }}>
+        }}
+      >
         <RiFileCopy2Line />
       </button>
       <Toast
@@ -1928,7 +1999,8 @@ export const CopyButton2 = ({ text }) => {
         isOpen={isToastOpen}
         onClose={(e) => {
           setIsToastOpen(false);
-        }}>
+        }}
+      >
         Copied to Clipboard
       </Toast>
     </div>
@@ -1988,20 +2060,23 @@ export const ModalWallet = () => {
       {!active ? (
         <button
           onClick={() => setIsSelectWalletOpen(true)}
-          className={"rounded-lg text-white bg-blue-600 px-3 py-2"}>
+          className={"rounded-lg text-white bg-blue-600 px-3 py-2"}
+        >
           Connect Wallet
         </button>
       ) : (
         <button
           onClick={() => logout()}
-          className={"rounded-full text-white bg-blue-600 px-3 py-2"}>
+          className={"rounded-full text-white bg-blue-600 px-3 py-2"}
+        >
           {getSimpleAddress(account)}
         </button>
       )}
       <Modal
         title={"Select Wallet"}
         isOpen={isSelectWalletOpen}
-        onClose={(e) => setIsSelectWalletOpen(e)}>
+        onClose={(e) => setIsSelectWalletOpen(e)}
+      >
         <div className={"grid grid-cols-2 gap-y-4 gap-x-2"}>
           <CardWebooWallet onClick={(p) => onClick(p)} />
           <CardMetamask onClick={(p) => onClick(p)} />
@@ -2160,7 +2235,8 @@ export const ModalWeb3 = () => {
       <Modal
         title={"Select Wallet"}
         isOpen={isSelectWalletOpen}
-        onClose={(e) => setIsSelectWalletOpen(e)}>
+        onClose={(e) => setIsSelectWalletOpen(e)}
+      >
         <div className={"flex flex-col gap-y-3"}>
           <CardWebooWallet onClick={(p) => onClickMetamask()} />
           <CardMetamask onClick={(p) => onClickMetamask()} />
@@ -2201,7 +2277,8 @@ export const ModalWeb3Test = () => {
   return (
     <button
       onClick={() => onConnect()}
-      className={"rounded-lg text-white bg-blue-600 px-3 py-2"}>
+      className={"rounded-lg text-white bg-blue-600 px-3 py-2"}
+    >
       Connect Wallet
     </button>
   );
@@ -2213,7 +2290,8 @@ export const CardMetamask = ({ onClick = (e) => {} }) => {
       className={
         "items-center border-2 rounded-full text-center flex flex-row justify-between py-2 hover:border-3 hover:border-red-600 px-8 gap-y-2"
       }
-      onClick={() => onClick(injected)}>
+      onClick={() => onClick(injected)}
+    >
       <div className={"text-sm font-bold"}>Metamask</div>
       <img
         alt={"Metamask"}
@@ -2235,7 +2313,8 @@ export const CardWebooWallet = ({ onClick = (e) => {} }) => {
       className={
         "items-center border-2 rounded-full text-center flex flex-row justify-between py-2 hover:border-3 hover:border-red-600 px-8 gap-y-2"
       }
-      onClick={() => onClick(injected)}>
+      onClick={() => onClick(injected)}
+    >
       <div className={"text-sm font-bold"}>Weboo Wallet</div>
       <img
         alt={"WebooWallet"}
@@ -2257,7 +2336,8 @@ export const CardWalletConnect = ({ onClick = (p) => {} }) => {
       className={
         "items-center border-2 rounded-full text-center flex flex-row justify-between py-2 hover:border-3 hover:border-red-600 px-8 gap-y-2"
       }
-      onClick={() => onClick(walletconnect)}>
+      onClick={() => onClick(walletconnect)}
+    >
       <div className={"text-sm font-bold"}>Wallet Connect</div>
       <img
         alt={"Wallet Connect"}
@@ -2373,7 +2453,8 @@ export const BtnWalletConnect = ({ children }) => {
           onClick={() => onConnectWallet()}
           className={
             "flex items-center justify-center w-full gap-2 py-2.5 px-2.5 text-white bg-blue-500 rounded-lg hover:bg-blue-600"
-          }>
+          }
+        >
           <IoWallet />
           <span className="hidden lg:block md:block">Connect Wallet</span>
         </button>
@@ -2432,7 +2513,8 @@ export const ModalTxHash = ({
           <Modal
             title={"Transaction Submitted"}
             isOpen={showModal}
-            onClose={() => setShowModal(false)}>
+            onClose={() => setShowModal(false)}
+          >
             <div className={"flex flex-col items-center gap-y-3"}>
               <FaArrowCircleUp size={100} />
               <a
@@ -2441,7 +2523,8 @@ export const ModalTxHash = ({
                 rel={"noreferrer"}
                 className={
                   "no-underline font-bold flex flex-row gap-x-3 justify-center items-center text-black dark:text-white"
-                }>
+                }
+              >
                 <span>View On Explorer</span>
                 <FaExternalLinkAlt />
               </a>
@@ -2464,7 +2547,8 @@ export const Empty = ({ text }) => {
     <div
       className={
         "w-full text-3xl flex items-center text-center align-center flex-col"
-      }>
+      }
+    >
       <span>{text}</span>
     </div>
   );

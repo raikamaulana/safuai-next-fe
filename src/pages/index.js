@@ -38,7 +38,8 @@ const HowWork = dynamic(
 );
 
 const ServiceProducts = dynamic(
-  () => import("@/components/ServiceProducts").then((mod) => mod.ServiceProducts),
+  () =>
+    import("@/components/ServiceProducts").then((mod) => mod.ServiceProducts),
   {
     ssr: false,
   }
@@ -51,7 +52,10 @@ const Footer = dynamic(
   }
 );
 const VulnerabilityScan = dynamic(
-  () => import("@/components/vulnerabilityScan").then((mod) => mod.VulnerabilityScan),
+  () =>
+    import("@/components/vulnerabilityScan").then(
+      (mod) => mod.VulnerabilityScan
+    ),
   {
     ssr: false,
   }
@@ -112,13 +116,10 @@ export default function Home() {
           Scanner, and Vulnerability Scanner Platform
         </title>
       </Head>
-      <Header />
-      <SafuAiHero />
-      <Collaborator />
-      <AuditInfo />
-      <HowWork />
-      <ServiceProducts />
-      <Footer />
+      {/* <Header /> */}
+      <AuditDetail />
+      {/* <OurSquad /> */}
+      {/* <Footer /> */}
     </>
   );
 }

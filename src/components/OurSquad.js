@@ -219,7 +219,7 @@ export const OurSquad = () => {
                         height="165"
                       />
                     </a>
-                    <h2 className="text-center text-white justify-center items-center text-xl">
+                    <h2 className="text-center dark:text-white justify-center items-center text-xl">
                       Apollo
                     </h2>
                     <p className="text-center text-[#797B88] font-bold">
@@ -234,7 +234,7 @@ export const OurSquad = () => {
                         height="165"
                       />
                     </a>
-                    <h2 className="text-center text-white justify-center items-center text-xl">
+                    <h2 className="text-center dark:text-white justify-center items-center text-xl">
                       Carver
                     </h2>
                     <p className="text-center text-[#797B88] font-bold">
