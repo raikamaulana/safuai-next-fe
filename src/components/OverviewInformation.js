@@ -1,14 +1,14 @@
 import Image from "next/image"
 import { useTheme } from "next-themes"
 
-export default function OverviewInformation() {
+export const OverviewInformation = () => {
     const { theme } = useTheme();
     const greenEllipse = theme === 'dark' ? '/images/ellipse-green.png' : '/images/ellipse-green-light.png';
     const redEllipse = theme === 'dark' ? '/images/ellipse-red.png' : '/images/ellipse-red-light.png';
     return (
         <div className="bg-[#E8ECEF] dark:bg-[#0D1116] min-h-screen overflow-hidden">
             <div className="flex justify-center">
-            <div className="bg-white dark:bg-[#20262D] max-w-4xl p-5 rounded-sm my-10">
+            <div className="bg-white dark:bg-[#20262D] max-w-4xl p-5 rounded-sm">
                 <div className="relative overflow-x-auto">
                 <table className="w-full text-left border-separate border-spacing-y-2">
                     <thead className="font-[Poppins] text-[#D171FF] uppercase">

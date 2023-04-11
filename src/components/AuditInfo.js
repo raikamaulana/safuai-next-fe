@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export const AuditInfo = () => {
   return (
@@ -57,7 +58,7 @@ export const AuditInfo = () => {
             <div className="flex justify-center md:pr-0 pr-40">
               <div className="mt-20 py-4 md:pr-5 pr-2 md:ml-0 ml-20 pl-10 md:pl-0 rounded-xl dark:bg-[#1B1F28] bg-[#FFFFFF] border dark:border-[#26293A] border-[#FFFFFF]">
                 <div className="md:w-[650px] w-80 md:h-14 h-12 rounded-md dark:bg-[#363D4D] bg-[#E8ECEF] mx-auto py-1 md:ml-4 -ml-8">
-                  <button>
+                  <Link href={"/detail-audit"}>
                     <p className="dark:text-white font-medium text-black md:mt-2 md:ml-5 ml-3 mt-2 md:text-lg text-base flex">
                       1
                     </p>
@@ -89,10 +90,10 @@ export const AuditInfo = () => {
                     <p className="dark:text-white font-medium text-black md:-mt-9 md:ml-[490px] md:text-lg text-xs -mt-6 ml-60">
                       2023-01-19
                     </p>
-                  </button>
+                  </Link>
                 </div>
                 <div className="md:w-[650px] w-80 md:h-14 h-12 rounded-md dark:bg-[#363D4D] bg-[#E8ECEF] mx-auto py-1 mt-3 md:ml-4 -ml-8">
-                  <button>
+                  <Link href={"/detail-audit"}>
                     <p className="dark:text-white font-medium text-black md:mt-2 md:ml-5 ml-3 mt-2 md:text-lg text-base flex">
                       2
                     </p>
@@ -124,10 +125,10 @@ export const AuditInfo = () => {
                     <p className="dark:text-white font-medium text-black md:-mt-9 md:ml-[490px] md:text-lg text-xs -mt-6 ml-60">
                       2023-01-19
                     </p>
-                  </button>
+                  </Link>
                 </div>
                 <div className="md:w-[650px] w-80 md:h-14 h-12 rounded-md dark:bg-[#363D4D] bg-[#E8ECEF] mx-auto py-1 mt-3 md:ml-4 -ml-8">
-                  <button>
+                  <Link href={"/detail-audit"}>
                     <p className="dark:text-white font-medium text-black md:mt-2 md:ml-5 ml-3 mt-2 md:text-lg text-base flex">
                       3
                     </p>
@@ -159,7 +160,7 @@ export const AuditInfo = () => {
                     <p className="dark:text-white font-medium text-black md:-mt-9 md:ml-[490px] md:text-lg text-xs -mt-6 ml-60">
                       2023-01-19
                     </p>
-                  </button>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -205,7 +206,7 @@ export const AuditInfo = () => {
             <div className="mx-auto md:pr-0 pr-20">
               <div className="py-4 mt-20 md:pr-5 pr-2 md:ml-0 ml-40 pl-10 md:pl-0 rounded-xl dark:bg-[#1B1F28] bg-[#FFFFFF] border dark:border-[#26293A] border-[#FFFFFF]">
                 <div className="md:w-[650px] w-80 md:h-14 h-12 rounded-md dark:bg-[#363D4D] bg-[#E8ECEF] mx-auto py-1 md:ml-4 -ml-8">
-                  <button>
+                  <Link href={"/detail-audit"}>
                     <p className="dark:text-white font-medium text-black md:mt-2 md:ml-5 ml-3 mt-2 md:text-lg text-base flex">
                       1
                     </p>
@@ -237,10 +238,10 @@ export const AuditInfo = () => {
                     <p className="dark:text-white font-medium text-black md:-mt-9 md:ml-[490px] md:text-lg text-xs -mt-6 ml-60">
                       2023-01-19
                     </p>
-                  </button>
+                  </Link>
                 </div>
                 <div className="md:w-[650px]  w-80 md:h-14 h-12 rounded-md dark:bg-[#363D4D] bg-[#E8ECEF] mx-auto py-1 mt-3 md:ml-4 -ml-8">
-                  <button>
+                  <Link href={"/detail-audit"}>
                     <p className="dark:text-white font-medium text-black md:mt-2 md:ml-5 ml-3 mt-2 md:text-lg text-base flex">
                       2
                     </p>
@@ -272,10 +273,10 @@ export const AuditInfo = () => {
                     <p className="dark:text-white font-medium text-black md:-mt-9 md:ml-[490px] md:text-lg text-xs -mt-6 ml-60">
                       2023-01-19
                     </p>
-                  </button>
+                  </Link>
                 </div>
                 <div className="md:w-[650px] w-80 md:h-14 h-12 rounded-md dark:bg-[#363D4D] bg-[#E8ECEF] mx-auto py-1 mt-3 md:ml-4 -ml-8 ">
-                  <button>
+                  <Link href={"/detail-audit"}>
                     <p className="dark:text-white font-medium text-black md:mt-2 md:ml-5 ml-3 mt-2 md:text-lg text-base flex">
                       3
                     </p>
@@ -307,7 +308,7 @@ export const AuditInfo = () => {
                     <p className="dark:text-white font-medium text-black md:-mt-9 md:ml-[490px] md:text-lg text-xs -mt-6 ml-60">
                       2023-01-19
                     </p>
-                  </button>
+                  </Link>
                 </div>
               </div>
             </div>

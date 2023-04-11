@@ -17,7 +17,7 @@ function classNames(...classes) {
 //   }
 // };
 
-export const manualAudit = () => {
+export const ManualAudit = () => {
 
   const [isClicked, setIsClicked] = useState(false);
 
@@ -31,7 +31,7 @@ export const manualAudit = () => {
   
   return (
     <>
-      <div className="pt-44 pb-28 px-4 sm:px-8 md:px-12 lg:px-28 bg-[#E8ECEF] dark:bg-[#0D1116] text-black dark:text-white transition-all duration-500">
+      <div className="bg-[#E8ECEF] dark:bg-[#0D1116] text-black dark:text-white transition-all duration-500">
         <div className='max-w-3xl min-h-[800px] bg-white dark:bg-[#20262D] py-4 px-4 font-[Poppins] font-normal'>
           <Tab.Group defaultIndex={0}>
             <Tab.List className='gap-4 overflow-x-scroll lg:overflow-hidden grid grid-flow-col w-full'>

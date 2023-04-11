@@ -9,7 +9,7 @@ import {
   MagnifyingGlassIcon,
 } from "@heroicons/react/20/solid";
 import Link from "next/link";
-import MarketAnalytic from "@/pages/market-analytic";
+// import MarketAnalytic from "@/pages/detail-audit/market-analytic";
 
 const audits = [
   { id: 1, name: "Tax / Fee Information", link: "/" },

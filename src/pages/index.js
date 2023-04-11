@@ -51,15 +51,6 @@ const Footer = dynamic(
     ssr: false,
   }
 );
-const VulnerabilityScan = dynamic(
-  () =>
-    import("@/components/vulnerabilityScan").then(
-      (mod) => mod.VulnerabilityScan
-    ),
-  {
-    ssr: false,
-  }
-);
 
 export default function Home() {
   return (
@@ -116,10 +107,13 @@ export default function Home() {
           Scanner, and Vulnerability Scanner Platform
         </title>
       </Head>
-      {/* <Header /> */}
-      <AuditDetail />
-      {/* <OurSquad /> */}
-      {/* <Footer /> */}
+      <Header />
+      <SafuAiHero />
+      <Collaborator />
+      <AuditInfo />
+      <HowWork />
+      <ServiceProducts />
+      <Footer />
     </>
   );
 }
