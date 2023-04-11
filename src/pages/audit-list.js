@@ -23,11 +23,24 @@ const AuditDetail = dynamic(
 );
 
 export default function auditList() {
-  const [open, setOpen] = useState(false);
+  const [isDropDownVisible, setIsDropDownVisible] = useState(false);
 
-  const handleOpen = () => {
-    setOpen(!open);
-  };
+  const [tokenListBasedOn, setTokenListBasedOn] = useState([
+    {
+      name: "Token Name",
+      value: "token_name",
+    },
+    {
+      name: "Token Symbol",
+      value: "token_symbol",
+    },
+    {
+      name: "Date Release",
+      value: "date_release",
+    },
+  ]);
+
+  const [selectedTokenIndex, setSelectedTokenIndex] = useState(null);
   return (
     <>
       <Header />
@@ -40,16 +53,53 @@ export default function auditList() {
               Audit List
             </span>
           </h3>
-          <h3 className="inline-flex bg-gradient-to-b from-[#121F43] to-[#1B1F29] rounded-lg text-white mb-4 md:mb-4 lg:mb-8 xl:mb-8 pt-2 md:pt-2 lg:pt-3 xl:pt-3 pl-5 md:pl-5 lg:pl-5 xl:pl-5 h-10 md:h-10 lg:h-12 xl:h-12 w-64 md:w-full lg:w-72 xl:w-88 ring-2 ring-[#5B4C7C]">
+          <h3 className="inline-flex bg-gradient-to-b from-[#121F43] to-[#1B1F29] rounded-lg text-white mb-4 md:mb-4 lg:mb-8 xl:mb-8 mr-0 md:mr-0 lg:mr-3 xl:mr-3 pt-2 md:pt-2 lg:pt-3 xl:pt-3 pl-5 md:pl-5 lg:pl-5 xl:pl-5 h-10 md:h-10 lg:h-12 xl:h-12 w-64 md:w-full lg:w-64 xl:w-72 ring-2 ring-[#5B4C7C]">
             Search Project
           </h3>
-          <select className="lg:inline-flex xl:inline-flex bg-[#142044] rounded-lg text-[#000000] dark:text-white mb-4 md:mb-4 lg:mb-0 xl:mb-0 ml-0 md:ml-0 lg:ml-3 xl:ml-3 pl-2 md:pl-2 lg:pl-2 xl:pl-2 py-2 md:py-2 lg:py-3 xl:py-3 w-64 md:w-full lg:w-36 xl:w-36 ring-2 ring-[#5B4C7C]">
+          {/* <select className="lg:inline-flex xl:inline-flex bg-[#142044] rounded-lg text-[#000000] dark:text-white mb-4 md:mb-4 lg:mb-0 xl:mb-0 ml-0 md:ml-0 lg:ml-3 xl:ml-3 pl-2 md:pl-2 lg:pl-2 xl:pl-2 py-2 md:py-2 lg:py-3 xl:py-3 w-64 md:w-full lg:w-36 xl:w-36 ring-2 ring-[#5B4C7C]">
+            <option value="token_Test" defaultChecked hidden>
+              Token Test
+            </option>
             <option value="token_name">Token Name</option>
             <option value="token_symbol">Token Symbol</option>
             <option value="date_release">Date Release</option>
-          </select>
-          <div className="lg:inline-flex xl:inline-flex md:grid md:grid-cols-4 md:mb-8">
-            <h3 className="grid grid-cols-4 md:grid md:grid-cols-2 bg-gradient-to-b from-[#142044] to-[#1A2348] rounded-lg text-white mb-4 md:mb-0 lg:mb-0 xl:mb-0 ml-0 md:ml-0 lg:ml-3 xl:ml-3 pl-3 md:pl-3 lg:pl-3 xl:pl-3 py-2 md:py-2 lg:py-3 xl:py-3 w-64 md:w-36 lg:w-40 xl:w-44 ring-2 ring-[#5B4C7C]">
+          </select> */}
+          <div className="custom-dropdown lg:inline-flex xl:inline-flex">
+            <div
+              className={
+                isDropDownVisible
+                  ? "visibles custom-dropdown-selection bg-gradient-to-b from-[#142044] to-[#1A2348] ring-2 ring-[#5B4C7C]"
+                  : "custom-dropdown-selection bg-gradient-to-b from-[#142044] to-[#1A2348] ring-2 ring-[#5B4C7C]"
+              }
+              onClick={(e) => {
+                setIsDropDownVisible(!isDropDownVisible);
+              }}
+            >
+              {selectedTokenIndex !== null
+                ? tokenListBasedOn[selectedTokenIndex].name
+                : "Select Token Based On.."}
+            </div>
+            {isDropDownVisible ? (
+              <div className="tokens-holder bg-gradient-to-b from-[#142044] to-[#1A2348] ring-2 ring-[#5B4C7C] z-10">
+                {tokenListBasedOn.map((token, index) => (
+                  <div
+                    key={token.value}
+                    className="dropdown-token"
+                    onClick={(e) => {
+                      setSelectedTokenIndex(index);
+                      setIsDropDownVisible(false);
+                    }}
+                  >
+                    {token.name}
+                  </div>
+                ))}
+              </div>
+            ) : (
+              <></>
+            )}
+          </div>
+          <div className="lg:inline-flex xl:inline-flex md:mb-8">
+            <h3 className="grid grid-cols-4 md:grid md:grid-cols-2 bg-gradient-to-b from-[#142044] to-[#1A2348] rounded-lg text-white mb-4 md:mb-0 lg:mb-0 xl:mb-0 ml-0 md:ml-0 lg:ml-0 xl:ml-0 pl-3 md:pl-3 lg:pl-3 xl:pl-3 py-2 md:py-2 lg:py-3 xl:py-3 w-64 md:w-full lg:w-40 xl:w-44 ring-2 ring-[#5B4C7C]">
               Network
               <div className="pl-4 md:pl-0 lg:pl-0 xl:pl-0">
                 <Image
@@ -60,14 +110,14 @@ export default function auditList() {
                 />
               </div>
             </h3>
-            <h3 className="bg-gradient-to-b from-[#142044] to-[#1A2348] rounded-lg text-white ml-0 md:ml-1 lg:ml-3 xl:ml-3 pl-2 md:pl-2 lg:pl-2 xl:pl-2 py-2 md:py-2 lg:py-3 xl:py-3 w-36 md:w-36 lg:w-28 xl:w-36 ring-2 ring-[#5B4C7C]">
+            <h3 className="bg-gradient-to-b from-[#142044] to-[#1A2348] rounded-lg text-white ml-0 md:ml-0 lg:ml-3 xl:ml-3 pl-2 md:pl-2 lg:pl-2 xl:pl-2 py-2 md:py-2 lg:py-3 xl:py-3 w-36 md:w-full lg:w-20 xl:w-28 ring-2 ring-[#5B4C7C]">
               Time
             </h3>
-            <h3 className="bg-gradient-to-b from-[#142044] to-[#1A2348] rounded-lg text-white mb-8 md:mb-0 lg:mb-0 xl:mb-0 ml-2 md:ml-2 lg:ml-3 xl:ml-3 pl-5 md:pl-5 lg:pl-6 xl:pl-7 py-2 md:py-2 lg:py-3 xl:py-3 w-12 md:w-12 lg:w-14 xl:w-16 ring-2 ring-[#5B4C7C]">
+            <h3 className="bg-gradient-to-b from-[#142044] to-[#1A2348] rounded-lg text-white mb-8 md:mb-0 lg:mb-0 xl:mb-0 ml-2 md:ml-0 lg:ml-3 xl:ml-3 pl-5 md:pl-5 lg:pl-6 xl:pl-7 py-2 md:py-2 lg:py-3 xl:py-3 w-12 md:w-full lg:w-14 xl:w-16 ring-2 ring-[#5B4C7C]">
               9
             </h3>
           </div>
-          <div className="grid grid-cols-1 md:grid md:grid-cols-2 lg:grid lg:grid-cols-3 xl:grid xl:grid-cols-3 md:gap-x-16 lg:gap-x-5 xl:gap-x-20 gap-y-5 md:gap-y-5 lg:gap-y-5 xl:gap-y-10 mb-4 md:mb-4 lg:mb-4 xl:mb-4">
+          <div className="grid grid-cols-1 md:grid md:grid-cols-2 lg:grid lg:grid-cols-3 xl:grid xl:grid-cols-3 md:gap-x-16 lg:gap-x-9 xl:gap-x-20 gap-y-5 md:gap-y-5 lg:gap-y-5 xl:gap-y-10 mb-4 md:mb-4 lg:mb-4 xl:mb-4">
             <div className="bg-[#26293A] rounded-xl h-64 w-64 px-4 py-6 ring-2 ring-[#5B4C7C]">
               <div className="inline-block">
                 <Image
@@ -546,7 +596,7 @@ export default function auditList() {
               </Link>
             </div>
           </div>
-          <div className="inline-flex gap-x-2 md:gap-x-2 lg:gap-x-2 xl:gap-x-2 -ml-3.5 md:ml-36 lg:ml-64 xl:ml-80 mb-4 md:mb-4 lg:mb-4 xl:mb-4">
+          <div className="inline-flex gap-x-2 md:gap-x-2 lg:gap-x-2 xl:gap-x-2 -ml-3.5 md:ml-36 lg:ml-72 xl:ml-80 mb-4 md:mb-4 lg:mb-4 xl:mb-4">
             <Link
               href="/"
               className="bg-[#26293A] rounded-lg text-white font-normal h-10 w-12 px-5 py-2 ring-2 ring-[#5B4C7C]"

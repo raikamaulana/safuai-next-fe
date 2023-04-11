@@ -23,37 +23,46 @@ export default function MarketAnalytic() {
               </button>
               <div className="flex justify-between">
                 <div className="mx-5">
-                    <div className="mb-4">
-                        <p className="text-[#D171FF] font-[Poppins]">Buy Gas</p>
-                        <p className="text-white font-[Poppins]">0 Gwei (0.0000 BNB / $0.00)</p>
-                    </div>
-                    <div className="mb-4">
-                        <p className="text-[#D171FF] font-[Poppins]">Sell Gas</p>
-                        <p className="text-white font-[Poppins]">0 Gwei (0.0000 BNB / $0.00)</p>
-                    </div>
-                    <div className="mb-4">
-                        <p className="text-[#D171FF] font-[Poppins]">Price</p>
-                        <p className="text-white font-[Poppins]">0.01094006 (6.739%)</p>
-                    </div>
+                  <div className="mb-4">
+                    <p className="text-[#D171FF] font-[Poppins]">Buy Gas</p>
+                    <p className="text-white font-[Poppins]">
+                      0 Gwei (0.0000 BNB / $0.00)
+                    </p>
+                  </div>
+                  <div className="mb-4">
+                    <p className="text-[#D171FF] font-[Poppins]">Sell Gas</p>
+                    <p className="text-white font-[Poppins]">
+                      0 Gwei (0.0000 BNB / $0.00)
+                    </p>
+                  </div>
+                  <div className="mb-4">
+                    <p className="text-[#D171FF] font-[Poppins]">Price</p>
+                    <p className="text-white font-[Poppins]">
+                      0.01094006 (6.739%)
+                    </p>
+                  </div>
                 </div>
                 <div className="mx-5">
-                    <div className="mb-4">
-                        <p className="text-[#D171FF] font-[Poppins]">Volume</p>
-                        <p className="text-white font-[Poppins]">$367476.72</p>
-                    </div>
-                    <div className="mb-4">
-                        <p className="text-[#D171FF] font-[Poppins]">Liquidity</p>
-                        <p className="text-white font-[Poppins]">$51,282 (30 BNB)</p>
-                    </div>
-                    <div className="mb-4">
-                        <p className="text-[#D171FF] font-[Poppins]">Tx Count</p>
-                        <p className="text-white font-[Poppins]">717 (0.32%)</p>
-                    </div>
+                  <div className="mb-4">
+                    <p className="text-[#D171FF] font-[Poppins]">Volume</p>
+                    <p className="text-white font-[Poppins]">$367476.72</p>
+                  </div>
+                  <div className="mb-4">
+                    <p className="text-[#D171FF] font-[Poppins]">Liquidity</p>
+                    <p className="text-white font-[Poppins]">
+                      $51,282 (30 BNB)
+                    </p>
+                  </div>
+                  <div className="mb-4">
+                    <p className="text-[#D171FF] font-[Poppins]">Tx Count</p>
+                    <p className="text-white font-[Poppins]">717 (0.32%)</p>
+                  </div>
                 </div>
-                    <div className="mb-4 mx-5">
-                        <p className="text-[#D171FF] font-[Poppins]">Marketcap</p>
-                        <p className="text-white font-[Poppins]">$1,094,005 (0.000%)</p>
-                    </div>
+                <div className="mb-4 mx-5">
+                  <p className="text-[#D171FF] font-[Poppins]">Marketcap</p>
+                  <p className="text-white font-[Poppins]">
+                    $1,094,005 (0.000%)
+                  </p>
                 </div>
               </div>
             </div>
