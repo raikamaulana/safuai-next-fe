@@ -52,13 +52,6 @@ const Footer = dynamic(
   }
 );
 
-const AuditDetail = dynamic(
-  () => import("@/components/AuditDetail").then((mod) => mod.AuditDetail),
-  {
-    ssr: false,
-  }
-);
-
 export default function Home() {
   return (
     <>
