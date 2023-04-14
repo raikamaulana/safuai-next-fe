@@ -6,7 +6,7 @@ export const Collaborator = () => {
   return (
     <div className="dark:bg-[#1B1F28] bg-[#E8ECEF] transition-all duration-500 flex justify-center overflow-hidden min-h-screen">
       <div>
-        <div className="pt-28 md:w-full mb-12">
+        <div className="pt-80 md:w-full mb-56">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="auto"
@@ -26,7 +26,7 @@ export const Collaborator = () => {
             ></path>
           </svg>
         </div>
-        <div className="p-14 grid lg:grid-cols-4 lg:gap-5 grid-cols-2 gap-5">
+        <div className="m-14 md:p-14 -mt-40 grid lg:grid-cols-4 lg:gap-5 grid-cols-2 gap-5">
           <Link href="/" className="mx-auto lg:ml-24 md:ml-0 ml-0">
             <Image
               src="/images/collaborator/coingeckolight.svg"
