@@ -151,17 +151,12 @@ export function AuditInfo() {
                 </p>
               </div>
             </div>
-            <div className="md:pr-0 pr-40">
-              {Auditinfo.map((audits, id) => (
-                <div
-                  key={id}
-                  className="py-4 mt-3 pt-1 md:pr-5 pr-2 md:ml-0 ml-20 pl-10 md:pl-0 dark:bg-[#1B1F28] bg-white outline dark:outline-[#363D4C] outline-gray-600"
-                >
-                  <div className="-ml-8 md:-ml-0 mx-auto w-80 md:w-full">
-                  <Link href={audits.link}>
-                    <p className="dark:text-white font-medium text-black md:mt-3 md:ml-5 -mr-10 mt-2 md:text-lg text-base flex">
-                      {" "}
-                      {audits.number}
+            <div className="flex justify-center md:pr-0 pr-40">
+              <div className="mt-20 py-4 md:pr-5 pr-2 md:ml-0 ml-20 pl-10 md:pl-0 rounded-xl dark:bg-[#1B1F28] bg-[#FFFFFF] border dark:border-[#26293A] border-[#FFFFFF]">
+                <div className="md:w-[650px] w-80 md:h-14 h-12 rounded-md dark:bg-[#363D4D] bg-[#E8ECEF] mx-auto py-1 md:ml-4 -ml-8">
+                  <Link href={"/detail-audit"}>
+                    <p className="dark:text-white font-medium text-black md:mt-2 md:ml-5 ml-3 mt-2 md:text-lg text-base flex">
+                      1
                     </p>
                     <Image
                       src={audits.icon}
@@ -192,9 +187,78 @@ export function AuditInfo() {
                       {audits.finnish}
                     </p>
                   </Link>
-                  </div>
                 </div>
-              ))}
+                <div className="md:w-[650px] w-80 md:h-14 h-12 rounded-md dark:bg-[#363D4D] bg-[#E8ECEF] mx-auto py-1 mt-3 md:ml-4 -ml-8">
+                  <Link href={"/detail-audit"}>
+                    <p className="dark:text-white font-medium text-black md:mt-2 md:ml-5 ml-3 mt-2 md:text-lg text-base flex">
+                      2
+                    </p>
+                    <Image
+                      src="/images/auditinfo/equilibrium.svg"
+                      width="28"
+                      height="28"
+                      className="md:-mt-7 md:ml-20 -mt-6 ml-9 md:w-9"
+                    />
+                    <p className="dark:text-white font-medium text-black md:-mt-8 md:ml-32 -mt-6 ml-[68px] absolute hover:text-blue-500 md:text-lg text-xs">
+                      Equilibrium
+                    </p>
+                    <div>
+                      <Image
+                        src="/images/auditinfo/score100light.svg"
+                        width="28"
+                        height="28"
+                        className="md:-mt-9 md:ml-88 dark:hidden -mt-7 md:w-9 ml-44"
+                        alt="/"
+                      />
+                      <Image
+                        src="/images/auditinfo/score100dark.svg"
+                        width="28"
+                        height="28"
+                        className="md:-mt-9 md:ml-88 hidden dark:block -mt-7 md:w-9 ml-44"
+                        alt="/"
+                      />
+                    </div>
+                    <p className="dark:text-white font-medium text-black md:-mt-9 md:ml-[490px] md:text-lg text-xs -mt-6 ml-60">
+                      2023-01-19
+                    </p>
+                  </Link>
+                </div>
+                <div className="md:w-[650px] w-80 md:h-14 h-12 rounded-md dark:bg-[#363D4D] bg-[#E8ECEF] mx-auto py-1 mt-3 md:ml-4 -ml-8">
+                  <Link href={"/detail-audit"}>
+                    <p className="dark:text-white font-medium text-black md:mt-2 md:ml-5 ml-3 mt-2 md:text-lg text-base flex">
+                      3
+                    </p>
+                    <Image
+                      src="/images/auditinfo/twitterdoge.svg"
+                      width="28"
+                      height="28"
+                      className="md:-mt-7 md:ml-20 -mt-6 ml-9 md:w-9"
+                    />
+                    <p className="dark:text-white font-medium text-black md:-mt-8 md:ml-32 -mt-6 ml-[68px] absolute hover:text-blue-500 md:text-lg text-xs">
+                      Twitter Doge
+                    </p>
+                    <div>
+                      <Image
+                        src="/images/auditinfo/score100light.svg"
+                        width="28"
+                        height="28"
+                        className="md:-mt-9 md:ml-88 dark:hidden -mt-7 md:w-9 ml-44"
+                        alt="/"
+                      />
+                      <Image
+                        src="/images/auditinfo/score100dark.svg"
+                        width="28"
+                        height="28"
+                        className="md:-mt-9 md:ml-88 hidden dark:block -mt-7 md:w-9 ml-44"
+                        alt="/"
+                      />
+                    </div>
+                    <p className="dark:text-white font-medium text-black md:-mt-9 md:ml-[490px] md:text-lg text-xs -mt-6 ml-60">
+                      2023-01-19
+                    </p>
+                  </Link>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -235,16 +299,12 @@ export function AuditInfo() {
                 </p>
               </div>
             </div>
-            <div className="mt-20 md:pr-0 pr-40">
-              {Auditinfosecond.map((auditsec, id) => (
-                <div
-                  key={id}
-                  className="py-4 mt-3 pt-1 md:pr-5 pr-2 md:ml-0 ml-20 pl-10 md:pl-0  dark:bg-[#1B1F28] bg-[#FFFFFF] outline dark:outline-[#363D4C] outline-gray-600"
-                >
-                  <div className="-ml-8 md:-ml-0 mx-auto w-80 md:w-full">
-                  <button>
-                    <p className="dark:text-white font-medium text-black md:mt-3 md:ml-5 ml-3 mt-2 md:text-lg text-base flex">
-                      {auditsec.number}
+            <div className="mx-auto md:pr-0 pr-20">
+              <div className="py-4 mt-20 md:pr-5 pr-2 md:ml-0 ml-40 pl-10 md:pl-0 rounded-xl dark:bg-[#1B1F28] bg-[#FFFFFF] border dark:border-[#26293A] border-[#FFFFFF]">
+                <div className="md:w-[650px] w-80 md:h-14 h-12 rounded-md dark:bg-[#363D4D] bg-[#E8ECEF] mx-auto py-1 md:ml-4 -ml-8">
+                  <Link href={"/detail-audit"}>
+                    <p className="dark:text-white font-medium text-black md:mt-2 md:ml-5 ml-3 mt-2 md:text-lg text-base flex">
+                      1
                     </p>
                     <Image
                       src={auditsec.icon}
@@ -274,10 +334,79 @@ export function AuditInfo() {
                     <p className="dark:text-white font-medium text-black md:-mt-9 md:ml-[490px] md:text-lg text-xs -mt-6 ml-60">
                       {auditsec.finnish}
                     </p>
-                  </button>
+                  </Link>
                 </div>
+                <div className="md:w-[650px]  w-80 md:h-14 h-12 rounded-md dark:bg-[#363D4D] bg-[#E8ECEF] mx-auto py-1 mt-3 md:ml-4 -ml-8">
+                  <Link href={"/detail-audit"}>
+                    <p className="dark:text-white font-medium text-black md:mt-2 md:ml-5 ml-3 mt-2 md:text-lg text-base flex">
+                      2
+                    </p>
+                    <Image
+                      src="/images/auditinfo/equilibrium.svg"
+                      width="28"
+                      height="28"
+                      className="md:-mt-7 md:ml-20 -mt-6 ml-9 md:w-9"
+                    />
+                    <p className="dark:text-white font-medium text-black md:-mt-8 md:ml-32 -mt-6 ml-[68px] absolute hover:text-blue-500 md:text-lg text-xs">
+                      Equilibrium
+                    </p>
+                    <div>
+                      <Image
+                        src="/images/auditinfo/score100light.svg"
+                        width="28"
+                        height="28"
+                        className="md:-mt-9 md:ml-88 dark:hidden -mt-7 md:w-9 ml-44"
+                        alt="/"
+                      />
+                      <Image
+                        src="/images/auditinfo/score100dark.svg"
+                        width="28"
+                        height="28"
+                        className="md:-mt-9 md:ml-88 hidden dark:block -mt-7 md:w-9 ml-44"
+                        alt="/"
+                      />
+                    </div>
+                    <p className="dark:text-white font-medium text-black md:-mt-9 md:ml-[490px] md:text-lg text-xs -mt-6 ml-60">
+                      2023-01-19
+                    </p>
+                  </Link>
                 </div>
-              ))}
+                <div className="md:w-[650px] w-80 md:h-14 h-12 rounded-md dark:bg-[#363D4D] bg-[#E8ECEF] mx-auto py-1 mt-3 md:ml-4 -ml-8 ">
+                  <Link href={"/detail-audit"}>
+                    <p className="dark:text-white font-medium text-black md:mt-2 md:ml-5 ml-3 mt-2 md:text-lg text-base flex">
+                      3
+                    </p>
+                    <Image
+                      src="/images/auditinfo/twitterdoge.svg"
+                      width="28"
+                      height="28"
+                      className="md:-mt-7 md:ml-20 -mt-6 ml-9 md:w-9"
+                    />
+                    <p className="dark:text-white font-medium text-black md:-mt-8 md:ml-32 -mt-6 ml-[68px] absolute hover:text-blue-500 md:text-lg text-xs">
+                      Twitter Doge
+                    </p>
+                    <div>
+                      <Image
+                        src="/images/auditinfo/score100light.svg"
+                        width="28"
+                        height="28"
+                        className="md:-mt-9 md:ml-88 dark:hidden -mt-7 md:w-9 ml-44"
+                        alt="/"
+                      />
+                      <Image
+                        src="/images/auditinfo/score100dark.svg"
+                        width="28"
+                        height="28"
+                        className="md:-mt-9 md:ml-88 hidden dark:block -mt-7 md:w-9 ml-44"
+                        alt="/"
+                      />
+                    </div>
+                    <p className="dark:text-white font-medium text-black md:-mt-9 md:ml-[490px] md:text-lg text-xs -mt-6 ml-60">
+                      2023-01-19
+                    </p>
+                  </Link>
+                </div>
+              </div>
             </div>
           </div>
           <div className="lg:block hidden">

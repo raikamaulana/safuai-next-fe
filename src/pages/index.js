@@ -38,7 +38,8 @@ const HowWork = dynamic(
 );
 
 const ServiceProducts = dynamic(
-  () => import("@/components/ServiceProducts").then((mod) => mod.ServiceProducts),
+  () =>
+    import("@/components/ServiceProducts").then((mod) => mod.ServiceProducts),
   {
     ssr: false,
   }
@@ -50,8 +51,9 @@ const Footer = dynamic(
     ssr: false,
   }
 );
-const VulnerabilityScan = dynamic(
-  () => import("@/components/vulnerabilityScan").then((mod) => mod.VulnerabilityScan),
+
+const AuditDetail = dynamic(
+  () => import("@/components/AuditDetail").then((mod) => mod.AuditDetail),
   {
     ssr: false,
   }
