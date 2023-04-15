@@ -3,7 +3,7 @@ import { Tab } from '@headlessui/react'
 
 export const FeeInformation = () => {
   return (
-    <section className="pt-6 dark:bg-[#0D1116] bg-[#E8ECEF] w-full lg:pl-36 lg:pr-36 px-2 md:px-20 pb-9 duration-500 transition-all">
+    <section className=" dark:bg-[#0D1116] bg-[#E8ECEF] w-full  duration-500 transition-all">
       <div className='max-w-max dark:bg-customDark bg-white dark:lg:bg-transparent lg:bg-transparent dark:md:bg-transparent md:bg-transparent'>
           <Tab.Group>
               <Tab.List>
@@ -35,7 +35,7 @@ export const FeeInformation = () => {
               </Tab.List>
               <Tab.Panels>
                 <Tab.Panel>
-                  <div className='dark:bg-customDark bg-white dark:text-white h-[570px] py-8 pr-8 pl-5'>
+                  <div className='dark:bg-customDark bg-white dark:text-white h-[650px] py-8 pr-8 pl-5'>
                     <div className='grid grid-cols-3 pl-6 mb-4'>
                       <p className='text-[#9098A0] '>Name</p>
                       <p className='text-[#9098A0] '>RECEIVER</p>
@@ -66,7 +66,7 @@ export const FeeInformation = () => {
               </Tab.Panels>
               <Tab.Panels>
                 <Tab.Panel>
-                <div className='dark:bg-customDark bg-white dark:text-white h-[570px] py-8 pr-8 pl-5'>
+                <div className='dark:bg-customDark bg-white dark:text-white h-[650px] py-8 pr-8 pl-5'>
                     <div className='grid grid-cols-3 pl-6 mb-4'>
                       <p className='text-[#9098A0] '>Name</p>
                       <p className='text-[#9098A0] '>RECEIVER</p>
@@ -97,7 +97,7 @@ export const FeeInformation = () => {
               </Tab.Panels>
               <Tab.Panels>
                 <Tab.Panel>
-                <div className='dark:bg-customDark bg-white dark:text-white h-[570px] py-8 pr-8 pl-5'>
+                <div className='dark:bg-customDark bg-white dark:text-white h-[650px] py-8 pr-8 pl-5'>
                     <div className='grid grid-cols-3 gap-9 pl-6 mb-4'>
                       <p className='text-[#9098A0]'>Name</p>
                       <p className='text-[#9098A0] ml-auto mr-0'>RECEIVER</p>
