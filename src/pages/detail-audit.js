@@ -27,7 +27,7 @@ const ManualAudit = dynamic(
   }
 );
 const MarketAnalytic = dynamic(
-  () => import("@/components/marketAnalytic").then((mod) => mod.MarketAnalytic),
+  () => import("@/components/MarketAnalytic").then((mod) => mod.MarketAnalytic),
   {
     ssr: false,
   }

@@ -6,12 +6,12 @@ export const OverviewInformation = () => {
     const greenEllipse = theme === 'dark' ? '/images/ellipse-green.png' : '/images/ellipse-green-light.png';
     const redEllipse = theme === 'dark' ? '/images/ellipse-red.png' : '/images/ellipse-red-light.png';
     return (
-        <div className="bg-[#E8ECEF] dark:bg-[#0D1116] min-h-screen overflow-hidden">
+        <div className="bg-customLightBg dark:bg-customDarkBg min-h-screen overflow-hidden">
             <div className="flex justify-center">
-            <div className="bg-white dark:bg-[#20262D] max-w-4xl p-5 rounded-sm">
+            <div className="bg-white dark:bg-customDarkComp max-w-4xl p-5 rounded-sm">
                 <div className="relative overflow-x-auto">
                 <table className="w-full text-left border-separate border-spacing-y-2">
-                    <thead className="font-[Poppins] text-[#D171FF] uppercase">
+                    <thead className="font-[Poppins] text-customPurple uppercase">
                         <tr>
                         <th className="px-7 py-3">Notes</th>
                         <th className="px-7 py-3">Name</th>
@@ -19,65 +19,65 @@ export const OverviewInformation = () => {
                         </tr>
                     </thead>
                     <tbody className="dark:text-white font-[Poppins]">
-                        <tr className="dark:bg-[#242A32] dark:border-b-8 border-2 border-[#E8ECEF] dark:border-none dark:border-[#20262D] rounded-lg mb-3">
-                            <td className="border-2 border-[#E8ECEF] border-r-0 dark:border-none px-7 py-3"><Image src={greenEllipse} alt="" width={17} height={17} className="mx-auto" /></td>
-                            <td className="border-2 border-[#E8ECEF] border-x-0 dark:border-none px-7 py-3">Minting</td>
-                            <td className="border-2 border-[#E8ECEF] border-l-0 dark:border-none px-7 py-3">No mint function found</td>
+                        <tr className="dark:bg-[#242A32] dark:border-b-8 border-2 border-custombg-customLightBg dark:border-none dark:border-[#20262D] rounded-lg mb-3">
+                            <td className="border-2 border-custombg-customLightBg border-r-0 dark:border-none px-7 py-3"><Image src={greenEllipse} alt="" width={17} height={17} className="mx-auto" /></td>
+                            <td className="border-2 border-custombg-customLightBg border-x-0 dark:border-none px-7 py-3">Minting</td>
+                            <td className="border-2 border-custombg-customLightBg border-l-0 dark:border-none px-7 py-3">No mint function found</td>
                         </tr>
-                        <tr className="dark:bg-[#242A32] dark:border-b-8 border-2 border-[#E8ECEF] dark:border-none dark:border-[#20262D] rounded-lg mb-3">
-                            <td className="border-2 border-[#E8ECEF] border-r-0 dark:border-none px-7 py-3"><Image src={greenEllipse} alt="" width={17} height={17} className="mx-auto" /></td>
-                            <td className="border-2 border-[#E8ECEF] border-x-0 dark:border-none px-7 py-3">Honeypot</td>
-                            <td className="border-2 border-[#E8ECEF] border-l-0 dark:border-none px-7 py-3">Liquidity has not been added</td>
+                        <tr className="dark:bg-[#242A32] dark:border-b-8 border-2 border-custombg-customLightBg dark:border-none dark:border-[#20262D] rounded-lg mb-3">
+                            <td className="border-2 border-custombg-customLightBg border-r-0 dark:border-none px-7 py-3"><Image src={greenEllipse} alt="" width={17} height={17} className="mx-auto" /></td>
+                            <td className="border-2 border-custombg-customLightBg border-x-0 dark:border-none px-7 py-3">Honeypot</td>
+                            <td className="border-2 border-custombg-customLightBg border-l-0 dark:border-none px-7 py-3">Liquidity has not been added</td>
                         </tr>
-                        <tr className="dark:bg-[#242A32] dark:border-b-8 border-2 border-[#E8ECEF] dark:border-none dark:border-[#20262D] rounded-lg mb-3">
-                            <td className="border-2 border-[#E8ECEF] border-r-0 dark:border-none px-7 py-3"><Image src={greenEllipse} alt="" width={17} height={17} className="mx-auto" /></td>
-                            <td className="border-2 border-[#E8ECEF] border-x-0 dark:border-none px-7 py-3">Modify Fees Buy</td>
-                            <td className="border-2 border-[#E8ECEF] border-l-0 dark:border-none px-7 py-3">The Owner can't set buy fees</td>
+                        <tr className="dark:bg-[#242A32] dark:border-b-8 border-2 border-custombg-customLightBg dark:border-none dark:border-[#20262D] rounded-lg mb-3">
+                            <td className="border-2 border-custombg-customLightBg border-r-0 dark:border-none px-7 py-3"><Image src={greenEllipse} alt="" width={17} height={17} className="mx-auto" /></td>
+                            <td className="border-2 border-custombg-customLightBg border-x-0 dark:border-none px-7 py-3">Modify Fees Buy</td>
+                            <td className="border-2 border-custombg-customLightBg border-l-0 dark:border-none px-7 py-3">The Owner can't set buy fees</td>
                         </tr>
-                        <tr className="dark:bg-[#242A32] dark:border-b-8 border-2 border-[#E8ECEF] dark:border-none dark:border-[#20262D] rounded-lg mb-3">
-                            <td className="border-2 border-[#E8ECEF] border-r-0 dark:border-none px-7 py-3"><Image src={greenEllipse} alt="" width={17} height={17} className="mx-auto" /></td>
-                            <td className="border-2 border-[#E8ECEF] border-x-0 dark:border-none px-7 py-3">Proxy</td>
-                            <td className="border-2 border-[#E8ECEF] border-l-0 dark:border-none px-7 py-3">Proxy Contract Not Detected</td>
+                        <tr className="dark:bg-[#242A32] dark:border-b-8 border-2 border-custombg-customLightBg dark:border-none dark:border-[#20262D] rounded-lg mb-3">
+                            <td className="border-2 border-custombg-customLightBg border-r-0 dark:border-none px-7 py-3"><Image src={greenEllipse} alt="" width={17} height={17} className="mx-auto" /></td>
+                            <td className="border-2 border-custombg-customLightBg border-x-0 dark:border-none px-7 py-3">Proxy</td>
+                            <td className="border-2 border-custombg-customLightBg border-l-0 dark:border-none px-7 py-3">Proxy Contract Not Detected</td>
                         </tr>
-                        <tr className="dark:bg-[#242A32] dark:border-b-8 border-2 border-[#E8ECEF] dark:border-none dark:border-[#20262D] rounded-lg mb-3">
-                            <td className="border-2 border-[#E8ECEF] border-r-0 dark:border-none px-7 py-3"><Image src={greenEllipse} alt="" width={17} height={17} className="mx-auto" /></td>
-                            <td className="border-2 border-[#E8ECEF] border-x-0 dark:border-none px-7 py-3">Anti Whale</td>
-                            <td className="border-2 border-[#E8ECEF] border-l-0 dark:border-none px-7 py-3">Not Detected</td>
+                        <tr className="dark:bg-[#242A32] dark:border-b-8 border-2 border-custombg-customLightBg dark:border-none dark:border-[#20262D] rounded-lg mb-3">
+                            <td className="border-2 border-custombg-customLightBg border-r-0 dark:border-none px-7 py-3"><Image src={greenEllipse} alt="" width={17} height={17} className="mx-auto" /></td>
+                            <td className="border-2 border-custombg-customLightBg border-x-0 dark:border-none px-7 py-3">Anti Whale</td>
+                            <td className="border-2 border-custombg-customLightBg border-l-0 dark:border-none px-7 py-3">Not Detected</td>
                         </tr>
-                        <tr className="dark:bg-[#242A32] dark:border-b-8 border-2 border-[#E8ECEF] dark:border-none dark:border-[#20262D] rounded-lg mb-3">
-                            <td className="border-2 border-[#E8ECEF] border-r-0 dark:border-none px-7 py-3"><Image src={greenEllipse} alt="" width={17} height={17} className="mx-auto" /></td>
-                            <td className="border-2 border-[#E8ECEF] border-x-0 dark:border-none px-7 py-3">Trading Couldown</td>
-                            <td className="border-2 border-[#E8ECEF] border-l-0 dark:border-none px-7 py-3">The owner can not set time selling interval</td>
+                        <tr className="dark:bg-[#242A32] dark:border-b-8 border-2 border-custombg-customLightBg dark:border-none dark:border-[#20262D] rounded-lg mb-3">
+                            <td className="border-2 border-custombg-customLightBg border-r-0 dark:border-none px-7 py-3"><Image src={greenEllipse} alt="" width={17} height={17} className="mx-auto" /></td>
+                            <td className="border-2 border-custombg-customLightBg border-x-0 dark:border-none px-7 py-3">Trading Couldown</td>
+                            <td className="border-2 border-custombg-customLightBg border-l-0 dark:border-none px-7 py-3">The owner can not set time selling interval</td>
                         </tr>
-                        <tr className="dark:bg-[#242A32] dark:border-b-8 border-2 border-[#E8ECEF] dark:border-none dark:border-[#20262D] rounded-lg mb-3">
-                            <td className="border-2 border-[#E8ECEF] border-r-0 dark:border-none px-7 py-3"><Image src={greenEllipse} alt="" width={17} height={17} className="mx-auto" /></td>
-                            <td className="border-2 border-[#E8ECEF] border-x-0 dark:border-none px-7 py-3">Owner Change Balance</td>
-                            <td className="border-2 border-[#E8ECEF] border-l-0 dark:border-none px-7 py-3">The owner can not change balance address</td>
+                        <tr className="dark:bg-[#242A32] dark:border-b-8 border-2 border-custombg-customLightBg dark:border-none dark:border-[#20262D] rounded-lg mb-3">
+                            <td className="border-2 border-custombg-customLightBg border-r-0 dark:border-none px-7 py-3"><Image src={greenEllipse} alt="" width={17} height={17} className="mx-auto" /></td>
+                            <td className="border-2 border-custombg-customLightBg border-x-0 dark:border-none px-7 py-3">Owner Change Balance</td>
+                            <td className="border-2 border-custombg-customLightBg border-l-0 dark:border-none px-7 py-3">The owner can not change balance address</td>
                         </tr>
-                        <tr className="dark:bg-[#242A32] dark:border-b-8 border-2 border-[#E8ECEF] dark:border-none dark:border-[#20262D] rounded-lg mb-3">
-                            <td className="border-2 border-[#E8ECEF] border-r-0 dark:border-none px-7 py-3"><Image src={greenEllipse} alt="" width={17} height={17} className="mx-auto" /></td>
-                            <td className="border-2 border-[#E8ECEF] border-x-0 dark:border-none px-7 py-3">Cannot Sell All</td>
-                            <td className="border-2 border-[#E8ECEF] border-l-0 dark:border-none px-7 py-3">Liquidity has not been added</td>
+                        <tr className="dark:bg-[#242A32] dark:border-b-8 border-2 border-custombg-customLightBg dark:border-none dark:border-[#20262D] rounded-lg mb-3">
+                            <td className="border-2 border-custombg-customLightBg border-r-0 dark:border-none px-7 py-3"><Image src={greenEllipse} alt="" width={17} height={17} className="mx-auto" /></td>
+                            <td className="border-2 border-custombg-customLightBg border-x-0 dark:border-none px-7 py-3">Cannot Sell All</td>
+                            <td className="border-2 border-custombg-customLightBg border-l-0 dark:border-none px-7 py-3">Liquidity has not been added</td>
                         </tr>
-                        <tr className="dark:bg-[#242A32] dark:border-b-8 border-2 border-[#E8ECEF] dark:border-none dark:border-[#20262D] rounded-lg mb-3">
-                            <td className="border-2 border-[#E8ECEF] border-r-0 dark:border-none px-7 py-3"><Image src={greenEllipse} alt="" width={17} height={17} className="mx-auto" /></td>
-                            <td className="border-2 border-[#E8ECEF] border-x-0 dark:border-none px-7 py-3">Self Destruct</td>
-                            <td className="border-2 border-[#E8ECEF] border-l-0 dark:border-none px-7 py-3">Not Detected</td>
+                        <tr className="dark:bg-[#242A32] dark:border-b-8 border-2 border-custombg-customLightBg dark:border-none dark:border-[#20262D] rounded-lg mb-3">
+                            <td className="border-2 border-custombg-customLightBg border-r-0 dark:border-none px-7 py-3"><Image src={greenEllipse} alt="" width={17} height={17} className="mx-auto" /></td>
+                            <td className="border-2 border-custombg-customLightBg border-x-0 dark:border-none px-7 py-3">Self Destruct</td>
+                            <td className="border-2 border-custombg-customLightBg border-l-0 dark:border-none px-7 py-3">Not Detected</td>
                         </tr>
-                        <tr className="dark:bg-[#242A32] dark:border-b-8 border-2 border-[#E8ECEF] dark:border-none dark:border-[#20262D] rounded-lg mb-3">
-                            <td className="border-2 border-[#E8ECEF] border-r-0 dark:border-none px-7 py-3"><Image src={greenEllipse} alt="" width={17} height={17} className="mx-auto" /></td>
-                            <td className="border-2 border-[#E8ECEF] border-x-0 dark:border-none px-7 py-3">Anti Bot</td>
-                            <td className="border-2 border-[#E8ECEF] border-l-0 dark:border-none px-7 py-3">Not Detected</td>
+                        <tr className="dark:bg-[#242A32] dark:border-b-8 border-2 border-custombg-customLightBg dark:border-none dark:border-[#20262D] rounded-lg mb-3">
+                            <td className="border-2 border-custombg-customLightBg border-r-0 dark:border-none px-7 py-3"><Image src={greenEllipse} alt="" width={17} height={17} className="mx-auto" /></td>
+                            <td className="border-2 border-custombg-customLightBg border-x-0 dark:border-none px-7 py-3">Anti Bot</td>
+                            <td className="border-2 border-custombg-customLightBg border-l-0 dark:border-none px-7 py-3">Not Detected</td>
                         </tr>
-                        <tr className="dark:bg-[#242A32] dark:border-b-8 border-2 border-[#E8ECEF] dark:border-none dark:border-[#20262D] rounded-lg mb-3">
-                            <td className="border-2 border-[#E8ECEF] border-r-0 dark:border-none px-7 py-3"><Image src={redEllipse} alt="" width={17} height={17} className="mx-auto" /></td>
-                            <td className="border-2 border-[#E8ECEF] border-x-0 dark:border-none px-7 py-3">Blacklist</td>
-                            <td className="border-2 border-[#E8ECEF] border-l-0 dark:border-none px-7 py-3">The owner can not set blacklist</td>
+                        <tr className="dark:bg-[#242A32] dark:border-b-8 border-2 border-custombg-customLightBg dark:border-none dark:border-[#20262D] rounded-lg mb-3">
+                            <td className="border-2 border-custombg-customLightBg border-r-0 dark:border-none px-7 py-3"><Image src={redEllipse} alt="" width={17} height={17} className="mx-auto" /></td>
+                            <td className="border-2 border-custombg-customLightBg border-x-0 dark:border-none px-7 py-3">Blacklist</td>
+                            <td className="border-2 border-custombg-customLightBg border-l-0 dark:border-none px-7 py-3">The owner can not set blacklist</td>
                         </tr>
-                        <tr className="dark:bg-[#242A32] dark:border-b-8 border-2 border-[#E8ECEF] dark:border-none dark:border-[#20262D] rounded-lg mb-3">
-                            <td className="border-2 border-[#E8ECEF] border-r-0 dark:border-none px-7 py-3"><Image src={greenEllipse} alt="" width={17} height={17} className="mx-auto" /></td>
-                            <td className="border-2 border-[#E8ECEF] border-x-0 dark:border-none px-7 py-3">Can Take Back Ownership</td>
-                            <td className="border-2 border-[#E8ECEF] border-l-0 dark:border-none px-7 py-3">The owner can not take back ownership</td>
+                        <tr className="dark:bg-[#242A32] dark:border-b-8 border-2 border-custombg-customLightBg dark:border-none dark:border-[#20262D] rounded-lg mb-3">
+                            <td className="border-2 border-custombg-customLightBg border-r-0 dark:border-none px-7 py-3"><Image src={greenEllipse} alt="" width={17} height={17} className="mx-auto" /></td>
+                            <td className="border-2 border-custombg-customLightBg border-x-0 dark:border-none px-7 py-3">Can Take Back Ownership</td>
+                            <td className="border-2 border-custombg-customLightBg border-l-0 dark:border-none px-7 py-3">The owner can not take back ownership</td>
                         </tr>
                     </tbody>
                 </table>
