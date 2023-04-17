@@ -62,13 +62,6 @@ const VulnerabilityScan = dynamic(
   }
 );
 
-const AuditDetail = dynamic(
-  () => import("@/components/AuditDetail").then((mod) => mod.AuditDetail),
-  {
-    ssr: false,
-  }
-);
-
 export default function Home() {
   return (
     <>
@@ -125,13 +118,12 @@ export default function Home() {
         </title>
       </Head>
       <Header />
-      {/* <AuditDetail /> */}
       <Collaborator />
-      {/* <SafuAiHero />
+      <SafuAiHero />
       <HowWork />
       <AuditInfo />
       <ServiceProducts />
-      <VulnerabilityScan /> */}
+      <VulnerabilityScan />
       {/* <OurSquad /> */}
       <Footer />
     </>
