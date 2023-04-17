@@ -46,7 +46,12 @@ module.exports = {
       customDarkBlue: "#0D3B6E",
       customPurple: "#D171FF",
       customDark: "#1B1F28",
+      customDark2: "#161C23",
       customGrey: "#363D4C",
+      customGrey2: "#20262D",
+      customWhite: "#E8ECEF",
+      customRed: "#FF0202",
+      customBlack: "#0D1116",
       gray: {
         100: "#EEF1F6",
         200: "#f1f1f1",
@@ -213,8 +218,10 @@ module.exports = {
       14: "3.5rem",
       16: "4rem",
       20: "5rem",
+      22: "5.5rem",
       24: "6rem",
       28: "7rem",
+      30: "7.5rem",
       32: "8rem",
       36: "9rem",
       40: "10rem",
@@ -883,6 +890,7 @@ module.exports = {
       screen: "100vw",
       min: "min-content",
       max: "max-content",
+      100: "25rem"
     }),
     zIndex: {
       auto: "auto",

@@ -4,7 +4,7 @@ import Image from 'next/image'
 export const auditInformation = () => {
     return (
         <>
-            <div className="bg-[#E8ECEF] dark:bg-[#0D1116] text-black dark:text-white transition-all duration-500">
+            <div className="bg-[#E8ECEF] dark:bg-customBlack text-black dark:text-white transition-all duration-500">
                 {/* DIV 1 */}
                 <div className='max-w-3xl font-[Poppins] font-normal'>
                     <h1 className='text-lg mb-3'>TOONSBOX TOKEN</h1>

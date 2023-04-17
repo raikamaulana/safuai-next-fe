@@ -3,7 +3,7 @@ import React from 'react'
 export const ToonsBox = () => {
   return (
     <>
-      <section className="dark:bg-[#0D1116] bg-[#E8ECEF] duration-500 transition-all lg:min-w-[700px]">
+      <section className="dark:bg-customBlack bg-customWhite duration-500 transition-all lg:min-w-[700px]">
         <div className='dark:text-white'> 
           <div className='lg:flex md:flex mb-6 lg:relative md:relative block'>
             <p className='text-2xl font-semibold lg:mb-0 md:mb-0 mb-4'>TOONSBOX TOKEN</p>
@@ -20,14 +20,14 @@ export const ToonsBox = () => {
             </button>
           </div>
           <div className='dark:bg-customDark bg-white w-full h-[650px] rounded-lg lg:px-11 md:px-11 py-14'>
-              <div className='w-52 h-52 rounded-full bg-[#D9D9D9] flex items-center relative mb-10 lg:mx-0 md:mx-0 mx-auto'>
+              <div className='w-52 h-52 rounded-full bg-customWhite flex items-center relative mb-10 lg:mx-0 md:mx-0 mx-auto'>
                 <svg width="130" height="130" className='mx-auto hidden dark:block '>
                   <ellipse cx="65" cy="65" rx="65" ry="65" fill="#20262D" className=''/>
                 </svg>
                 <svg width="130" height="130" className='mx-auto dark:hidden '>
                   <ellipse cx="65" cy="65" rx="65" ry="65" fill="white" className=''/>
                 </svg>
-                  <p className=' absolute left-[60px]'>AIRobotCEO</p>
+                  <p className=' absolute left-14'>AIRobotCEO</p>
               </div>
               <ul className='ml-7'>
                 <li className='flex mb-7 '>
