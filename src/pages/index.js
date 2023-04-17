@@ -52,7 +52,6 @@ const Footer = dynamic(
   }
 );
 
-
 export default function Home() {
   return (
     <>
@@ -109,11 +108,13 @@ export default function Home() {
         </title>
       </Head>
       <Header />
-      <SafuAiHero />
       <Collaborator />
+      <SafuAiHero />
+      <HowWork />
       <AuditInfo />
       <HowWork />
       <ServiceProducts />
+      {/* <OurSquad /> */}
       <Footer />
     </>
   );

@@ -459,9 +459,9 @@ export function Header() {
 
   return (
     <>
-      <Popover className="fixed z-20 w-full bg-white backdrop-blur dark:bg-[#26293A]">
+      <Popover className="fixed z-20 w-full bg-white backdrop-blur dark:bg-[#26293A] ">
         <div className="px-4 sm:px-8 md:px-12 lg:px-28 py-2.5 md:py-2.5 lg:py-2 xl:py-2 transition-all duration-500">
-          <div className="flex items-center justify-between md:justify-between md:space-x-4">
+          <div className="flex items-center justify-between md:justify-between md:space-x-4 lg:mx-auto">
             <div className="flex items-center justify-start gap-2">
               <Link
                 href="/"
