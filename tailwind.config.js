@@ -45,7 +45,9 @@ module.exports = {
       customFullBlack: "#000000",
       customBlue: "#165BB8",
       customDarkBlue: "#0D3B6E",
+      customGraySemiPurple: "#5B4C7C",
       customPurple: "#D171FF",
+      customHoverPurple: "#bf61eb",
       customDark: "#1B1F28",
       customDark2: "#161C23",
       customGrey: "#363D4C",
@@ -58,7 +60,7 @@ module.exports = {
       customDarkComp: "#20262D",
       customDarkTr: "#242A32",
       customDarkBorder: "#5B4C7C",
-      customDarkBox: "#2C3239",
+      customSecondGray: "#2C3239",
       gray: {
         100: "#EEF1F6",
         200: "#f1f1f1",
