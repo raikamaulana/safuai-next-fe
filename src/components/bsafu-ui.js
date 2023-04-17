@@ -557,37 +557,24 @@ export function Header() {
               </Menu>
               {colorTheme === "light" ? (
                 <div className="p-2 text-black bg-white rounded-lg dark:bg-[#26293A] dark:text-[#D171FF] duration-500 ring-2 ring-[#D171FF]">
-                  <svg
+                  <Image
                     onClick={() => setTheme("light")}
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="w-6 h-6"
-                    fill="none"
-                    viewBox="0 0 33 33"
-                    stroke="currentColor"
-                  >
-                    <path
-                      d="M16.5 25.5C14.1131 25.5 11.8239 24.5518 10.136 22.864C8.44821 21.1761 7.5 18.8869 7.5 16.5C7.5 14.1131 8.44821 11.8239 10.136 10.136C11.8239 8.44821 14.1131 7.5 16.5 7.5C18.8869 7.5 21.1761 8.44821 22.864 10.136C24.5518 11.8239 25.5 14.1131 25.5 16.5C25.5 18.8869 24.5518 21.1761 22.864 22.864C21.1761 24.5518 18.8869 25.5 16.5 25.5ZM16.5 22.5C18.0913 22.5 19.6174 21.8679 20.7426 20.7426C21.8679 19.6174 22.5 18.0913 22.5 16.5C22.5 14.9087 21.8679 13.3826 20.7426 12.2574C19.6174 11.1321 18.0913 10.5 16.5 10.5C14.9087 10.5 13.3826 11.1321 12.2574 12.2574C11.1321 13.3826 10.5 14.9087 10.5 16.5C10.5 18.0913 11.1321 19.6174 12.2574 20.7426C13.3826 21.8679 14.9087 22.5 16.5 22.5ZM15 0H18V4.5H15V0ZM15 28.5H18V33H15V28.5ZM3.7725 5.8935L5.8935 3.7725L9.075 6.954L6.954 9.075L3.7725 5.8935ZM23.925 26.046L26.046 23.925L29.2275 27.1065L27.1065 29.2275L23.925 26.046ZM27.1065 3.771L29.2275 5.8935L26.046 9.075L23.925 6.954L27.1065 3.7725V3.771ZM6.954 23.925L9.075 26.046L5.8935 29.2275L3.7725 27.1065L6.954 23.925ZM33 15V18H28.5V15H33ZM4.5 15V18H0V15H4.5Z"
-                      fill="#D171FF"
-                    />
-                  </svg>
+                    src="/images/lightmodelogodesktop.svg"
+                    width="24"
+                    height="24"
+                    alt="Light Mode Logo"
+                    className="fill-current"
+                  />
                 </div>
               ) : (
                 <div className="p-2 text-[#D171FF] ring-2 ring-[#D171FF] bg-white duration-500 rounded-lg">
-                  <svg
+                  <Image
                     onClick={() => setTheme("dark")}
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="w-6 h-6"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
-                    />
-                  </svg>
+                    src="/images/darkmodelogodesktop.svg"
+                    width="24"
+                    height="24"
+                    alt="Dark Mode Logo"
+                  />
                 </div>
               )}
 

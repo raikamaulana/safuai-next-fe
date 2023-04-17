@@ -70,7 +70,7 @@ export default function auditList() {
               <option value="date_release">72</option>
             </select>
           </div>
-          <div className="grid grid-cols-1 md:grid md:grid-cols-2 lg:grid lg:grid-cols-3 xl:grid xl:grid-cols-3 md:gap-x-16 lg:gap-x-18.5 xl:gap-x-24 gap-y-5 md:gap-y-5 lg:gap-y-5 xl:gap-y-10 mb-4 md:mb-4 lg:mb-4 xl:mb-4">
+          <div className="grid grid-cols-1 md:grid md:grid-cols-2 lg:grid lg:grid-cols-3 xl:grid xl:grid-cols-3 md:gap-x-16 lg:gap-x-5 xl:gap-x-0 gap-y-5 md:gap-y-5 lg:gap-y-5 xl:gap-y-10 mb-4 md:mb-4 lg:mb-4 xl:mb-4">
             <div className="bg-white dark:bg-customDarkGrey rounded-xl h-64 w-64 px-4 py-6 ring-2 ring-purple-850">
               <div className="inline-block">
                 <Image
