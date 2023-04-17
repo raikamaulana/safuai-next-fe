@@ -108,13 +108,11 @@ export default function Home() {
         </title>
       </Head>
       <Header />
-      <Collaborator />
       <SafuAiHero />
-      <HowWork />
+      <Collaborator />
       <AuditInfo />
       <HowWork />
       <ServiceProducts />
-      {/* <OurSquad /> */}
       <Footer />
     </>
   );

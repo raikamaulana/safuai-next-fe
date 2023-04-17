@@ -4,7 +4,7 @@ export const MarketAnalytic = () => {
       <div className="dark:bg-customBlack dark:text-white bg-customWhite min-h-screen overflow-hidden">
         <div className="flex items-center justify-center">
           <div className="dark:bg-customDarkComp bg-white max-w-4xl p-5 rounded-sm my-">
-            <div className="dark:bg-customDarkBox bg-white w-full border p-2 border-customWhite rounded-md">
+            <div className="dark:bg-customSecondGray bg-white w-full border p-2 border-customWhite rounded-md">
               <p className="font-[Poppins]  ml-5 mt-3">Market Information</p>
               <button className="bg-customPurple text-white py-2 px-6 font-[Poppins] text-center rounded-lg ml-5 mt-2 mb-4">
                 Swap GPT-4

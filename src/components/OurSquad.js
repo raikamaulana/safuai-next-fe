@@ -26,7 +26,7 @@ export const OurSquad = () => {
                     <h2 className="text-center dark:text-white justify-center items-center text-xl">
                       Cyriil Quinzi
                     </h2>
-                    <p className="text-center text-gray-650 text-gra font-bold">
+                    <p className="text-center text-gray-650 font-bold">
                       Speaker, Treasury
                     </p>
                   </div>
