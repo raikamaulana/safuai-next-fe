@@ -2,8 +2,8 @@ import React from "react";
 
 export const HolderTaken = () => {
   return (
-    <div className="dark:bg-[#1B1F28] bg-[#E8ECEF] flex transition-all duration-500 overflow-hidden">
-      <div className="dark:bg-[#2C3239] bg-white pt-3 pb-20 w-[800px]">
+    <div className="dark:bg-customDark bg-customWhite flex transition-all duration-500 overflow-hidden">
+      <div className="dark:bg-customDarkBox bg-white pt-3 pb-20 w-200">
         <div className="pb-10 pt-2 pl-7 text-2xl dark:text-white">
           Search :
           <input

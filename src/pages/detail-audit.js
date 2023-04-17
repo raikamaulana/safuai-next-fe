@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import dynamic from "next/dynamic";
 import { Tab } from "@headlessui/react";
-import Image from 'next/image';
+import Image from "next/image";
 
 const Header = dynamic(
   () => import("@/components/bsafu-ui").then((mod) => mod.Header),
@@ -93,7 +93,6 @@ const VulnerabilityScan = dynamic(
 export default function DetailAudit() {
   return (
     <section className="bg-customWhite dark:bg-customBlack duration-500 transition-all">
-      <Header />
       <div className="flex lg:pl-28 pl-2 pb-9 pt-24">
         <Tab.Group vertical>
           <Tab.List className="flex flex-col bg-white dark:text-white dark:bg-customDark2 text-left w-80  mr-5 px-3 pt-4 min-h-max">
@@ -108,7 +107,7 @@ export default function DetailAudit() {
                 height="20"
                 className="absolute top-3 left-3"
                 src="/images/Search-Icon.svg"
-                />
+              />
             </div>
             <Tab as={Fragment}>
               {({ selected }) => (

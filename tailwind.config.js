@@ -68,6 +68,7 @@ module.exports = {
         450: "#d9d9d9",
         500: "#a0aec0",
         600: "#718096",
+        650: "#797b88",
         700: "#4a5568",
         750: "#37384d",
         800: "#2d3748",
@@ -262,6 +263,7 @@ module.exports = {
       84: "21rem",
       88: "22rem",
       96: "24rem",
+      200: "50rem",
     },
     animation: {
       none: "none",
@@ -922,7 +924,7 @@ module.exports = {
       screen: "100vw",
       min: "min-content",
       max: "max-content",
-      100: "25rem"
+      100: "25rem",
     }),
     zIndex: {
       auto: "auto",
