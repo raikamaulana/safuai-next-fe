@@ -34,7 +34,7 @@ export const ServiceProducts = () => {
                         <p className="mt-3 ml-8">Anti-money laundering and KYC analysis sor an address</p>
                         <button className="bg-[#D171FF] font-semibold hover:bg-[#bf61eb] text-white mt-6 rounded-lg py-2 mb-10 px-3 ml-8">Launch</button>
                         </div>
-                        <div className="shrink-0 w-5/12 flex items-center justify-center sm:w-auto sm:flex-none">
+                        <div className="shrink-0 w-5/12 flex items-center justify-center sm:flex-none">
                             <Image src='/images/suspect-logo.png' className='mt-14 ml-6 sm:ml-12 mr-6 mb-5' alt="" width={130} height={136} />
                         </div>
                     </div>

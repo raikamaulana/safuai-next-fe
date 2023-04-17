@@ -122,6 +122,7 @@ export default function Home() {
       <SafuAiHero />
       <HowWork />
       <AuditInfo />
+      <HowWork />
       <ServiceProducts />
       <VulnerabilityScan />
       {/* <OurSquad /> */}

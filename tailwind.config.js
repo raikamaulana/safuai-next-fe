@@ -51,6 +51,13 @@ module.exports = {
       customWhite: "#E8ECEF",
       customDarkGrey: "#26293a",
       customLightGreen: "#38f982",
+      customLightBg: "#E8ECEF",
+      customDarkComp: "#20262D",
+      customDarkTr: "#242A32",
+      customDarkBorder: "#5B4C7C",
+      customDarkBg: "#0D1116",
+      customDarkBox: "#2C3239",
+
       gray: {
         100: "#EEF1F6",
         200: "#f1f1f1",
