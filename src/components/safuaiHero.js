@@ -3,7 +3,7 @@ import Image from "next/image"
 export const safuaiHero = () => {
     return (
         <>
-            <div className="pt-32 lg:pt-40 pb-28 px-4 sm:px-8 md:px-12 lg:px-28 bg-customModeLight dark:bg-customDark text-black dark:text-white transition-all duration-500">
+            <div className="pt-32 lg:pt-40 pb-28 px-4 sm:px-8 md:px-12 lg:px-28 bg-customWhite dark:bg-customDark text-black dark:text-white transition-all duration-500">
                 <div className="grid lg:grid-cols-2 grid-cols-1 w-full">
                     <div className="w-full">
                         <p className="font-[Poppins] text-base font-medium leading-6">Provable Trust <span className="text-customPurple">For All.</span></p>

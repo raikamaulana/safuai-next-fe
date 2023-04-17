@@ -559,7 +559,7 @@ export function Header() {
                 <div className="p-2 text-black bg-white rounded-lg dark:bg-[#26293A] dark:text-[#D171FF] duration-500 ring-2 ring-[#D171FF]">
                   <Image
                     onClick={() => setTheme("light")}
-                    src="/images/lightmodelogodesktop.svg"
+                    src="/images/lightmodelogomobile.svg"
                     width="24"
                     height="24"
                     alt="Light Mode Logo"
