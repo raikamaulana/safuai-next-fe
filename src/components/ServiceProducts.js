@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export const ServiceProducts = () => {
     return (
-        <div className="bg-customLight dark:bg-customDark px-4 sm:px-8 md:px-12 lg:px-28 pb-36 min-h-screen overflow-hidden transition-all duration-500">
+        <div className="bg-customWhite dark:bg-customDark px-4 sm:px-8 md:px-12 lg:px-28 pb-36 min-h-screen overflow-hidden transition-all duration-500">
             <p className="text-2xl text-center text-customBlack dark:text-white my-16 font-semibold">Products</p>
             <div className="lg:flex lg:justify-center">
                 <div className='lg:mr-4 mb-11 lg:mb-0'>

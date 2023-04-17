@@ -3,7 +3,7 @@ import React from 'react'
 export const privacyPolicy = () => {
     return (
         <>
-            <div className="pt-44 pb-28 px-4 sm:px-8 md:px-12 lg:px-28 bg-customLight dark:bg-customDark text-black dark:text-white transition-all duration-500 font-[Inter]">
+            <div className="pt-44 pb-28 px-4 sm:px-8 md:px-12 lg:px-28 bg-customWhite dark:bg-customDark text-black dark:text-white transition-all duration-500 font-[Inter]">
                 <h1 className='font-semibold text-2xl'>Privacy & Policy</h1>
                 <p className='dark:font-light font-normal text-base text-justify mt-4 sm:pr-48 md:pr-56 lg:pr-72 xl:pr-96'>We collect and use personal information from our site's users to understand usage and gather traffic statistics. By using the site, you agree to this policy.
                 </p>

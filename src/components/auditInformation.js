@@ -4,7 +4,7 @@ import Image from 'next/image'
 export const auditInformation = () => {
     return (
         <>
-            <div className="bg-customLight dark:bg-customSecondDark text-black dark:text-white transition-all duration-500">
+            <div className="bg-customWhite dark:bg-customBlack text-black dark:text-white transition-all duration-500">
                 {/* DIV 1 */}
                 <div className='max-w-3xl font-[Poppins] font-normal'>
                     <h1 className='text-lg mb-3'>TOONSBOX TOKEN</h1>
@@ -44,7 +44,7 @@ export const auditInformation = () => {
                     </div>
                 </div>
                 {/* DIV 3 */}
-                <div className='max-w-3xl mt-8 px-6 py-7 bg-white dark:bg-customBlack'>
+                <div className='max-w-3xl mt-8 px-6 py-7 bg-white dark:bg-customDarkComp'>
                     <div className=''>
                         {/* DIV 3 #1 */}
                         <div className='max-w-lg h-10 flex font-[Poppins] font-medium text-lg text-white'>
@@ -89,7 +89,7 @@ export const auditInformation = () => {
                                 <h1 className='font-[Poppins] font-semibold text-lg hidden md:block'>Issue Information</h1>
                                 <h2 className='font-[Poppins] font-semibold text-lg hidden md:block'>Issue Tags</h2>
                             </div>
-                            <div className='font-[Poppins] font-normal text-sm md:text-base bg-white border border-customLight dark:border-none dark:bg-customSecondGray rounded-md mt-2 py-3 px-4 flex flex-col justify-between w-full md:flex-row'>
+                            <div className='font-[Poppins] font-normal text-sm md:text-base bg-white border border-customWhite dark:border-none dark:bg-customSecondGray rounded-md mt-2 py-3 px-4 flex flex-col justify-between w-full md:flex-row'>
                                 <div className='w-full md:w-full'>
                                     <h1 className='font-[Poppins] mb-3 md:mb-0 font-medium text-lg block md:hidden'>Issue Information</h1>
                                     <div className='flex items-start justify-between w-full'>

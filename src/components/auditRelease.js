@@ -3,11 +3,11 @@ import Image from "next/image"
 export const auditRelease = () => {
     return (
         <>
-            <div className="pt-44 pb-28 px-4 sm:px-8 md:px-12 lg:px-28 bg-customLight dark:bg-customDark text-black dark:text-white transition-all duration-500">
+            <div className="pt-44 pb-28 px-4 sm:px-8 md:px-12 lg:px-28 bg-customWhite dark:bg-customDark text-black dark:text-white transition-all duration-500">
                 <div className="w-full">
                     <div className="flex flex-col gap-4 lg:flex-row">
                         <div className="min-w-max flex gap-4 items-center">
-                            <div className="w-20 rounded-md bg-customDarkGray border border-gray-700 px-5 py-1">
+                            <div className="w-20 rounded-md bg-customDarkGrey border border-gray-700 px-5 py-1">
                                     <p className="font-[Inter] font-light text-base text-white">Audit</p>
                             </div>
                             <span className="w-8 h-1 bg-black dark:bg-white" />
@@ -43,7 +43,7 @@ export const auditRelease = () => {
                         <Image src="/images/auditrelease/blocksafu.svg" width="138" height="40" />
                     </div>
                 </div>
-                <div className="w-full mt-5 rounded-md dark:bg-customDarkGray bg-white dark:border-none">
+                <div className="w-full mt-5 rounded-md dark:bg-customDarkGrey bg-white dark:border-none">
                     <div className="py-6 px-5 text-black dark:text-white">
                         <h2 className="font-[Inter] font-semibold text-xl">About Project</h2>
                         <p className="font-[Poppins] font-normal dark:font-light text-base leading-6 mt-3">It's not an ordinary meme token. Become a part of a powerful ecosystem and win more FROG CEO! Ecosystem Products: 🐸Apps, 🐸Game, 🐸Wallet, 🐸Swap, 🐸Chain, 🐸 AI, 🐸NFT, 🐸Browser, 🐸Pay, 🐸Clothing With the powerful Frog CEO, 6% of every transaction is automatically given to the owners in real time.</p>
@@ -73,7 +73,7 @@ export const auditRelease = () => {
                     </div>
                 </div>
                 <div className="grid lg:grid-cols-2 grid-cols-1 mt-6 w-full">
-                    <div className="w-full px-5 py-6 rounded-md dark:border-none bg-white dark:bg-customDarkGray flex justify-center gap-5">
+                    <div className="w-full px-5 py-6 rounded-md dark:border-none bg-white dark:bg-customDarkGrey flex justify-center gap-5">
                         <div className="w-full mt-2">
                             <p className="text-center font-[Inter] font-semibold text-lg leading-4">Content Score</p>
                             <Image src="/images/auditrelease/auditmeter.svg" width="100" height="100" className="mx-auto mt-5 sm:mt-4" alt="auditmeter"/>
@@ -107,22 +107,22 @@ export const auditRelease = () => {
                         <div className="w-full mt-2">
                             <p className="font-[Inter] sm:text-center lg:text-left font-semibold text-lg leading-4">Informations</p>
                             <div className="mx-auto grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-3 w-full sm:w-52 lg:w-full mt-4 gap-5">
-                                <button className="w-8 h-8 bg-customLight dark:bg-customDark text-white flex justify-center items-center rounded-full">
+                                <button className="w-8 h-8 bg-customWhite dark:bg-customDark text-white flex justify-center items-center rounded-full">
                                     <Image src="/images/auditrelease/telegram.svg" width="22" height="22" alt="Telegram" aria-hidden="true" />
                                 </button>
-                                <button className="w-8 h-8 bg-customLight dark:bg-customDark flex justify-center items-center rounded-full">
+                                <button className="w-8 h-8 bg-customWhite dark:bg-customDark flex justify-center items-center rounded-full">
                                     <Image src="/images/auditrelease/twitter.svg" width="40" height="40" alt="Twitter" aria-hidden="true" />
                                 </button>
-                                <button className="w-8 h-8 bg-customLight dark:bg-customDark flex justify-center items-center rounded-full">
+                                <button className="w-8 h-8 bg-customWhite dark:bg-customDark flex justify-center items-center rounded-full">
                                     <Image src="/images/auditrelease/medium.svg" width="18" height="18" alt="Medium" aria-hidden="true" />
                                 </button>
-                                <button className="w-8 h-8 bg-customLight dark:bg-customDark flex justify-center items-center rounded-full">
+                                <button className="w-8 h-8 bg-customWhite dark:bg-customDark flex justify-center items-center rounded-full">
                                     <Image src="/images/auditrelease/browser.svg" width="18" height="18" alt="Browser" aria-hidden="true" />
                                 </button>
-                                <button className="w-8 h-8 bg-customLight dark:bg-customDark flex justify-center items-center rounded-full">
+                                <button className="w-8 h-8 bg-customWhite dark:bg-customDark flex justify-center items-center rounded-full">
                                     <Image src="/images/auditrelease/github.svg" width="18" height="18" alt="Github" aria-hidden="true" />
                                 </button>
-                                <button className="w-8 h-8 bg-customLight dark:bg-customDark flex justify-center items-center rounded-full">
+                                <button className="w-8 h-8 bg-customWhite dark:bg-customDark flex justify-center items-center rounded-full">
                                     <Image src="/images/auditrelease/instagram.svg" width="20" height="20" alt="Instagram" aria-hidden="true" />
                                 </button>
                             </div>
@@ -137,7 +137,7 @@ export const auditRelease = () => {
                     <div className="relative w-full font-normal text-lg font-[Inter] overflow-hidden">
                         <input type="checkbox" className="peer absolute top-0 inset-x-0 w-full h-[84px] z-10 opacity-0 cursor-pointer rounded-lg" />
                         {/* Kolom depan */}
-                        <div className="w-full bg-white peer-hover:bg-opacity-50 dark:bg-customBlack dark:peer-hover:bg-customGrey rounded-lg pl-5 py-7 flex items-center justify-between pr-8">
+                        <div className="w-full bg-white peer-hover:bg-opacity-50 dark:bg-customDarkComp dark:peer-hover:bg-customGrey rounded-lg pl-5 py-7 flex items-center justify-between pr-8">
                             <h1 className="text-lg font-normal">SAFU AI Certificate</h1>
                         </div>
                         <div className="absolute right-7 top-8 transition-all duration-500 rotate-0 peer-checked:rotate-180 peer-checked:scale-125 peer-checked:top-7">
@@ -146,8 +146,8 @@ export const auditRelease = () => {
                             </svg>
                         </div>
                         {/* Content */}
-                        <div className="w-full mt-1 bg-white dark:bg-customBlack rounded-lg peer-checked:p-2 lg:peer-checked:p-5 overflow-hidden transition-all duration-500 max-h-0 peer-checked:max-h-[9999px]">
-                            <div className="w-full bg-customLight dark:bg-gray-800 py-1 rounded-lg">
+                        <div className="w-full mt-1 bg-white dark:bg-customDarkComp rounded-lg peer-checked:p-2 lg:peer-checked:p-5 overflow-hidden transition-all duration-500 max-h-0 peer-checked:max-h-[9999px]">
+                            <div className="w-full bg-customWhite dark:bg-gray-800 py-1 rounded-lg">
                                 <div className="w-full px-4 py-6 flex justify-between gap-2">
                                     <div className="w-88 md:w-2/3">
                                         <h2>Audit On SAFU AI</h2>
@@ -168,9 +168,9 @@ export const auditRelease = () => {
                                     </div>
                                 </div>
                                 <div className="relative">
-                                    <span className="absolute -top-3 -left-3 w-6 h-6 rounded-full bg-white dark:bg-customBlack z-[9999] transition-all duration-500"/>
+                                    <span className="absolute -top-3 -left-3 w-6 h-6 rounded-full bg-white dark:bg-customDarkComp z-[9999] transition-all duration-500"/>
                                     <hr className="dark:dashed-line-dark dashed-line"/>
-                                    <span className="absolute -top-3 -right-3 w-6 h-6 rounded-full bg-white dark:bg-customBlack z-[9999] transition-all duration-500" />
+                                    <span className="absolute -top-3 -right-3 w-6 h-6 rounded-full bg-white dark:bg-customDarkComp z-[9999] transition-all duration-500" />
                                 </div>
                                 <div className="w-full px-4 py-6 flex justify-between gap-2">
                                     <div className="w-88 md:w-2/3">
@@ -193,9 +193,9 @@ export const auditRelease = () => {
                                     </div>
                                 </div>
                                 <div className="relative">
-                                    <span className="absolute -top-3 -left-3 w-6 h-6 rounded-full bg-white dark:bg-customBlack z-[9999] transition-all duration-500"/>
+                                    <span className="absolute -top-3 -left-3 w-6 h-6 rounded-full bg-white dark:bg-customDarkComp z-[9999] transition-all duration-500"/>
                                     <hr className="dark:dashed-line-dark dashed-line"/>
-                                    <span className="absolute -top-3 -right-3 w-6 h-6 rounded-full bg-white dark:bg-customBlack z-[9999] transition-all duration-500" />
+                                    <span className="absolute -top-3 -right-3 w-6 h-6 rounded-full bg-white dark:bg-customDarkComp z-[9999] transition-all duration-500" />
                                 </div>
                                 <div className="w-full px-4 py-6 flex justify-between">
                                     <div className="flex items-center">

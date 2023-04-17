@@ -101,7 +101,7 @@ const Auditinfosecond = [
 export function AuditInfo() {
   return (
     <div className="dark:bg-[#1B1F28] bg-[#E8ECEF] min-h-screen overflow-hidden transition-all duration-500">
-      <div className="pb-16">
+      <div className="pt-5">
         <div className="lg:flex flex justify-center">
           <div className="lg:block hidden">
             <Image
