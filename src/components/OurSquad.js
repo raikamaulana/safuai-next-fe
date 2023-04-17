@@ -26,7 +26,7 @@ export const OurSquad = () => {
                     <h2 className="text-center dark:text-white justify-center items-center text-xl">
                       Cyriil Quinzi
                     </h2>
-                    <p className="text-center text-[#797B88] font-bold">
+                    <p className="text-center text-gray-600 font-bold">
                       Speaker, Treasury
                     </p>
                   </div>
@@ -42,7 +42,7 @@ export const OurSquad = () => {
                     <h2 className="text-center dark:text-white justify-center items-center text-xl">
                       Sherrod wood
                     </h2>
-                    <p className="text-center text-[#797B88] font-bold">
+                    <p className="text-center text-gray-600 font-bold">
                       CEO-Founder, Blockchain Expert
                     </p>
                   </div>
@@ -57,7 +57,7 @@ export const OurSquad = () => {
                     <h2 className="text-center dark:text-white justify-center items-center text-xl">
                       Un Ucky
                     </h2>
-                    <p className="text-center text-[#797B88] font-bold">
+                    <p className="text-center text-gray-600 font-bold">
                       Lead Marketing, Blockchain Esxpert
                     </p>
                   </div>
@@ -72,7 +72,7 @@ export const OurSquad = () => {
                     <h2 className="text-center dark:text-white justify-center items-center text-xl">
                       Near
                     </h2>
-                    <p className="text-center text-[#797B88] font-bold">
+                    <p className="text-center text-gray-600 font-bold">
                       Frontend Developer, Blockchain Developer
                     </p>
                   </div>
@@ -87,7 +87,7 @@ export const OurSquad = () => {
                     <h2 className="text-center dark:text-white justify-center items-center text-xl">
                       L
                     </h2>
-                    <p className="text-center text-[#797B88] font-bold">
+                    <p className="text-center text-gray-600 font-bold">
                       UI/UX
                     </p>
                   </div>
@@ -102,7 +102,7 @@ export const OurSquad = () => {
                     <h2 className="text-center dark:text-white justify-center items-center text-xl">
                       Pietro
                     </h2>
-                    <p className="text-center text-[#797B88] font-bold">
+                    <p className="text-center text-gray-600 font-bold">
                       Data Input
                     </p>
                   </div>
@@ -117,7 +117,7 @@ export const OurSquad = () => {
                     <h2 className="text-center dark:text-white justify-center items-center text-xl">
                       Wax Arsatya
                     </h2>
-                    <p className="text-center text-[#797B88] font-bold">
+                    <p className="text-center text-gray-600 font-bold">
                       Backend Developer
                     </p>
                   </div>
@@ -132,7 +132,7 @@ export const OurSquad = () => {
                     <h2 className="text-center dark:text-white justify-center items-center text-xl">
                       SY Craft
                     </h2>
-                    <p className="text-center text-[#797B88] font-bold">
+                    <p className="text-center text-gray-600 font-bold">
                       Gamers
                     </p>
                   </div>
@@ -147,7 +147,7 @@ export const OurSquad = () => {
                     <h2 className="text-center dark:text-white justify-center items-center text-xl">
                       Ainsley
                     </h2>
-                    <p className="text-center text-[#797B88] font-bold">
+                    <p className="text-center text-gray-600 font-bold">
                       Frontend Developer
                     </p>
                   </div>
@@ -162,7 +162,7 @@ export const OurSquad = () => {
                     <h2 className="text-center dark:text-white justify-center items-center text-xl">
                       Arthur
                     </h2>
-                    <p className="text-center text-[#797B88] font-bold">
+                    <p className="text-center text-gray-600 font-bold">
                       Frontend Developer
                     </p>
                   </div>
@@ -177,7 +177,7 @@ export const OurSquad = () => {
                     <h2 className="text-center dark:text-white justify-center items-center text-xl">
                       Stephen Baldwin
                     </h2>
-                    <p className="text-center text-[#797B88] font-bold">
+                    <p className="text-center text-gray-600 font-bold">
                       Frontend Developer
                     </p>
                   </div>
@@ -192,7 +192,7 @@ export const OurSquad = () => {
                     <h2 className="text-center dark:text-white justify-center items-center text-xl">
                       Yuukiseirai
                     </h2>
-                    <p className="text-center text-[#797B88] font-bold">
+                    <p className="text-center text-gray-600 font-bold">
                       Frontend Developer
                     </p>
                   </div>
@@ -207,7 +207,7 @@ export const OurSquad = () => {
                     <h2 className="text-center dark:text-white justify-center items-center text-xl">
                       Brox
                     </h2>
-                    <p className="text-center text-[#797B88] font-bold">
+                    <p className="text-center text-gray-600 font-bold">
                       Frontend Developer
                     </p>
                   </div>
@@ -222,7 +222,7 @@ export const OurSquad = () => {
                     <h2 className="text-center dark:text-white justify-center items-center text-xl">
                       Apollo
                     </h2>
-                    <p className="text-center text-[#797B88] font-bold">
+                    <p className="text-center text-gray-600 font-bold">
                       Frontend Developer
                     </p>
                   </div>
@@ -237,7 +237,7 @@ export const OurSquad = () => {
                     <h2 className="text-center dark:text-white justify-center items-center text-xl">
                       Carver
                     </h2>
-                    <p className="text-center text-[#797B88] font-bold">
+                    <p className="text-center text-gray-600 font-bold">
                       Frontend Developer
                     </p>
                   </div>

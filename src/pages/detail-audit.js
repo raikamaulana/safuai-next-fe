@@ -73,7 +73,7 @@ const VulnerabilityScan = dynamic(
 export default function DetailAudit() {
   return (
     <section className='bg-[#E8ECEF] dark:bg-[#0D1116] duration-500 transition-all'>
-      <div className='flex pt-6 lg:pl-28 pl-2 pb-9'>
+      <div className='flex pt-32 lg:pl-28 pl-2 pb-9'>
       <Tab.Group vertical>
               <Tab.List className="flex flex-col bg-white dark:text-white dark:bg-[#161C23] text-left w-80  mr-5 px-3 pt-4 min-h-max">
                 <div className='relative flex'>

@@ -42,11 +42,18 @@ module.exports = {
 
       black: "#0e1133",
       white: colors.white,
+      customBlack: "#20262D",
       customBlue: "#165BB8",
       customDarkBlue: "#0D3B6E",
+      customGraySemiPurple: "#5B4C7C",
       customPurple: "#D171FF",
+      customHoverPurple: "#bf61eb",
       customDark: "#1B1F28",
+      customSecondDark: "#0D1116",
+      customDarkGray: "#26293A",
       customGrey: "#363D4C",
+      customSecondGray: "#2C3239",
+      customLight: "#E8ECEF",
       gray: {
         100: "#EEF1F6",
         200: "#f1f1f1",
