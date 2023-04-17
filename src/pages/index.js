@@ -1,7 +1,6 @@
 import Head from "next/head";
 import axios from "axios";
 import dynamic from "next/dynamic";
-import HowWork from "@/components/HowWork";
 
 const Header = dynamic(
   () => import("@/components/bsafu-ui").then((mod) => mod.Header),
