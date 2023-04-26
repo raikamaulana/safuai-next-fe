@@ -25,7 +25,8 @@ export const safuaiHero = () => {
                         </div>
                     </div>
                     <div className="mt-20 lg:-mt-10 w-full flex items-start lg:justify-end">
-                        <Image src='/images/safuaihero/safuaihero.svg' width="430" height="339" alt="safuai" />
+                        <Image src='/images/safuaihero/safuaihero.svg' width="430" height="339" alt="safuai" className="block dark:hidden" />
+                        <Image src='/images/safuaihero/safuaiherodark.svg' width="430" height="339" alt="safuai" className="hidden dark:block" />
                     </div>
                 </div>
 
