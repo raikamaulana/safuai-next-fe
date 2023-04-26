@@ -557,9 +557,11 @@ export function Header() {
                                 </Menu.Items> */}
               </Menu>
               {colorTheme === "light" ? (
-                <div className="p-2 text-black bg-white rounded-lg dark:bg-customDarkGrey dark:text-customPurple duration-500 ring-2 ring-customPurple">
+                <div
+                  onClick={() => setTheme("light")}
+                  className="p-2 text-black bg-white rounded-lg dark:bg-customDarkGrey dark:text-customPurple duration-500 ring-2 ring-customPurple"
+                >
                   <Image
-                    onClick={() => setTheme("light")}
                     src="/images/light-theme-icon.svg"
                     width="24"
                     height="24"
@@ -568,12 +570,11 @@ export function Header() {
                   />
                 </div>
               ) : (
-                <div className="p-2 text-customPurple ring-2 ring-customPurple bg-white duration-500 rounded-lg">
-                  <FaMoon
-                    onClick={() => setTheme("dark")}
-                    style={{ color: "purple" }}
-                    className="h-6 w-6"
-                  />
+                <div
+                  onClick={() => setTheme("dark")}
+                  className="p-2 text-customPurple ring-2 ring-customPurple bg-white duration-500 rounded-lg"
+                >
+                  <FaMoon style={{ color: "purple" }} className="h-6 w-6" />
                 </div>
               )}
 
@@ -738,9 +739,11 @@ export function Header() {
 
               <div className="">
                 {colorTheme === "light" ? (
-                  <div className="px-2.5 py-2 text-black bg-white rounded-lg dark:bg-customDarkGrey dark:text-customPurple duration-500 ring-2 ring-customPurple">
+                  <div
+                    onClick={() => setTheme("light")}
+                    className="px-2.5 py-2 text-black bg-white rounded-lg dark:bg-customDarkGrey dark:text-customPurple duration-500 ring-2 ring-customPurple"
+                  >
                     <Image
-                      onClick={() => setTheme("light")}
                       src="/images/light-theme-icon.svg"
                       width={24}
                       height={24}
@@ -749,12 +752,11 @@ export function Header() {
                     />
                   </div>
                 ) : (
-                  <div className="px-2.5 py-2 text-customPurple bg-white duration-500 ring-2 ring-customPurple rounded-lg">
-                    <FaMoon
-                      onClick={() => setTheme("dark")}
-                      style={{ color: "purple" }}
-                      className="h-6 w-6"
-                    />
+                  <div
+                    onClick={() => setTheme("dark")}
+                    className="px-2.5 py-2 text-customPurple bg-white duration-500 ring-2 ring-customPurple rounded-lg"
+                  >
+                    <FaMoon style={{ color: "purple" }} className="h-6 w-6" />
                   </div>
                 )}
               </div>
