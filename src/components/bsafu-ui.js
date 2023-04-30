@@ -34,6 +34,7 @@ import {
   FaLock,
   FaDollarSign,
   FaMoon,
+  FaSun,
 } from "react-icons/fa";
 import { Popover, Transition, Menu } from "@headlessui/react";
 import { Context } from "../Store";
@@ -561,12 +562,9 @@ export function Header() {
                   onClick={() => setTheme("light")}
                   className="p-2 text-black bg-white rounded-lg dark:bg-customDarkGrey dark:text-customPurple duration-500 ring-2 ring-customPurple"
                 >
-                  <Image
-                    src="/images/light-theme-icon.svg"
-                    width="24"
-                    height="24"
-                    alt="Light Mode Logo"
-                    className="fill-current"
+                  <FaSun
+                    style={{ color: "customPurple" }}
+                    className="h-6 w-6"
                   />
                 </div>
               ) : (
@@ -574,7 +572,10 @@ export function Header() {
                   onClick={() => setTheme("dark")}
                   className="p-2 text-customPurple ring-2 ring-customPurple bg-white duration-500 rounded-lg"
                 >
-                  <FaMoon style={{ color: "purple" }} className="h-6 w-6" />
+                  <FaMoon
+                    style={{ color: "customPurple" }}
+                    className="h-6 w-6"
+                  />
                 </div>
               )}
 
@@ -743,12 +744,9 @@ export function Header() {
                     onClick={() => setTheme("light")}
                     className="px-2.5 py-2 text-black bg-white rounded-lg dark:bg-customDarkGrey dark:text-customPurple duration-500 ring-2 ring-customPurple"
                   >
-                    <Image
-                      src="/images/light-theme-icon.svg"
-                      width={24}
-                      height={24}
-                      alt=""
-                      className="fill-current"
+                    <FaSun
+                      style={{ color: "customPurple" }}
+                      className="h-6 w-6"
                     />
                   </div>
                 ) : (
@@ -756,7 +754,10 @@ export function Header() {
                     onClick={() => setTheme("dark")}
                     className="px-2.5 py-2 text-customPurple bg-white duration-500 ring-2 ring-customPurple rounded-lg"
                   >
-                    <FaMoon style={{ color: "purple" }} className="h-6 w-6" />
+                    <FaMoon
+                      style={{ color: "customPurple" }}
+                      className="h-6 w-6"
+                    />
                   </div>
                 )}
               </div>
