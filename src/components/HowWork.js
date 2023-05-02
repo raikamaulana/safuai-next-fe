@@ -3,7 +3,7 @@ import React from 'react'
 
 export const HowWork = () => {
   return (
-    <div className='bg-[#E8ECEF] dark:bg-[#1B1F28] transition-all duration-500 px-6 pt-32 md:pb-14 lg:pb-10 pb-[750px]'>
+    <div className='bg-[#E8ECEF] dark:bg-[#1b1f28] transition-all duration-500 px-6 pt-32 md:pb-14 lg:pb-10 pb-[750px]'>
       <div className='lg:absolute lg:p-10 '>
         <Image src='/images/howWork/heading.svg' 
         width='200' 
@@ -65,8 +65,8 @@ export const HowWork = () => {
       height='57' 
       className='-m-7 ml-3'/>
 
-    <h1 className='lg:text-center md:text-center lg:ml-4 md:ml-0 ml-4 mt-10 text-xl lg:max-w-min font-semibold dark:text-white'>Correction assesment</h1>
-    <p className='mt-4 ml-4 text-md pr-4 dark:text-[#ffffff]'>Once you implement the 
+    <h1 className='lg:ml-4 md:ml-0 ml-4 mt-10 text-xl lg:max-w-min font-semibold dark:text-white'>Correction assessment</h1>
+<p className='mt-4 ml-4 text-md pr-4 dark:text-[#ffffff]'>Once you implement the 
 fixes, our team conducts
 a validation check (1 check
 is covered in the cost) to
@@ -99,9 +99,9 @@ are accurate.</p>
     height='27' 
     className='ml-48 -mt-10'/>
     </button>
-        </div>
-      </div>
-      </div>
+    </div>
+    </div>
+    </div>
     </div>
   )
 }
