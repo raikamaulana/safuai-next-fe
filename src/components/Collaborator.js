@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export const Collaborator = () => {
   return (
-    <div className="dark:bg-[#1B1F28] bg-[#E8ECEF] transition-all duration-500 flex justify-center overflow-hidden">
+    <div className="dark:bg-customDark bg-customWhite transition-all duration-500 flex justify-center overflow-hidden">
       <div>
         <div className="pt-5 mb-48 mx-auto">
           <Image

@@ -33,6 +33,8 @@ import {
   FaUserCog,
   FaLock,
   FaDollarSign,
+  FaMoon,
+  FaSun,
 } from "react-icons/fa";
 import { Popover, Transition, Menu } from "@headlessui/react";
 import { Context } from "../Store";
@@ -346,7 +348,7 @@ function WalletConnectButton({ onConnect, onDisconnect }) {
         <button
           onClick={() => setDropdownOpen(!dropdownOpen)}
           className={
-            "rounded-lg text-white bg-[#D171FF] border-2 border-[#D171FF] px-1 py-1 md:px-3 md:py-2 lg:px-3 lg:py-2"
+            "rounded-lg text-white bg-customPurple border-2 border-customPurple px-1 py-1 md:px-3 md:py-2 lg:px-3 lg:py-2"
           }
         >
           {getSimpleAddress(address ? address : "")} ({chainId})
@@ -355,7 +357,7 @@ function WalletConnectButton({ onConnect, onDisconnect }) {
         <button
           onClick={connect}
           className={
-            "rounded-lg text-[#26293A] bg-[#D171FF] border-2 border-[#D171FF] px-1 py-1 md:px-3 md:py-2 lg:px-3 lg:py-2"
+            "rounded-lg text-cusdbg-customDarkGrey bg-customPurple border-2 border-customPurple px-1 py-1 md:px-3 md:py-2 lg:px-3 lg:py-2"
           }
         >
           Connect Wallet
@@ -459,7 +461,7 @@ export function Header() {
 
   return (
     <>
-      <Popover className="fixed z-20 w-full bg-white backdrop-blur dark:bg-[#26293A] ">
+      <Popover className="fixed z-20 w-full bg-white backdrop-blur dark:bg-customDarkGrey ">
         <div className="px-4 sm:px-8 md:px-12 lg:px-28 py-2.5 md:py-2.5 lg:py-2 xl:py-2 transition-all duration-500">
           <div className="flex items-center justify-between md:justify-between md:space-x-4 lg:mx-auto">
             <div className="flex items-center justify-start gap-2">
@@ -467,7 +469,7 @@ export function Header() {
                 href="/"
                 className={
                   activ === "/"
-                    ? "text-[#D171FF] font-medium flex items-center gap-1"
+                    ? "text-customPurple font-medium flex items-center gap-1"
                     : "text-gray-900 dark:text-white font-medium flex items-center gap-1"
                 }
                 aria-label="logo this"
@@ -488,7 +490,7 @@ export function Header() {
                   />
                 )}
                 {colorTheme === "dark" ? (
-                  <h1 className="text-xl text-[#000000] duration-500 font-bold">
+                  <h1 className="text-xl text-customFullBlack duration-500 font-bold">
                     SAFU.AI
                   </h1>
                 ) : (
@@ -556,29 +558,28 @@ export function Header() {
                                 </Menu.Items> */}
               </Menu>
               {colorTheme === "light" ? (
-                <div className="p-2 text-black bg-white rounded-lg dark:bg-[#26293A] dark:text-[#D171FF] duration-500 ring-2 ring-[#D171FF]">
-                  <Image
-                    onClick={() => setTheme("light")}
-                    src="/images/lightmodelogomobile.svg"
-                    width="24"
-                    height="24"
-                    alt="Light Mode Logo"
-                    className="fill-current"
+                <div
+                  onClick={() => setTheme("light")}
+                  className="p-2 text-black bg-white rounded-lg dark:bg-customDarkGrey dark:text-customPurple duration-500 ring-2 ring-customPurple"
+                >
+                  <FaSun
+                    style={{ color: "customPurple" }}
+                    className="h-6 w-6"
                   />
                 </div>
               ) : (
-                <div className="p-2 text-[#D171FF] ring-2 ring-[#D171FF] bg-white duration-500 rounded-lg">
-                  <Image
-                    onClick={() => setTheme("dark")}
-                    src="/images/darkmodelogomobile.svg"
-                    width="24"
-                    height="24"
-                    alt="Dark Mode Logo"
+                <div
+                  onClick={() => setTheme("dark")}
+                  className="p-2 text-customPurple ring-2 ring-customPurple bg-white duration-500 rounded-lg"
+                >
+                  <FaMoon
+                    style={{ color: "customPurple" }}
+                    className="h-6 w-6"
                   />
                 </div>
               )}
 
-              <Popover.Button className="relative inline-flex items-center justify-center p-2 text-[#D171FF] bg-white rounded-md dark:bg-gray-800 duration-500 hover:black hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-[#D171FF]">
+              <Popover.Button className="relative inline-flex items-center justify-center p-2 text-customPurple bg-white rounded-md dark:bg-gray-800 duration-500 hover:black hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-customPurple">
                 <span className="sr-only">Open menu</span>
                 <FaBars className="w-6 h-6" aria-hidden="true" />
               </Popover.Button>
@@ -588,7 +589,7 @@ export function Header() {
                 href="/"
                 className={
                   activ === "/"
-                    ? "text-[#D171FF] font-medium py-5 ml-20"
+                    ? "text-customPurple font-medium py-5 ml-20"
                     : "dark:text-white text-gray-900 duration-500 font-medium py-5 ml-20"
                 }
               >
@@ -642,7 +643,7 @@ export function Header() {
                                 className="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50"
                               >
                                 <item.icon
-                                  className="flex-shrink-0 w-6 h-6 text-[#D171FF]"
+                                  className="flex-shrink-0 w-6 h-6 text-customPurple"
                                   aria-hidden="true"
                                 />
                                 <div className="ml-4">
@@ -707,7 +708,7 @@ export function Header() {
                                 className="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50"
                               >
                                 <item.icon
-                                  className="flex-shrink-0 w-6 h-6 text-[#D171FF]"
+                                  className="flex-shrink-0 w-6 h-6 text-customPurple"
                                   aria-hidden="true"
                                 />
                                 <div className="ml-4">
@@ -739,23 +740,23 @@ export function Header() {
 
               <div className="">
                 {colorTheme === "light" ? (
-                  <div className="px-2.5 py-2 text-black bg-white rounded-lg dark:bg-[#26293A] dark:text-[#D171FF] duration-500 ring-2 ring-[#D171FF]">
-                    <Image 
+                  <div
                     onClick={() => setTheme("light")}
-                    src="/images/light-theme-icon.svg"
-                    width={24}
-                    height={24}
-                    alt=""
-                     />
+                    className="px-2.5 py-2 text-black bg-white rounded-lg dark:bg-customDarkGrey dark:text-customPurple duration-500 ring-2 ring-customPurple"
+                  >
+                    <FaSun
+                      style={{ color: "customPurple" }}
+                      className="h-6 w-6"
+                    />
                   </div>
                 ) : (
-                  <div className="px-2.5 py-2 text-[#D171FF] bg-white duration-500 ring-2 ring-[#D171FF] rounded-lg">
-                    <Image
+                  <div
                     onClick={() => setTheme("dark")}
-                    src="/images/dark-theme-icon.svg"
-                    width={24}
-                    height={24}
-                    alt=""
+                    className="px-2.5 py-2 text-customPurple bg-white duration-500 ring-2 ring-customPurple rounded-lg"
+                  >
+                    <FaMoon
+                      style={{ color: "customPurple" }}
+                      className="h-6 w-6"
                     />
                   </div>
                 )}
@@ -781,9 +782,18 @@ export function Header() {
               <div className="px-5 pt-5 pb-6">
                 <div className="flex items-center justify-between">
                   <div className="flex items-center">
-                    <Image src="/images/logo-safu-ai.svg" width={30} height={30} alt="" />
-                    <Image src="/images/logo-blocksafu.svg" width={101} height={25} alt="" />
-                    
+                    <Image
+                      src="/images/logo-safu-ai.svg"
+                      width={30}
+                      height={30}
+                      alt=""
+                    />
+                    <Image
+                      src="/images/logo-blocksafu.svg"
+                      width={101}
+                      height={25}
+                      alt=""
+                    />
                   </div>
                   <div className="-mr-2">
                     <Popover.Button className="inline-flex items-center justify-center p-2 text-gray-400 bg-white rounded-md dark:bg-gray-900 hover:black hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
@@ -831,23 +841,25 @@ export function Header() {
                   <div className="flex items-center justify-between gap-2">
                     <WalletConnectButton />
                     {colorTheme === "light" ? (
-                      <div className="px-2 py-2 text-black bg-white border-2 border-gray-800 rounded-lg dark:bg-gray-800 dark:text-white">\
-                    <Image 
-                    onClick={() => setTheme("light")}
-                    src="/images/light-theme-icon.svg"
-                    width={24}
-                    height={24}
-                    alt=""
-                     />
+                      <div className="px-2 py-2 text-black bg-white border-2 border-gray-800 rounded-lg dark:bg-gray-800 dark:text-white">
+                        \
+                        <Image
+                          onClick={() => setTheme("light")}
+                          src="/images/light-theme-icon.svg"
+                          width={24}
+                          height={24}
+                          alt=""
+                        />
                       </div>
                     ) : (
                       <div className="px-2 py-2 text-white bg-gray-900 border-2 border-gray-800 rounded-lg">
                         <Image
-                        onClick={() => setTheme("dark")}
-                        src="/images/dark-theme-icon.svg"
-                        width={24}
-                        height={24}
-                        alt="" />
+                          onClick={() => setTheme("dark")}
+                          src="/images/dark-theme-icon.svg"
+                          width={24}
+                          height={24}
+                          alt=""
+                        />
                       </div>
                     )}
                   </div>
@@ -1002,21 +1014,23 @@ export function HeaderFixed() {
               </Menu>
               {colorTheme === "light" ? (
                 <div className="p-2 text-black bg-white rounded-lg dark:bg-gray-800 dark:text-white">
-                  <Image 
-                  onClick={() => setTheme("light")}
-                  src="/images/light-theme-icon.svg" 
-                  width={20} 
-                  height={20} 
-                  alt="" />
+                  <Image
+                    onClick={() => setTheme("light")}
+                    src="/images/light-theme-icon.svg"
+                    width={20}
+                    height={20}
+                    alt=""
+                  />
                 </div>
               ) : (
                 <div className="p-2 text-white bg-gray-900 rounded-lg">
-                  <Image 
-                  onClick={() => setTheme("dark")}
-                  src="/images/dark-theme-icon.svg" 
-                  width={20} 
-                  height={20} 
-                  alt="" />
+                  <Image
+                    onClick={() => setTheme("dark")}
+                    src="/images/dark-theme-icon.svg"
+                    width={20}
+                    height={20}
+                    alt=""
+                  />
                 </div>
               )}
 
