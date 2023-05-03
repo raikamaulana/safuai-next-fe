@@ -6,7 +6,7 @@ export const ContractInheritance = () => {
   return (
     <>
     <section className="dark:bg-customBlack bg-customWhite w-full duration-500 transition-all">
-            <div className='dark:bg-customDark bg-white h-[650px] rounded-lg lg:px-11 md:px-11  py-14'>
+            <div className='dark:bg-customDark bg-white h-162.5 rounded-lg lg:px-11 md:px-11  py-14'>
                 <div>
                 <div className='border border-customPurple dark:text-white max-w-min mx-auto lg:px-20 lg:py-5 md:px-20 md:py-5 px-6 py-3 rounded-lg text-lg lg:mb-1 md:mb-1 mb-2'>
                     BEP20Token

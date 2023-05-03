@@ -35,7 +35,7 @@ export const FeeInformation = () => {
               </Tab.List>
               <Tab.Panels>
                 <Tab.Panel>
-                  <div className='dark:bg-customDark bg-white dark:text-white h-[650px] py-8 pr-8 pl-5'>
+                  <div className='dark:bg-customDark bg-white dark:text-white h-162.5 py-8 pr-8 pl-5'>
                     <div className='grid grid-cols-3 pl-6 mb-4'>
                       <p className='text-gray-500 '>Name</p>
                       <p className='text-gray-500 '>RECEIVER</p>
@@ -66,7 +66,7 @@ export const FeeInformation = () => {
               </Tab.Panels>
               <Tab.Panels>
                 <Tab.Panel>
-                <div className='dark:bg-customDark bg-white dark:text-white h-[650px] py-8 pr-8 pl-5'>
+                <div className='dark:bg-customDark bg-white dark:text-white h-162.5 py-8 pr-8 pl-5'>
                     <div className='grid grid-cols-3 pl-6 mb-4'>
                       <p className='text-gray-500 '>Name</p>
                       <p className='text-gray-500 '>RECEIVER</p>
@@ -97,7 +97,7 @@ export const FeeInformation = () => {
               </Tab.Panels>
               <Tab.Panels>
                 <Tab.Panel>
-                <div className='dark:bg-customDark bg-white dark:text-white h-[650px] py-8 pr-8 pl-5'>
+                <div className='dark:bg-customDark bg-white dark:text-white h-162.5 py-8 pr-8 pl-5'>
                     <div className='grid grid-cols-3 gap-9 pl-6 mb-4'>
                       <p className='text-gray-500'>Name</p>
                       <p className='text-gray-500 ml-auto mr-0'>RECEIVER</p>
