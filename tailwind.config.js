@@ -265,6 +265,8 @@ module.exports = {
       84: "21rem",
       88: "22rem",
       96: "24rem",
+      132.5: "33.1rem",
+      162.5: "40.6rem",
       200: "50rem",
       455: "455px"
     },
@@ -699,6 +701,7 @@ module.exports = {
       0: "0px",
       240: "240px",
       300: "300px",
+      700: "700px",
       full: "100%",
       min: "min-content",
       max: "max-content",
