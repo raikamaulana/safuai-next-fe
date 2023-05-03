@@ -200,7 +200,7 @@ export const auditRelease = () => {
                                 <div className="w-full px-4 py-6 flex justify-between">
                                     <div className="flex items-center">
                                         <Image src="/images/auditrelease/virtualrobot.svg" width="30" height="30" className="mr-4"/>
-                                        <h2 className="font-[Inter] text-lg font-normal mr-5">Virtual Robot</h2>
+                                        <h2 className="font-inter text-lg font-normal mr-5">Virtual Robot</h2>
                                         <span className="w-32 py-1 font-[Inter] text-center text-lg font-normal border border-gray-600 rounded-lg">VR</span>
                                     </div>
                                 </div>

@@ -371,6 +371,9 @@ module.exports = {
       DEFAULT: "1",
     },
     fontFamily: {
+      inter: [
+        "Inter", "sans-serif"
+      ],
       sans: [
         "ui-sans-serif",
         "system-ui",
