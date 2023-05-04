@@ -9,7 +9,6 @@ export const FeeInformation = () => {
               <Tab.List>
                 <Tab as={Fragment}>
                   {({ selected }) => (
-                    /* Use the `selected` state to conditionally style the selected tab. */
                     <button className={selected ? 'dark:bg-customDark bg-white text-customPurple lg:mr-5 dark:lg:px-9 lg:px-9  dark:lg:pt-4 lg:pt-4 lg:pb-7  mr-4 pt-2 px-2 md:pb-4' : 'dark:bg-customDark  dark:text-white lg:border md:border lg:border-customPurple md:border-customPurple  dark:border-none  lg:mr-5 lg:px-9 lg:pt-4 lg:pb-3  mr-4 pt-2 px-2 md:pb-2'}>
                       Buy Tax Information
                     </button>
@@ -17,7 +16,6 @@ export const FeeInformation = () => {
                 </Tab>
                 <Tab as={Fragment}>
                   {({ selected }) => (
-                    /* Use the `selected` state to conditionally style the selected tab. */
                     <button className={selected ? 'dark:bg-customDark bg-white text-customPurple lg:mr-5 dark:lg:px-9 lg:px-9 dark:lg:pt-4 lg:pt-4 lg:pb-7  mr-4 pt-2 px-2 md:pb-4' : 'dark:bg-customDark  dark:text-white lg:border md:border lg:border-customPurple md:border-customPurple  dark:border-none  lg:mr-5 lg:px-9 lg:pt-4 lg:pb-3  mr-4 pt-2 px-2 md:pb-2'}>
                       Sell Tax Information
                     </button>
@@ -25,7 +23,6 @@ export const FeeInformation = () => {
                 </Tab>
                 <Tab as={Fragment}>
                   {({ selected }) => (
-                    /* Use the `selected` state to conditionally style the selected tab. */
                     <button className={selected ? 'dark:bg-customDark bg-white text-customPurple dark:lg:px-9 lg:px-9 dark:lg:pt-4 lg:pt-4 lg:pb-7 pt-2 px-2 md:pb-4 mr-0' : 'dark:bg-customDark  dark:text-white lg:border md:border lg:border-customPurple md:border-customPurple  dark:border-none  lg:px-9 lg:pt-4 lg:pb-3 pt-2 px-2 md:pb-2 mr-0'}>
                       Transfer Tax Information
                     </button>
