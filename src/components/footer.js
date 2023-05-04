@@ -7,7 +7,7 @@ export const Footer = () => {
   const [colorTheme, setTheme] = useDarkMode();
   return (
     <>
-      <section className="lg:px-0 lg:pt-10 md:pt-14 transition-all duration-500 bg-customWhite dark:bg-gray-900 linear">
+      <section className="lg:px-0 lg:pt-10 md:pt-14 transition-all duration-500 bg-customWhite dark:bg-customDark linear">
         <footer className="pt-24 pb-2 mx-auto lg:px-22 px-7 md:px-16">
           <div className="md:w-100 lg:w-100 mb-12">
             <div className="lg:flex gap-1 mb-3 lg:mb-0 md:flex ">

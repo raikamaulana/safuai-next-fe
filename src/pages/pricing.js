@@ -24,7 +24,7 @@ export default function pricing() {
   return (
     <>
       <Header />
-      <section className="dark:bg-gray-900 bg-customWhite w-full transition-all duration-500 linear">
+      <section className="dark:bg-customDark bg-customWhite w-full transition-all duration-500 linear">
         <div className="pt-30 md:px-12 lg:px-24 pl-0 pb-3">
           <div className="mb-12">
             <p className="font-semibold text-lg dark:text-white text-center mb-3">

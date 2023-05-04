@@ -249,6 +249,7 @@ module.exports = {
       36: "9rem",
       40: "10rem",
       44: "11rem",
+      45: "11.25rem",
       48: "12rem",
       50: "12.5rem",
       52: "13rem",
@@ -266,7 +267,7 @@ module.exports = {
       88: "22rem",
       96: "24rem",
       200: "50rem",
-      455: "455px"
+      455: "455px",
     },
     animation: {
       none: "none",
