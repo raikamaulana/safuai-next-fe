@@ -14,12 +14,13 @@ export const Collaborator = () => {
             className="dark:hidden w-72 md:w-96 mx-auto"
             alt=""
           />
-          <Image 
-          src="/images/collaborator/connectdark.svg"
-          width="480"
-          height="480"
-          className="dark:block w-72 md:w-96 hidden mx-auto"
-          alt="" />
+          <Image
+            src="/images/collaborator/connectdark.svg"
+            width="480"
+            height="480"
+            className="dark:block w-72 md:w-96 hidden mx-auto"
+            alt=""
+          />
         </div>
         <div className="m-14 md:p-14 -mt-40 grid lg:grid-cols-4 lg:gap-5 grid-cols-2 gap-5">
           <Link href="/" className="mx-auto lg:ml-24 md:ml-0 ml-0">

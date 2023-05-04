@@ -35,7 +35,7 @@ export default function pricing() {
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 lg:gap-3 md:gap-16 gap-9 mx-6 lg:mx-0">
-            <div className="mx-auto col-span-1 row-span-1 md:col-span-1 md:row-span-1 md:mx-auto md:mr-0 max-w-[285px] max-h-[470px] lg:ml-auto lg:mr-0">
+            <div className="mx-auto col-span-1 row-span-1 md:col-span-1 md:row-span-1 md:mx-auto md:mr-0 max-w-285 max-h-470 lg:ml-auto lg:mr-0">
               <div className="p-4 duration-500 border rounded-lg dark:border-customPurple border-white dark:bg-transparent bg-white">
                 <p className="dark:text-white w-32 leading-5">Audit Token</p>
                 <p className="dark:text-white leading-5">

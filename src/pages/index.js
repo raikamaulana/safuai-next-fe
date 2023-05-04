@@ -44,13 +44,6 @@ const ServiceProducts = dynamic(
     ssr: false,
   }
 );
-const AuditRelease = dynamic(
-  () =>
-    import("@/components/auditRelease").then((mod) => mod.auditRelease),
-  {
-    ssr: false,
-  }
-);
 
 const Footer = dynamic(
   () => import("@/components/footer").then((mod) => mod.Footer),
@@ -120,7 +113,6 @@ export default function Home() {
       <AuditInfo />
       <HowWork />
       <ServiceProducts />
-      <AuditRelease />
       <Footer />
     </>
   );
