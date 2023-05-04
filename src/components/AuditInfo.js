@@ -199,9 +199,9 @@ export function AuditInfo() {
           </div>
         </div>
         <div className="">
-          <div className="lg:-mt-48 mt-16 pb-5">
+          <div className="lg:-mt-48 mt-16 pb-7">
             <div className="pt-5 flex lg:inline-flex justify-center lg:-translate-x-30">
-              <div className="md:space-x-6 space-x-12 md:-translate-x-7 lg:translate-x-28 dark:lg:translate-x-20 dark:md:-translate-x-7 pl-7">
+              <div className="md:space-x-6 space-x-12 md:-translate-x-7 lg:translate-x-28 lg:translate-y-5 dark:lg:translate-x-20 dark:md:-translate-x-7 pl-7">
                 <div className="flex md:ml-1 ml-36">
                   <p className="dark:text-white text-black font-medium md:text-2xl text-xl pt-4 md:ml-8 lg:ml-2 md:-mr-10 lg:-mr-20">
                     Review of onboarding project data
@@ -291,7 +291,7 @@ export function AuditInfo() {
                 src="/images/auditinfo/reviewlight.svg"
                 width="340"
                 height="340"
-                className="pt-40 mr-14 pl-30 md:w-455 w-0 dark:hidden lg:translate-y-14"
+                className="pt-40 mr-14 pl-30 md:w-455 w-0 dark:hidden lg:translate-y-14 lg:translate-x-6"
               />
               <Image
                 src="/images/auditinfo/reviewdark.svg"

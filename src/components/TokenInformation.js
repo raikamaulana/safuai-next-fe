@@ -5,51 +5,51 @@ export const TokenInformation = () => {
     <div className="bg-customWhite dark:bg-customDark min-h-screen overflow-hidden">
       <div className="flex justify-center">
         <div className="bg-white dark:bg-customDarkComp mt-14 mb-8 rounded-md p-6 mr-2">
-          <p className="text-customPurple font-[Poppins] mb-5 text-xl mt-2 ml-4 font-semibold">
+          <p className="text-customPurple font-poppins mb-5 text-xl mt-2 ml-4 font-semibold">
             Token Information
           </p>
           <div className="flex justify-between border-2 border-customWhite dark:border-none dark:bg-customDarkTr mx-auto rounded-lg p-1">
-            <p className="dark:text-white font-[Poppins] py-3 px-5">
+            <p className="dark:text-white font-poppins py-3 px-5">
               Token Name :
             </p>
-            <p className="dark:text-white font-[Poppins] py-3 px-5 text-right font-semibold">
+            <p className="dark:text-white font-poppins py-3 px-5 text-right font-semibold">
               Virtual Robot CEO
             </p>
           </div>
           <div className="flex justify-between border-2 border-customWhite dark:border-none dark:bg-customDarkTr mt-4 mx-auto rounded-lg p-1">
-            <p className="dark:text-white font-[Poppins] py-3 px-5">
+            <p className="dark:text-white font-poppins py-3 px-5">
               Token Symbol :
             </p>
-            <p className="dark:text-white font-[Poppins] py-3 px-5 text-right font-semibold">
+            <p className="dark:text-white font-poppins py-3 px-5 text-right font-semibold">
               AIRobotCEO
             </p>
           </div>
           <div className="flex justify-between border-2 border-customWhite dark:border-none dark:bg-customDarkTr mt-4 mx-auto rounded-lg p-1">
-            <p className="dark:text-white font-[Poppins] py-3 px-5">
+            <p className="dark:text-white font-poppins py-3 px-5">
               Token Decimal :
             </p>
-            <p className="dark:text-white font-[Poppins] py-3 px-5 text-right font-semibold">
+            <p className="dark:text-white font-poppins py-3 px-5 text-right font-semibold">
               18
             </p>
           </div>
           <div className="flex justify-between border-2 border-customWhite dark:border-none dark:bg-customDarkTr mt-4 mx-auto rounded-lg p-1">
-            <p className="dark:text-white font-[Poppins] py-3 px-5">
+            <p className="dark:text-white font-poppins py-3 px-5">
               Token Supply :
             </p>
-            <p className="dark:text-white font-[Poppins] py-3 px-5 text-right font-semibold">
+            <p className="dark:text-white font-poppins py-3 px-5 text-right font-semibold">
               1,000,000,000,000
             </p>
           </div>
           <div className="flex justify-between border-2 border-customWhite dark:border-none dark:bg-customDarkTr mt-4 mx-auto rounded-lg p-1">
-            <p className="dark:text-white font-[Poppins] py-3 px-5">
+            <p className="dark:text-white font-poppins py-3 px-5">
               Holder Count :
             </p>
-            <p className="dark:text-white font-[Poppins] py-3 px-5 text-right font-semibold">
+            <p className="dark:text-white font-poppins py-3 px-5 text-right font-semibold">
               2
             </p>
           </div>
           <div className="flex justify-between border-2 border-customWhite dark:border-none dark:bg-customDarkTr mt-4 mx-auto rounded-lg p-1">
-            <p className="dark:text-white font-[Poppins] my-auto px-5">
+            <p className="dark:text-white font-poppins my-auto px-5">
               Contract Address :
             </p>
             <div className=" mx-3 rounded-md border-2 border-customPurple dark:border-customDarkBorder flex p-1 my-1 shrink-0">
@@ -60,7 +60,7 @@ export const TokenInformation = () => {
                 height={25}
                 className="my-auto ml-3"
               />
-              <p className="font-[Poppins] my-auto mx-4 dark:text-white">
+              <p className="font-poppins my-auto mx-4 dark:text-white">
                 0xbE....d6A7
               </p>
               <button>
@@ -84,58 +84,56 @@ export const TokenInformation = () => {
             </div>
           </div>
           <div className="flex justify-between border-2 border-customWhite dark:border-none dark:bg-customDarkTr mt-4 mx-auto rounded-lg p-1">
-            <p className="dark:text-white font-[Poppins] py-3 px-5">
+            <p className="dark:text-white font-poppins py-3 px-5">
               Contract Verified :
             </p>
-            <p className="dark:text-white font-[Poppins] py-3 px-5 text-right font-semibold">
+            <p className="dark:text-white font-poppins py-3 px-5 text-right font-semibold">
               Yes
             </p>
           </div>
           <div className="flex justify-between border-2 border-customWhite dark:border-none dark:bg-customDarkTr mt-4 mx-auto rounded-lg p-1">
-            <p className="dark:text-white font-[Poppins] py-3 px-5">
+            <p className="dark:text-white font-poppins py-3 px-5">
               Contract Type :
             </p>
-            <p className="dark:text-white font-[Poppins] py-3 px-5 text-right font-semibold">
+            <p className="dark:text-white font-poppins py-3 px-5 text-right font-semibold">
               BEP20
             </p>
           </div>
           <div className="flex justify-between border-2 border-customWhite dark:border-none dark:bg-customDarkTr mt-4 mx-auto rounded-lg p-1">
-            <p className="dark:text-white font-[Poppins] py-3 px-5">
-              Compiler :
-            </p>
-            <p className="dark:text-white font-[Poppins] py-3 px-5 text-right font-semibold">
+            <p className="dark:text-white font-poppins py-3 px-5">Compiler :</p>
+            <p className="dark:text-white font-poppins py-3 px-5 text-right font-semibold">
               v0.8.4+commit.c7e474f2
             </p>
           </div>
           <div className="flex justify-between border-2 border-customWhite dark:border-none dark:bg-customDarkTr mt-4 mx-auto rounded-lg p-1">
-            <p className="dark:text-white font-[Poppins] py-3 px-5">
+            <p className="dark:text-white font-poppins py-3 px-5">
               Sol License :
             </p>
-            <p className="dark:text-white font-[Poppins] py-3 px-5 text-right font-semibold">
+            <p className="dark:text-white font-poppins py-3 px-5 text-right font-semibold">
               MIT License
             </p>
           </div>
           <div className="flex justify-between border-2 border-customWhite dark:border-none dark:bg-customDarkTr mt-4 mx-auto rounded-lg p-1">
-            <p className="dark:text-white font-[Poppins] py-3 px-5">
+            <p className="dark:text-white font-poppins py-3 px-5">
               Contract Name :
             </p>
-            <p className="dark:text-white font-[Poppins] py-3 px-5 text-right font-semibold">
+            <p className="dark:text-white font-poppins py-3 px-5 text-right font-semibold">
               AIRobot
             </p>
           </div>
           <div className="flex justify-between border-2 border-customWhite dark:border-none dark:bg-customDarkTr mt-4 mx-auto rounded-lg p-1">
-            <p className="dark:text-white font-[Poppins] py-3 px-5">
+            <p className="dark:text-white font-poppins py-3 px-5">
               Contract Create :
             </p>
-            <p className="dark:text-white font-[Poppins] py-3 px-5 text-right font-semibold">
+            <p className="dark:text-white font-poppins py-3 px-5 text-right font-semibold">
               Solidity
             </p>
           </div>
           <div className="flex justify-between border-2 border-customWhite dark:border-none dark:bg-customDarkTr mt-4 mx-auto rounded-lg p-1">
-            <p className="dark:text-white font-[Poppins] py-3 px-5">
+            <p className="dark:text-white font-poppins py-3 px-5">
               Contract Language :
             </p>
-            <p className="dark:text-white font-[Poppins] py-3 px-5 text-right font-semibold">
+            <p className="dark:text-white font-poppins py-3 px-5 text-right font-semibold">
               Available
             </p>
           </div>
@@ -143,11 +141,11 @@ export const TokenInformation = () => {
 
         <div className="mt-14">
           <div className="bg-white dark:bg-customDarkComp mb-4 rounded-md p-6 ml-2">
-            <p className="text-custborder-customPurple font-[Poppins] mb-5 text-xl mt-2 ml-4 font-semibold">
+            <p className="text-custborder-customPurple font-poppins mb-5 text-xl mt-2 ml-4 font-semibold">
               Owner & Deployer Information
             </p>
             <div className="flex justify-between border-2 border-customWhite dark:border-none dark:bg-customDarkTr mx-auto rounded-lg p-1">
-              <p className="dark:text-white font-[Poppins] my-auto px-5">
+              <p className="dark:text-white font-poppins my-auto px-5">
                 Owner Address :
               </p>
               <div className=" mx-3 rounded-md border-2 border-customPurple dark:border-customDarkBorder flex p-1 my-1 shrink-0">
@@ -158,7 +156,7 @@ export const TokenInformation = () => {
                   height={25}
                   className="my-auto ml-3"
                 />
-                <p className="font-[Poppins] my-auto mx-4 dark:text-white">
+                <p className="font-poppins my-auto mx-4 dark:text-white">
                   0xbE....d6A7
                 </p>
                 <button>
@@ -182,7 +180,7 @@ export const TokenInformation = () => {
               </div>
             </div>
             <div className="flex justify-between border-2 border-customWhite dark:border-none dark:bg-customDarkTr mt-4 mx-auto rounded-lg p-1">
-              <p className="dark:text-white font-[Poppins] my-auto px-5">
+              <p className="dark:text-white font-poppins my-auto px-5">
                 Deployer Addess :
               </p>
               <div className=" mx-3 rounded-md border-2 border-customPurple dark:border-customDarkBorder flex p-1 my-1 shrink-0">
@@ -193,7 +191,7 @@ export const TokenInformation = () => {
                   height={25}
                   className="my-auto ml-3"
                 />
-                <p className="font-[Poppins] my-auto mx-4 dark:text-white">
+                <p className="font-poppins my-auto mx-4 dark:text-white">
                   0xbE....d6A7
                 </p>
                 <button>
@@ -221,7 +219,7 @@ export const TokenInformation = () => {
           <div className="bg-white dark:bg-customDarkComp p-6 ml-2 rounded-md pb-8">
             <div className="flex ">
               <div className="ml-4 mr-16">
-                <p className="dark:text-white font-[Poppins] mt-2 mb-5 text-xl font-semibold">
+                <p className="dark:text-white font-poppins mt-2 mb-5 text-xl font-semibold">
                   Audit Link Share
                 </p>
                 <div className="bg-white p-1 ml-1">
@@ -235,25 +233,25 @@ export const TokenInformation = () => {
               </div>
 
               <div className="my-auto">
-                <p className="dark:text-white font-[Poppins] mb-3 text-xl font-semibold">
+                <p className="dark:text-white font-poppins mb-3 text-xl font-semibold">
                   Presale Link
                 </p>
                 <div className="flex justify-between border-2 border-customWhite dark:border-none dark:bg-customDarkTr p-1 rounded-md mb-5">
-                  <p className="dark:text-white font-[Poppins] my-auto mx-3">
+                  <p className="dark:text-white font-poppins my-auto mx-3">
                     Go to Presale link
                   </p>
-                  <p className="dark:text-white text-2xl font-[Poppins] my-auto mr-3">
+                  <p className="dark:text-white text-2xl font-poppins my-auto mr-3">
                     &gt;
                   </p>
                 </div>
-                <p className="dark:text-white font-[Poppins] mb-3 text-xl font-semibold">
+                <p className="dark:text-white font-poppins mb-3 text-xl font-semibold">
                   Testnet Link
                 </p>
                 <div className="flex justify-between border-2 border-customWhite dark:border-none dark:bg-customDarkTr p-1 rounded-md">
-                  <p className="dark:text-white font-[Poppins] my-auto mx-3">
+                  <p className="dark:text-white font-poppins my-auto mx-3">
                     Go to Testnet link
                   </p>
-                  <p className="dark:text-white text-2xl font-[Poppins] my-auto mr-3">
+                  <p className="dark:text-white text-2xl font-poppins my-auto mr-3">
                     &gt;
                   </p>
                 </div>
