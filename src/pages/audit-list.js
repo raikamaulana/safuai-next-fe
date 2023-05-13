@@ -187,7 +187,14 @@ export default function auditList() {
               className="relative flex items-center justify-between bg-white dark:bg-customDarkGrey rounded-xl p-4 ring-2 ring-purple-850"
             >
               <div className="w-auto">
-                <Image src={audits.icon} width="60" height="0" alt="" />
+                <Image
+                  src={audits.icon}
+                  width="0"
+                  height="0"
+                  alt=""
+                  className="w-auto h-auto"
+                  priority
+                />
                 <h3 className="text-customFullBlack dark:text-white mt-4 text-xl font-medium">
                   {audits.name}
                 </h3>
