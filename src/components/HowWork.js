@@ -170,7 +170,7 @@ export const HowWork = () => {
             </div>
           </div>
         </div>
-      </div>
+      </d
     </>
   );
 };
