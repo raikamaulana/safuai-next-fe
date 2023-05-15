@@ -477,16 +477,20 @@ export function Header() {
                 {colorTheme === "dark" ? (
                   <Image
                     src="/images/safuai-logo-dark.svg"
-                    width="60"
-                    height="15"
+                    width="0"
+                    height="0"
                     alt=""
+                    className="w-auto h-auto"
+                    priority
                   />
                 ) : (
                   <Image
                     src="/images/safuai-logo-white.svg"
-                    width="60"
-                    height="15"
+                    width="0"
+                    height="0"
                     alt=""
+                    className="w-auto h-auto"
+                    priority
                   />
                 )}
                 {colorTheme === "dark" ? (

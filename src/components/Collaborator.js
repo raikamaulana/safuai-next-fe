@@ -74,8 +74,8 @@ export const Collaborator = () => {
           <Link href="/" className="mx-auto lg:mr-20 md:mr-14 ">
             <Image
               src="/images/collaborator/pinksalelight.svg"
-              width="200"
-              height="200"
+              width="175"
+              height="175"
               className="dark:hidden w-36 md:w-40 lg:w-48 lg:-ml-10 lg:-mt-2 -ml-5 md:mr-10 -mt-2 md:mt-1"
               alt=""
             />

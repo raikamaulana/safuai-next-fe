@@ -8,7 +8,7 @@ export const Footer = () => {
   return (
     <>
       <section className="lg:px-0 lg:pt-10 md:pt-14 transition-all duration-500 bg-customWhite dark:bg-customDark linear">
-        <footer className="pt-24 pb-2 mx-auto lg:px-22 px-7 md:px-16">
+        <footer className="pt-24 pb-2 mx-auto px-4 sm:px-8 md:px-12 lg:px-28 xl:px-28">
           <div className="md:w-100 lg:w-100 mb-12">
             <div className="lg:flex gap-1 mb-3 lg:mb-0 md:flex ">
               <div className="flex items-center">
@@ -123,12 +123,12 @@ export const Footer = () => {
           </div>
         </footer>
         <div className="lg:mt-32 md:mt-24 mt-16 w-full flex flex-col items-center lg:py-6 py-4 space-y-5 lg:flex-row lg:space-y-0 bg-white dark:bg-customGrey lg:mr-0 duration-500">
-          <nav className="flex lg:pl-20 items-center flex-col justify-center text-black dark:text-white font-medium lg:flex-row">
+          <nav className="flex lg:pl-28 items-center flex-col justify-center text-black dark:text-white font-medium lg:flex-row">
             <p className="text-center px-2 lg:px-0">
               Copyright © 2023 Safu AI. All rights reserved.
             </p>
             <div className="lg:absolute mt-2 lg:mt-0 lg:right-30 px-2 lg:px-0 ">
-              <a href="#" className="lg:mr-12 mr-5 hover:underline">
+              <a href="#" className="lg:mr-14 mr-5 hover:underline">
                 Term & Condition
               </a>
               <a href="#" className="hover:underline">
