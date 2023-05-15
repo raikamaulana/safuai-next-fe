@@ -58,14 +58,14 @@ export const safuaiHero = () => {
               width="430"
               height="339"
               alt="safuai"
-              className="block dark:hidden"
+              className="block dark:hidden mx-auto"
             />
             <Image
               src="/images/safuaihero/safuaiherodark.svg"
               width="430"
               height="339"
               alt="safuai"
-              className="hidden dark:block"
+              className="hidden dark:block mx-auto"
             />
           </div>
         </div>

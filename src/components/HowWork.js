@@ -3,149 +3,174 @@ import React from "react";
 
 export const HowWork = () => {
   return (
-    <div className="bg-customWhite dark:bg-customDark transition-all duration-500 px-6 pt-32 md:pb-14 lg:pb-10 pb-750">
-      <div className="lg:absolute lg:p-10 ">
-        <Image
-          src="/images/howWork/heading.svg"
-          width="200"
-          height="200"
-          className="mb-4 md:mb-4 xl:mx-20 mt-10"
-        />
-
-        <p className="font-semibold dark:text-white text-2xl mb-20 xl:mx-20 lg:w-88">
-          Get Udited by SAFU AI within 1-2Days
-        </p>
-
-        <Image
-          src="/images/howWork/blockicon.svg"
-          width="400"
-          height="400"
-          className="xl:mx-28 max-w-xs mx-auto"
-        />
-      </div>
-      <div className="py-10 md:w-64 max-w-xl md:h-80 h-72 lg:mx-auto md:mx-130 mx-auto mt-200px rounded-md bg-white dark:bg-gray-850">
-        <Image
-          src="/images/howWork/pricingicon.svg"
-          width="57"
-          height="57"
-          className="-m-7 ml-3"
-        />
-
-        <h1 className="lg:ml-4 md:ml-4 ml-4  mt-10 text-xl text-left font-semibold dark:text-white">
-          Get a pricing quote
-        </h1>
-        <p className="pr-3 mt-4 ml-4 text-md dark:text-white">
-          Obtain an audit scope, timeline, and pricing estimate by submitting
-          the necessary paperwork
-        </p>
-
-        <div className="flex relative w-full">
-          <h2 className="mt-5 ml-4 text-lg font-semibold dark:text-white">
-            Request Now
-          </h2>
-          <button className="absolute right-8 -bottom-3">
-            <Image
-              src="/images/howWork/buttonarrow.svg"
-              width="27"
-              height="27"
-              className="ml-48 -mt-10"
-            />
-          </button>
-        </div>
-        <div className="py-10 pr-12 md:w-64 md:h-395 mx-auto md:ml-88 md:-mt-96 mt-410 rounded-md bg-white dark:bg-gray-850">
-          <Image
-            src="/images/howWork/inspecticon.svg"
-            width="57"
-            height="57"
-            className="-m-7 ml-3"
-          />
-
-          <h1 className="lg:text-center md:text-center lg:ml-0 md:ml-0 ml-4 mt-10 text-xl text-left font-semibold dark:text-white">
-            Inspection report
+    <>
+      <div className="pt-32 lg:pt-40 pb-28 px-4 sm:px-8 md:px-12 lg:px-28 bg-customWhite dark:bg-customDark text-black dark:text-white transition-all duration-500 lg:flex">
+        <div className="lg:w-5/6 xl:w-3/4">
+          <h1 className="uppercase font-semibold text-lg text-gray-600 mb-4">
+            how does it <span className="text-customPurple">work?</span>
           </h1>
-          <p className="mt-4 ml-4 text-md dark:text-white">
-            Upon completion of preliminary testing, our specialists will provide
-            you with a report detailing any detected vulnerabilities along with
-            recommendations for addressing them
-          </p>
+          <h2 className="font-inter text-2xl font-semibold mb-15 lg:mb-28">
+            Get Audited by SAFU AI within
+            <span className="block sm:inline lg:block"> 1-2 Days</span>
+          </h2>
+          <Image
+            src="/images/howWork/blockicon.svg"
+            width="400"
+            height="400"
+            className="mx-auto lg:mx-0"
+          />
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-15 lg:gap-0 lg:grid-cols-1 xl:grid-cols-2 w-full mt-24 lg:mt-0">
+          <div className="w-full lg:max-w-285 lg:mb-10 xl:mb-0 lg:max-h-84 p-6 mx-auto xl:mx-0 rounded-md bg-white dark:bg-gray-850 sm:relative">
+            <Image
+              src="/images/howWork/pricingicon.svg"
+              width="57"
+              height="57"
+              className="mb-4 hidden dark:block"
+            />
+            <Image
+              src="/images/howWork/pricingiconlight.svg"
+              width="57"
+              height="57"
+              className="mb-4 dark:hidden"
+            />
 
-          <div className="flex relative w-full">
-            <h2 className="mt-5 ml-4 text-lg font-semibold dark:text-white">
-              Request Now
-            </h2>
-            <button className="absolute right-0 -bottom-3">
-              <Image
-                src="/images/howWork/buttonarrow.svg"
-                width="27"
-                height="27"
-                className="ml-48 -mt-10"
-              />
-            </button>
+            <h1 className="text-xl text-left mb-5 font-semibold dark:text-white">
+              Get a pricing quote
+            </h1>
+
+            <p className="text-md mb-8 dark:text-white">
+              Obtain an audit scope, timeline, and pricing estimate by
+              submitting the necessary paperwork
+            </p>
+
+            <div className="flex justify-between">
+              <h2 className="sm:absolute sm:bottom-8 lg:static text-lg font-semibold dark:text-white">
+                Request Now
+              </h2>
+              <button className="sm:absolute sm:bottom-8 lg:static sm:right-7">
+                <Image
+                  src="/images/howWork/buttonarrow.svg"
+                  width="27"
+                  height="27"
+                />
+              </button>
+            </div>
+          </div>
+          <div className="lg:max-w-285 lg:mb-10 xl:mb-0 p-6 mx-auto xl:mx-0 rounded-md xl:-translate-y-28 xl:mr-0 xl:ml-auto bg-white dark:bg-gray-850">
+            <Image
+              src="/images/howWork/inspecticon.svg"
+              width="57"
+              height="57"
+              className="mb-4 hidden dark:block"
+            />
+            <Image
+              src="/images/howWork/inspecticonlight.svg"
+              width="57"
+              height="57"
+              className="mb-4 block dark:hidden"
+            />
+
+            <h1 className="text-xl text-left mb-5 font-semibold dark:text-white">
+              Inspection report
+            </h1>
+
+            <p className="text-md mb-8 dark:text-white">
+              Upon completion of preliminary testing, our specialists will
+              provide you with a report detailing any detected vulnerabilities
+              along with recommendations for addressing them
+            </p>
+
+            <div className="flex justify-between w-full mb-2">
+              <h2 className="text-lg font-semibold dark:text-white">
+                Request Now
+              </h2>
+              <button>
+                <Image
+                  src="/images/howWork/buttonarrow.svg"
+                  width="27"
+                  height="27"
+                />
+              </button>
+            </div>
+          </div>
+          <div className="lg:max-w-285 lg:mb-10 xl:mb-12 p-6 mx-auto xl:mx-0 rounded-md bg-white dark:bg-gray-850 sm:relative">
+            <Image
+              src="/images/howWork/corectionicon.svg"
+              width="57"
+              height="57"
+              className="mb-4 hidden dark:block"
+            />
+            <Image
+              src="/images/howWork/correctioniconlight.svg"
+              width="57"
+              height="57"
+              className="mb-4 block dark:hidden"
+            />
+
+            <h1 className="text-xl text-left mb-5 font-semibold dark:text-white">
+              Correction
+              <span className="lg:block"> assessment</span>
+            </h1>
+
+            <p className="text-md mb-8 dark:text-white">
+              Once you implement the fixes, our team conducts a validation check
+              (1 check is covered in the cost) to verify that all modifications
+              are accurate.
+            </p>
+
+            <div className="flex justify-between w-full">
+              <h2 className="sm:absolute sm:bottom-8 lg:static text-lg font-semibold dark:text-white">
+                Request Now
+              </h2>
+              <button className="sm:absolute sm:bottom-8 lg:static sm:right-7">
+                <Image
+                  src="/images/howWork/buttonarrow.svg"
+                  width="27"
+                  height="27"
+                />
+              </button>
+            </div>
+          </div>
+          <div className="lg:max-w-285 p-6 mx-auto xl:mx-0 rounded-md xl:-translate-y-20 xl:mr-0 xl:ml-auto bg-white dark:bg-gray-850">
+            <Image
+              src="/images/howWork/accreditation.svg"
+              width="57"
+              height="57"
+              className="mb-4 hidden dark:block"
+            />
+            <Image
+              src="/images/howWork/accreditationlight.svg"
+              width="57"
+              height="57"
+              className="mb-4 block dark:hidden"
+            />
+
+            <h1 className="text-xl text-left mb-5 font-semibold dark:text-white">
+              Accreditation and advertising
+            </h1>
+
+            <p className="text-md mb-8 dark:text-white">
+              Incorporate a Hacken audit onto your website and have it featured
+              on CER.live, CMC, and CoinGecko. Your audit will also be
+              highlighted on media platforms owned by Hacken and its partners.
+            </p>
+
+            <div className="flex justify-between w-full mb-2">
+              <h2 className="text-lg font-semibold dark:text-white">
+                Request Now
+              </h2>
+              <button>
+                <Image
+                  src="/images/howWork/buttonarrow.svg"
+                  width="27"
+                  height="27"
+                />
+              </button>
+            </div>
           </div>
         </div>
       </div>
-      <div className="py-10 md:w-64 max-w-xl md:h-96 h-80 md:mt-16 mt-6 lg:mx-auto mx-auto md:mx-130 rounded-md bg-white dark:bg-gray-850">
-        <Image
-          src="/images/howWork/corectionicon.svg"
-          width="57"
-          height="57"
-          className="-m-7 ml-3"
-        />
-
-        <h1 className="lg:ml-4 md:ml-0 ml-4 mt-10 text-xl lg:max-w-min font-semibold dark:text-white">
-          Correction assessment
-        </h1>
-        <p className="mt-4 ml-4 text-md pr-4 dark:text-white">
-          Once you implement the fixes, our team conducts a validation check (1
-          check is covered in the cost) to verify that all modifications are
-          accurate.
-        </p>
-
-        <div className="flex relative w-full">
-          <h2 className="mt-5 ml-4 text-lg font-semibold dark:text-white">
-            Request Now
-          </h2>
-          <button className="absolute right-8 -bottom-3">
-            <Image
-              src="/images/howWork/buttonarrow.svg"
-              width="27"
-              height="27"
-              className="ml-48 -mt-10"
-            />
-          </button>
-        </div>
-        <div className="py-10 md:w-64 md:h-395 h-80 mx-auto md:-mt-96 mt-450 md:ml-88 rounded-md bg-white dark:bg-gray-850">
-          <Image
-            src="/images/howWork/accreditation.svg"
-            width="57"
-            height="57"
-            className="-m-7 ml-3"
-          />
-
-          <h1 className="lg:ml-4 lg:mb-4 md:ml-4 md:mb-4 ml-4 mt-10 text-xl text-left font-semibold dark:text-white">
-            Accreditation and advertising
-          </h1>
-          <p className="mt-2 ml-4 pr-3 text-md dark:text-white">
-            Incorporate a Hacken audit onto your website and have it featured on
-            CER.live, CMC, and CoinGecko. Your audit will also be highlighted on
-            media platforms owned by Hacken and its partners.
-          </p>
-
-          <div className="flex relative w-full">
-            <h2 className="mt-5 ml-4 text-lg font-semibold dark:text-white">
-              Request Now
-            </h2>
-            <button className="absolute right-8 -bottom-3">
-              <Image
-                src="/images/howWork/buttonarrow.svg"
-                width="27"
-                height="27"
-                className="ml-48 -mt-10"
-              />
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
+    </>
   );
 };
